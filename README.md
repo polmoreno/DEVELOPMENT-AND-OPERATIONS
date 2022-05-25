@@ -86,14 +86,14 @@ Who is the best audience for this book?
 
 In summary, this book will prepare you to:
 ```
-Learn what Red Teaming is and how it differs from other security testing engagements
-Understand the unique view of the offensive security field of Red Teaming and the concepts,
-principles, and guidelines critical to its success
-Design and create threat-specific goals to measure and train organizational defenders
-Learn to use the “Get In, Stay In, and Act” methodology to achieve operational impacts
-Design, operate, and run a professional red teaming program
-Make the best use of a Red Team and apply it to measure and understand an organization's
-security defenses
+● Learn what Red Teaming is and how it differs from other security testing engagements.
+● Understand the unique view of the offensive security field of Red Teaming and the concepts,
+principles, and guidelines critical to its success.
+● Design and create threat-specific goals to measure and train organizational defenders.
+● Learn to use the “Get In, Stay In, and Act” methodology to achieve operational impacts.
+● Design, operate, and run a professional red teaming program.
+● Make the best use of a Red Team and apply it to measure and understand an organization's
+security defenses.
 ```
 
 ## Acknowledgments
