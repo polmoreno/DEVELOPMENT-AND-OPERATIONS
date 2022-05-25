@@ -289,7 +289,7 @@ Does a threat know a target has a robust security program?
 Do threats perform actions that will trigger an alert or get them caught?
 Are threats still successful?
 If so, why are threats able to successfully achieve its goals and negatively impact an organization when that organization has a comprehensive security program? 
-To understand this - We must understand the threat to develop defenses properly. -
+To understand this we must understand the threat to develop defenses properly.
 ```
 
 The security industry uses the term threat, but what is a threat?
