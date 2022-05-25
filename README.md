@@ -91,8 +91,7 @@ In summary, this book will prepare you to:
 ● Design and create threat-specific goals to measure and train organizational defenders.
 ● Learn to use the “Get In, Stay In, and Act” methodology to achieve operational impacts.
 ● Design, operate, and run a professional red teaming program.
-● Make the best use of a Red Team and apply it to measure and understand an organization's
-security defenses.
+● Make the best use of a Red Team and apply it to measure and understand an organization's security defenses.
 ```
 
 ## Acknowledgments
