@@ -306,7 +306,7 @@ A potential cause of an incident, that may result in harm of systems and organiz
 Any circumstance or event with the potential to adversely impact organizational operations (including
 mission, functions, image, or reputation), organizational assets, individuals, other organizations, or
 the Nation through an information system via unauthorized access, destruction, disclosure,
-modification of information, or denial of service. |
+modification of information, or denial of service.
 
 Let’s walk through this in the context of cybersecurity threats. A threat is an event that has the
 potential to impact an organization adversely. Are security operations teams defending against this
@@ -325,13 +325,10 @@ protect themselves against unknown or zero-day attacks.
 
 #### Why do Threats Succeed?
 
-
 Many organizations currently use audit and compliance, vulnerability assessments, and penetration
 testing to evaluate and measure risk to cyber-attack. Why bother with a new, threat-focused approach?
 
-### Isn't the identification and mitigation of
-
-### vulnerabilities enough?
+### Isn't the identification and mitigation of vulnerabilities enough?
 
 To answer, you must understand how a threat-actor thinks and acts. Remember, a threat is really an
 intelligent person determined to cause harm. It is NOT an exploit of a vulnerability, NOT a piece of
@@ -361,7 +358,6 @@ understanding their actions and TTPs.
 
 After evaluating a target network, a threat-actor decides phishing is their chosen method to gain
 access. They send a phishing email to a small number of targeted individuals. The phish contains an
-
 excel attachment with a DDE based attack[5]. One of the email recipients opens the attachment. This
 launches malicious code and establishes command and control (C2). The threat-actor then performs a
 series of steps that includes situational awareness of current access, enumeration of potential new
@@ -372,11 +368,8 @@ critical data. It’s just a test application. The credentials provide the means
 database server. Remember, the database doesn’t have sensitive data but is part of the “server zone”
 in the network. Code execution on the database server provides elevated access. The situational
 awareness cycle repeats. The threat-actor discovers elevated credentials stored in memory on the
-
-
 database server. The threat extracts this credential material and uses to communicate with a Windows
 domain controller to extract an even greater elevated credential from a Windows domain controller
-
 using the dcsync[6] technique. The threat-actor repeats the situational awareness and enumeration
 cycle using the newly gained credentials from the domain controller. The intended target is identified
 and located on a sensitive file repository. The threat-actor prepositions themselves using the access
@@ -401,15 +394,12 @@ user, but the steps taken to defend systems often say otherwise.
 
 ```
 Consider This
-A phishing attack leading to compromise is NOT the
-fault of an end-user but rather, insufficient security
-controls of a target environment.
-End-users are often blamed for compromise due to a
-phishing attack. Security defenses are not intended to
-hinge on a user’s click decision to click or not. If a user
-who falls victim to a phishing attack leads to system-wide
-compromise, that user already had the potential to elevate
-privileges or otherwise compromise the environment.
+A phishing attack leading to compromise is NOT the fault of an end-user but rather, insufficient security
+controls of a target environment. 
+End-users are often blamed for compromise due to a phishing attack. 
+Security defenses are not intended to hinge on a user’s click decision to click or not.
+If a user who falls victim to a phishing attack leads to system-wide compromise,
+that user already had the potential to elevate privileges or otherwise compromise the environment.
 ```
 #### Why is this scenario successful?
 
