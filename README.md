@@ -74,25 +74,17 @@ and understand tools needed you reinforce your organization’s security posture
 Who is the best audience for this book?
 ```
 Security professionals interested in expanding their knowledge of Red Teaming.
-
 Penetration testers or ethical hackers looking to understand how Red Teaming is different from other security testing types.
-
 Defenders who want to understand offensive methodologies, tools, and techniques better.
-
 Auditors who need to build relevant technical skills and understand how to measure success.
-
 Red Team members looking to understand their craft as professionals better.
-
 Threat hunters looking to understand better how red teaming can increase their ability to defend.
-
 Computer Network Defense or Exploitation (CND/CNE) Teams.
-
 Forensics specialists who want to understand offensive tactics better.
-
 Information security managers who need to incorporate red team activities into their operations.
 ```
-In summary, this book will prepare you to:
 
+In summary, this book will prepare you to:
 ```
 Learn what Red Teaming is and how it differs from other security testing engagements
 Understand the unique view of the offensive security field of Red Teaming and the concepts,
