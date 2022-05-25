@@ -394,40 +394,35 @@ user, but the steps taken to defend systems often say otherwise.
 
 ```
 Consider This
-A phishing attack leading to compromise is NOT the fault of an end-user but rather, insufficient security
-controls of a target environment. 
+A phishing attack leading to compromise is NOT the fault of an end-user but rather, insufficient security controls of a target environment. 
 End-users are often blamed for compromise due to a phishing attack. 
 Security defenses are not intended to hinge on a user’s click decision to click or not.
-If a user who falls victim to a phishing attack leads to system-wide compromise,
-that user already had the potential to elevate privileges or otherwise compromise the environment.
+If a user who falls victim to a phishing attack leads to system-wide compromise, that user already had the potential to elevate privileges or otherwise compromise the environment.
 ```
 #### Why is this scenario successful?
 
 Organizations often have the wrong mindset to security defense.
 
-**Users are blamed for clicking links**
+**Users are blamed for clicking links**  
 User education is only one piece of defense in security operations. Users will click. It’s their job!
 
-**Policies, procedures, and compliance measure security**
+**Policies, procedures, and compliance measure security**  
 These are extremely important to a security program but often only represent the minimum needed to
-comply with a standard. Treat compliance as the stick at an amusement park. You must be "this tall" to
+comply with a standard. Treat compliance as the stick at an amusement park. You must be "this tall" to ride.
 
-
-ride.
-
-**Log everything; You never know what you need**
+**Log everything; You never know what you need**  
 Security operations often log a tremendous amount of unactionable data. Logging may be due to
 compliance requirements, vendor recommendations, lack of understanding of data sources, or a 'better
 safe than sorry' mindset. This misunderstanding leads to bottlenecks and overburdened security
 analysts.
 
-**Patch, patch, patch. Threats only use exploits**
+**Patch, patch, patch. Threats only use exploits**  
 A common misunderstanding or viewpoint is threats only use exploits. This is far from the truth. Patch
 management is an essential factor in a comprehensive security program that helps with attack surface
 reduction. Threats understand this and may change their tactics. This concept is further explored and
 discussed in the text as “exploitation without exploits”.
 
-**Our security tools will save us**
+**Our security tools will save us**  
 The security industry is very dependent on security tools. Unfortunately, many do not know how these
 tools work. The lack of understanding leads to poor tuning and misconfiguration. Tools should
 improve the efficiency and capability of our security defenders and analysts and not drive security
