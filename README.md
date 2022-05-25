@@ -284,7 +284,7 @@ security testing and auditing. The result is a severe false sense of security. A
 and uses it to their advantage.
 
 ```
-Consider This
+Consider This:
 Does a threat know a target has a robust security program?
 Do threats perform actions that will trigger an alert or get them caught?
 Are threats still successful?
