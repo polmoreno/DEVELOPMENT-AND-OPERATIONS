@@ -268,8 +268,7 @@ oversight, incident response, etc. The program is designed and built with the as
 from several different divisions or job functions, all contributing their thoughts and security
 requirements. Security programs often use this strategy for ensuring a complete and holistic security
 program; however, what or who is often missing? Has anyone on the security operations team ever
-seen a bad guy? Has anyone on the team attacked or compromised a network? To what extent? To
-
+seen a bad guy? Has anyone on the team attacked or compromised a network? To what extent? To 
 quote Peter in the movie Office Space[1]. _"I can’t believe what a bunch of nerds we are. We’re
 looking up money laundering in a dictionary.”_ Are teams designing defenses for an enemy they do
 not know or understand?
@@ -287,21 +286,16 @@ and uses it to their advantage.
 ```
 Consider This
 Does a threat know a target has a robust security program?
-Do threats perform actions that will trigger an alert or get
-them caught?
+Do threats perform actions that will trigger an alert or get them caught?
 ```
 
 ```
 Are threats still successful?
-If so, why are threats able to successfully achieve its
-goals and negatively impact an organization when that
-organization has a comprehensive security program? To
-understand this,
+If so, why are threats able to successfully achieve its goals and negatively impact an organization when that organization has a comprehensive security program? To
+understand this
+
+\.#### We must understand the threat to develop defenses properly.
 ```
-#### We must understand the threat to
-
-#### develop defenses properly.
-
 The security industry uses the term threat, but what is a threat?
 
 **Dictionary.com** [2] defines threat as:
