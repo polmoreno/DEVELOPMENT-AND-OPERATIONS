@@ -450,18 +450,7 @@ unbiased base of understanding. The authors of this book have seen misunderstood
 complications and missed expectations. Concepts will be defined and explained throughout this book.
 We begin by defining red teaming.
 
-### Red Teaming is the process of using Tactics,
-
-### Techniques, and Procedures (TTPs) to emulate
-
-
-### a real-world threat with the goals of training
-
-### and measuring the effectiveness of the people,
-
-### processes, and technology used to defend an
-
-### environment.
+### Red Teaming is the process of using Tactics, Techniques, and Procedures (TTPs) to emulate a real-world threat with the goals of training and measuring the effectiveness of the people, processes, and technology used to defend an environment.
 
 Assumptions, bias, misunderstandings, and disbelief have a significant impact on the security
 operations of an environment. Red Teams provide formidable, honest assessments of internal
