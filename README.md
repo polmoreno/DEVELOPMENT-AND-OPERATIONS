@@ -261,9 +261,7 @@ the means to defend a network from attack. Unfortunately, this often falls short
 primary goal of preventing, detecting, and responding to real threats. Why? What is missing? The real
 question to consider is:
 
-### Are organizations truly building security
-
-### programs designed to address the threat?
+### Are organizations truly building security programs designed to address the threat?
 
 A security program includes many components such as staff, policies, procedures, tools, management,
 oversight, incident response, etc. The program is designed and built with the assistance of members
