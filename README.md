@@ -473,14 +473,14 @@ standard methods to apply Red Teaming scenarios are:
 
 **Tabletop exercises** – An activity where key individuals walk through a simulated situation to answer
 "what if" questions. Actual technical testing does not occur. Discussions of potential outcomes are
-explored and examined in an open discussion format.
+explored and examined in an open discussion format.  
 **Physical attacks** – An attack on a physical resource, such as a facility or building, to test scenarios
-based on attack paths involving physical assets.
+based on attack paths involving physical assets.  
 **Human attacks** – An attack that involves social engineering and the manipulation of people to
-achieve Red Team goals.
+achieve Red Team goals.  
 **Cyber exercises** – A Red vs. Blue exercise designed to train or evaluate staff and security operation
 defenses. Exercises can range from a focuses offensive threat scenario to a full Red vs. Blue war
-game.
+game.  
 **Full-scale cyber operation** – The most realistic attack an organization can endure outside of an attack
 from a real threat. The elements of the operation collectively assess all aspects of a specific scenario.
 The scenario drives the need and may leverage physical, human, and cyber weaknesses to accomplish
@@ -489,8 +489,6 @@ desired objectives.
 Red Teaming does not focus on a vulnerability or weakness as a single "finding." During a Red Team
 engagement, an operator may find an unpatched or misconfigured system. This flaw may be used to
 the team's advantage to provide a more extensive compromise into a network or to pivot from the
-
-
 vulnerable system to achieve a specific goal or may not be used at all. Although a single unpatched or
 misconfigured system may give a Red Team Operator the means to compromise a network, it is just a
 means to an end. This is a crucial distinguisher for Red Teaming.
@@ -521,11 +519,8 @@ controls.
 
 **Training or measuring defensive or security operations**
 
-### "We don't rise to the level of our expectations;
-
-### we fall to the level of our training." -
-
-### Archilochus, Greek Poet, around 650 BC
+### "We don't rise to the level of our expectations; we fall to the level of our training." 
+### - Archilochus, Greek Poet, around 650 BC
 
 Training the Blue Team (defenders of a network) is one of the most valuable aspects of Red Teams.
 Without training, how are defenders expected to defend against a real attack? Classroom exercises
