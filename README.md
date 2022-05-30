@@ -538,7 +538,6 @@ A Red Team can execute and emulate a current, new, or custom threat as part of a
 or validate the effectiveness of security controls. Threat emulation scenarios distinguish red teaming
 from other types of security assessments and can be used to understand an organization's posture
 against various threats. This approach provides the means to test scenarios based on new
-
 undiscovered threats or zero-day exploits. A great example is the EternalBlue[7] exploit. This exploit
 involved remote code execution using the SMB protocol, a key protocol used in Microsoft
 environments. Before the exploit was known, a Red Team could have easily designed a scenario
@@ -549,10 +548,8 @@ found on ExternalBlue in CVE-2017-0144.
 
 ```
 Remember This
-Red Teams are used to measure the effectiveness of the
-people, processes, and technology used to defend a
-network, train or measure a Blue Team (defensive security
-operations), and test and understand specific threats or
+Red Teams are used to measure the effectiveness of the people, processes, and technology used to defend a
+network, train or measure a Blue Team (defensive security operations), and test and understand specific threats or
 threat scenarios.
 ```
 We’ve described what Red Teams do, but let’s give them a definition to add to our common lexicon.
@@ -574,12 +571,8 @@ world risks and consequences and a key component of Red Teaming.
 
 ```
 Consider This
-Independent Red Teams are invaluable in determining
-real-world risks and potential impacts.
-```
-```
-Independence allows the Red Team to accurately review
-or assess while limiting many of the biases and
+Independent Red Teams are invaluable in determining real-world risks and potential impacts.
+Independence allows the Red Team to accurately review or assess while limiting many of the biases and
 assumptions of the target.
 ```
 
@@ -607,13 +600,9 @@ identified during an assessment but focus on the whole story of the attacker thr
 
 ```
 Consider This
-Assumptions, bias, misunderstandings, and disbelief
-have a considerable impact on the security failures of
+Assumptions, bias, misunderstandings, and disbelief have a considerable impact on the security failures of
 an environment.
-```
-```
-An unbiased Red Team helps measure the gap between
-"what is" and "what should be" to get to the truth of
+An unbiased Red Team helps measure the gap between "what is" and "what should be" to get to the truth of
 security operations as a whole.
 ```
 #### Let’s consider the following.
@@ -670,16 +659,11 @@ an effort in attack surface reduction.
 
 ```
 Consider This
-Red Teams rarely, if ever, run standard vulnerability
-assessment tools.
-These tools are loud and generate more traffic than a Red
-Team engagement is willing to accept. If a vulnerability
-assessment tool MUST be used, there should be a question
-asked as to the type of security assessment being
-conducted, or they should be run with high focus from a
-"burned" attack location. Vulnerability assessments are
-still a critical component to security program but are quite
-different in scope and goals of a red team engagement.
+Red Teams rarely, if ever, run standard vulnerability assessment tools.
+These tools are loud and generate more traffic than a Red Team engagement is willing to accept. If a vulnerability
+assessment tool MUST be used, there should be a question asked as to the type of security assessment being
+conducted, or they should be run with high focus from a "burned" attack location. Vulnerability assessments are
+still a critical component to security program but are quite different in scope and goals of a red team engagement.
 ```
 
 #### Penetration Test
@@ -709,7 +693,6 @@ ability to operate but do not measure a threat's ability to impact an organizati
 should be considered an effort in attack path validation with a goal to reduce the attack surface.
 
 Penetration tests are often driven to support audit requirements, such as those for PCI/DSS[9] or
-
 HIPAA[10]. Red Teaming is typically not driven by compliance but by the desire to fully test an
 organization's ability to defend, respond, and react to a threat.
 
@@ -746,8 +729,6 @@ playing a "whack-a-mole" game with individual vulnerabilities? Plugging holes is
 reduce the attack surface, but this is where red teaming enters. Red Teaming focuses on security
 operations as a whole and includes people, processes, and technology. Red teaming focuses explicitly
 on goals related to training blue teams or measuring how security operations can impact a threat's
-
-
 ability to operate. Technical flaws are secondary to understanding how the threat was able to impact
 an organization's operations or how security operations were able to impact a threat's ability to
 operate.
@@ -755,77 +736,43 @@ operate.
 #### Comparison Summary
 
 ```
-Method Description Goal in Terms of
-Risk
-```
-```
-Penetration
-Test
-```
-```
-An attack against a
-system, network, or
-application designed to
-identify and measure
-risks associated with
-the exploitation of a
-target’s attack surface.
-Think: Attack path
-validation
-```
-```
-Attack surface
-reduction
-```
-```
-Vulnerability
-Assessment
-```
-```
-An assessment used to
-identify the adequacy of
-security measures,
-identify security
-deficiencies, and
-confirm the mitigations
-are in place with the
-goal of reducing a
-target’s attack surface
-Think: Flaw
-identification
-```
-```
-Attack surface
-reduction
-```
-```
-Red Team
-Engagement
-```
-```
-The process of using
-Tactics, Techniques,
-and Procedures (TTPs)
-to emulate a real-world
-threat with the goals of
-training or measuring
-the effectiveness of the
-people, processes, and
-technology used to
-defend an environment.
-Think: Measure
-security operation’s
-capabilities as a whole
-```
-```
-Training and
-measuring the
-effectiveness of
-the people,
-processes, and
-technology
-(security
-operations)
+| Method                   	| Description              	| Goal in Terms of Risk    	|
+|--------------------------	|--------------------------	|--------------------------	|
+| Penetration Test         	| An attack against        	| Attack surface reduction 	|
+|                          	| a system, network, or    	|                          	|
+|                          	| application designed to  	|                          	|
+|                          	| identify and measure     	|                          	|
+|                          	| risks associated with    	|                          	|
+|                          	| the exploitation of a    	|                          	|
+|                          	| target’s attack surface. 	|                          	|
+|                          	| Think: Attack path       	|                          	|
+|                          	| validation               	|                          	|
+|                          	|                          	|                          	|
+| Vulnerability Assessment 	| An assessment used to    	| Attack surface reduction 	|
+|                          	| identify the adequacy of 	|                          	|
+|                          	| security measures,       	|                          	|
+|                          	| identify security        	|                          	|
+|                          	| deficiencies, and        	|                          	|
+|                          	| confirm the mitigations  	|                          	|
+|                          	| are in place with the    	|                          	|
+|                          	| goal of reducing a       	|                          	|
+|                          	| target’s attack surface  	|                          	|
+|                          	| Think: Flaw              	|                          	|
+|                          	| identification           	|                          	|
+|                          	|                          	|                          	|
+| Red Team Engagement      	| The process of using     	| Training and measuring   	|
+|                          	| Tactics, Techniques,     	| the effectiveness of     	|
+|                          	| and Procedures (TTPs)    	| the people, processes,   	|
+|                          	| to emulate a real-world  	| and technology (security 	|
+|                          	| threat with the goals of 	| operations)              	|
+|                          	| training or measuring    	|                          	|
+|                          	| the effectiveness of the 	|                          	|
+|                          	| people, processes, and   	|                          	|
+|                          	| technology used to       	|                          	|
+|                          	| defend an environment.   	|                          	|
+|                          	| Think: Measure           	|                          	|
+|                          	| security operation’s     	|                          	|
+|                          	| capabilities as a whole  	|                          	|
 ```
 
 ### Red Teaming Organizations
