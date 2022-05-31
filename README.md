@@ -507,7 +507,7 @@ literature, or structured testing.
 
 The following categories summarize Red Teaming goals.
 
-**Measuring the effectiveness of the people, processes, and technology used to defend a network**
+**Measuring the effectiveness of the people, processes, and technology used to defend a network**  
 When a Red Team uses real-world attack techniques against a target’s production network, the extent
 of the organization’s defenses are challenged. For example, an engagement has the goal of stealing
 critical data from a target. A targeted phishing attack tests the end user’s willingness to participate in
