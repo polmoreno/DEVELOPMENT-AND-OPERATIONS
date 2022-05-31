@@ -614,6 +614,7 @@ system". In their minds, this is what " **Is** ." When planning a threat scenari
 professional and unbiased approach. The goal is not to prove that you can 'hack' into the system but to
 understand what " **Is** " vs. " **Should Be** ."
 
+![Alt Image](./Images/xx.jpg)
 
 Another way to describe this:
 
@@ -802,7 +803,7 @@ to understand its ability to Identify, Protect, Detect, Respond, and Recover aga
 categories are where we in the security industry should focus. Detection and response capabilities are
 vital and arguably the point of a security operations.
 
-**Identify** – The Identify Function are foundational for effective use of the Framework. The
+**Identify** – The Identify function are foundational for effective use of the Framework. The
 organization has associated business context, functions, assets, people and technologies with potential
 weaknesses, vulnerabilities, and threats to ascertain risks.  
 **Protect** – The Protect function supports the ability to limit or contain the impact of a potential
@@ -851,11 +852,8 @@ that result in mitigation and attack surface reduction.
 
 ```
 Consider This
-Red Teaming may use offensive security techniques but is
-not offensive in nature. It is arguably part of the security
+Red Teaming may use offensive security techniques but is not offensive in nature. It is arguably part of the security
 defensive community.
-```
-```
 Red cannot exist without Blue
 ```
 
