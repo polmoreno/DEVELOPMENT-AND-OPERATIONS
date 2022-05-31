@@ -614,7 +614,7 @@ system". In their minds, this is what " **Is** ." When planning a threat scenari
 professional and unbiased approach. The goal is not to prove that you can 'hack' into the system but to
 understand what " **Is** " vs. " **Should Be** ."
 
-![Alt Image](./Images/xx.jpg)
+![Alt Image](./Images/shouldbe-is.png)
 
 Another way to describe this:
 
