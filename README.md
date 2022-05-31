@@ -804,15 +804,15 @@ vital and arguably the point of a security operations.
 
 **Identify** – The Identify Function are foundational for effective use of the Framework. The
 organization has associated business context, functions, assets, people and technologies with potential
-weaknesses, vulnerabilities, and threats to ascertain risks.
+weaknesses, vulnerabilities, and threats to ascertain risks.  
 **Protect** – The Protect function supports the ability to limit or contain the impact of a potential
 cybersecurity event. The organization is prepared and configured to prevent intrusion, exploitation, or
-manipulation of information.
+manipulation of information.  
 **Detect** – The Detect function enables the timely discovery of cybersecurity events. The organization
-conducts reliable monitoring and identification of unauthorized activity or entities.
+conducts reliable monitoring and identification of unauthorized activity or entities.  
 **Respond** – The Respond function supports the ability to contain the impact of a potential
 cybersecurity incident. The organization performs accurate identification and analysis of detected
-activities resulting in effective reporting and responses.
+activities resulting in effective reporting and responses.  
 **Recover** – The Recover function supports timely recovery to normal operations to reduce the impact
 from a cybersecurity incident. Capabilities are effectively restored when operational
 processes/productions have been impaired.
