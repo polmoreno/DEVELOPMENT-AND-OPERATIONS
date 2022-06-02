@@ -1053,11 +1053,11 @@ The organization (or at least the security operations team) has the knowledge th
 underway.
 
 This can impact an engagement in the following ways.  
-An organization may increase security, patch systems, change passwords, or otherwise
+● An organization may increase security, patch systems, change passwords, or otherwise
 prepare for a known attack. This can have a dramatic impact on the results.  
-Planning can include all key members of an organization. This helps ensure the critical
+● Planning can include all key members of an organization. This helps ensure the critical
 assets are included, and the Red Team goals can be set accordingly.  
-Fears of a rogue Red Team can be dealt with early through effective communication.
+● Fears of a rogue Red Team can be dealt with early through effective communication.
 This typically leads to a more in-depth engagement where risks can be explored with
 well-planned rules of engagement.
 
@@ -1067,12 +1067,12 @@ The organization (especially the security operations team) does not know that an
 underway.
 
 This can impact an engagement in the following ways.  
-An organization will act and respond as it would on any given day. This provides very
+● An organization will act and respond as it would on any given day. This provides very
 realistic results by measuring the actual posture of security operations.  
-Fear of the unknown causes some organizations to react with the “sky is falling”
+● Fear of the unknown causes some organizations to react with the “sky is falling”
 mentality. This fear may cause unintended self-inflicted damages if policies and
 procedures are not followed.  
-Goals and targets may not be included in the planning. When only a small number of an
+● Goals and targets may not be included in the planning. When only a small number of an
 organization's team is part of planning, critical assets may be missed and not included in
 the scope. This oversight can cause an engagement to lose focus on areas that may
 expose an organization to considerable risk.
@@ -1090,21 +1090,16 @@ specific or targeted, including the defenders can ensure the scope and rules are
 adequately designed to achieve the desired results.
 
 ```
-Red Team Tip
+Red Team Tip  
 Announced vs. Unannounced Notification
 
-1) If the overall goal is to measure the effectiveness of an
-organization’s security operations, start the planning with
-an unannounced engagement. Even with the limitations, the
-results will be the most accurate and realistic in terms of
+1) If the overall goal is to measure the effectiveness of an organization’s security operations, start the planning with
+an unannounced engagement. Even with the limitations, the results will be the most accurate and realistic in terms of
 understanding a threat’s impact.  
 
-2) If the overall goal is to measure the effectiveness of a
-specific capability, tool, process, or technology, start the
-planning with an announced engagement. When goals are
-specific or targeted, including the defenders can ensure the
-scope and rules are adequately designed to achieve the
-desired results.
+2) If the overall goal is to measure the effectiveness of a specific capability, tool, process, or technology, start the
+planning with an announced engagement. When goals are specific or targeted, including the defenders can ensure the
+scope and rules are adequately designed to achieve the desired results.
 ```
 
 ### Roles and Responsibilities
@@ -1122,13 +1117,13 @@ The White Cell primarily enforces the Rules of engagement to ensure neither Red 
 activities cause unexpected problems in the operational or target environment. The White Cell is
 often tasked with:
 Serving as referee between Red Team activities and defender responses during an engagement
-Establishing metrics for the engagement
-Coordinating activities on both sides to ensure engagement goals are achieved
-Providing the information required to conduct an efficient engagement
-Assisting with deconfliction activities between the Red Team and the defenders
-Scoring the engagement (if applicable)
-Providing a consolidated list of lessons learned obtained through observation during and
-after—action request immediately following the engagement
+● Establishing metrics for the engagement  
+● Coordinating activities on both sides to ensure engagement goals are achieved  
+● Providing the information required to conduct an efficient engagement  
+● Assisting with deconfliction activities between the Red Team and the defenders  
+● Scoring the engagement (if applicable)  
+● Providing a consolidated list of lessons learned obtained through observation during and
+after—action request immediately following the engagement  
 The White Cell is also responsible for correlating activities conducted by the Red Team with actions
 performed by the defenders (including times, systems, networks, team communications, etc.). This
 data is beneficial to the defenders as well as to the control group in identifying shortfalls in the
@@ -1143,18 +1138,16 @@ routed through the Engagement or Exercise Control Group.
 
 The Engagement (or Exercise) Control Group is ultimately responsible for all activities conducted
 during the engagement. This responsibility includes:
-Approving the engagement schedule, objectives, and directives
-Approving the Red Team objective targets for inclusion in engagement planning
-Establishing a time-coordinated blacklist for the environment (if required)
-Providing the environment information needed to construct scenarios that meet all
-objectives for the engagement
-Providing management and direction for the execution of the engagement
-Determining if, when, and what information should be provided to the defender during
-execution (a.k.a. injects)
-
-
-Determining when actions should be implemented as part of an engagement operational
-impact
+● Approving the engagement schedule, objectives, and directives  
+● Approving the Red Team objective targets for inclusion in engagement planning  
+● Establishing a time-coordinated blacklist for the environment (if required)  
+● Providing the environment information needed to construct scenarios that meet all
+objectives for the engagement  
+● Providing management and direction for the execution of the engagement  
+● Determining if, when, and what information should be provided to the defender during
+execution (a.k.a. injects)  
+● Determining when actions should be implemented as part of an engagement operational
+impact  
 Most often, the ECG is composed of one or two senior managers from the target environment (for
 example, a Chief Information Officer or Chief Operating Officer), one member from the Information
 Technology department of the organization, a White Cell liaison, and a Red Team liaison. Others can
