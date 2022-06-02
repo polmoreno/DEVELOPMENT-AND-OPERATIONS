@@ -887,8 +887,7 @@ agreement. Regardless of team status (internal or external service provider), ea
 ### Scope
 
 Scope plays the most significant role in the overall cost of an engagement. Consider scoping a
-vulnerability assessment. There is often a considerable benefit and need to conduct a full-scope, in-
-depth review of every node in an environment. The equipment and software employed are usually
+vulnerability assessment. There is often a considerable benefit and need to conduct a full-scope, in-depth review of every node in an environment. The equipment and software employed are usually
 part of the price (less additional licensing requirements), setup and configuration are already being
 conducted, and the addition of target space to the contract is generally cost-effective. This scoping
 effort is arguably straight forward and typically broken into the asset type being assessed. Scoping
@@ -922,10 +921,8 @@ starting point but must be adjusted based on the actual scope.
 
 ```
 Focus Area
-The two-to-four week recommendation is for estimating an
-individual engagement, which may be part of a larger
-campaign composed of multiple engagements. The goals
-must be considered when determining scope duration.
+The two-to-four week recommendation is for estimating an individual engagement, which may be part of a larger
+campaign composed of multiple engagements. The goals must be considered when determining scope duration.
 ```
 
 ### Personnel Labor Cost
@@ -1029,8 +1026,6 @@ weaknesses associated with long-term advanced and persistent threats. Constant d
 hours a day / 365 days a year. It means that a Red Team's goals are spread out over some time. Goals
 could be in weeks, months, or even years instead of over a one or two-week engagements. This
 approach allows a team to perform more realistic actions, attempt to remain in the network for a more
-
-
 extended period, and position themselves in ways a real threat would use to cause severe damage to
 an organization. They are also able to emulate actual threat activities and timelines. In this model,
 what happens if the team is not detected? The team can use operational impacts. These are the steps
@@ -1057,11 +1052,11 @@ This decision can have a considerable impact on the results and must be made car
 The organization (or at least the security operations team) has the knowledge that an engagement is
 underway.
 
-This can impact an engagement in the following ways.
+This can impact an engagement in the following ways.  
 An organization may increase security, patch systems, change passwords, or otherwise
-prepare for a known attack. This can have a dramatic impact on the results.
+prepare for a known attack. This can have a dramatic impact on the results.  
 Planning can include all key members of an organization. This helps ensure the critical
-assets are included, and the Red Team goals can be set accordingly.
+assets are included, and the Red Team goals can be set accordingly.  
 Fears of a rogue Red Team can be dealt with early through effective communication.
 This typically leads to a more in-depth engagement where risks can be explored with
 well-planned rules of engagement.
@@ -1071,12 +1066,12 @@ well-planned rules of engagement.
 The organization (especially the security operations team) does not know that an engagement is
 underway.
 
-This can impact an engagement in the following ways.
+This can impact an engagement in the following ways.  
 An organization will act and respond as it would on any given day. This provides very
-realistic results by measuring the actual posture of security operations.
+realistic results by measuring the actual posture of security operations.  
 Fear of the unknown causes some organizations to react with the “sky is falling”
 mentality. This fear may cause unintended self-inflicted damages if policies and
-procedures are not followed.
+procedures are not followed.  
 Goals and targets may not be included in the planning. When only a small number of an
 organization's team is part of planning, critical assets may be missed and not included in
 the scope. This oversight can cause an engagement to lose focus on areas that may
@@ -1084,28 +1079,25 @@ expose an organization to considerable risk.
 
 #### How To Decide?
 
-The following two tips can be used to answer the question about choosing announced or unannounced.
+The following two tips can be used to answer the question about choosing announced or unannounced.  
 1. If the overall goal is to measure the effectiveness of an organization’s security
 operations, start the planning with an unannounced engagement. Even with the
-
-
-```
 limitations, the results will be the most accurate and realistic in terms of understanding
-a threat’s impact
+a threat’s impact.  
 2. If the overall goal is to measure the effectiveness of a specific capability, tool, process,
 or technology, start the planning with an announced engagement. When goals are
 specific or targeted, including the defenders can ensure the scope and rules are
 adequately designed to achieve the desired results.
-```
+
 ```
 Red Team Tip
 Announced vs. Unannounced Notification
-```
+
 1) If the overall goal is to measure the effectiveness of an
 organization’s security operations, start the planning with
 an unannounced engagement. Even with the limitations, the
 results will be the most accurate and realistic in terms of
-understanding a threat’s impact
+understanding a threat’s impact.  
 
 2) If the overall goal is to measure the effectiveness of a
 specific capability, tool, process, or technology, start the
@@ -1113,7 +1105,7 @@ planning with an announced engagement. When goals are
 specific or targeted, including the defenders can ensure the
 scope and rules are adequately designed to achieve the
 desired results.
-
+```
 
 ### Roles and Responsibilities
 
