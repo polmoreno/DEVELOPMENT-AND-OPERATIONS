@@ -1116,7 +1116,7 @@ numerous roles and groups.
 The White Cell primarily enforces the Rules of engagement to ensure neither Red Team nor defender
 activities cause unexpected problems in the operational or target environment. The White Cell is
 often tasked with:
-Serving as referee between Red Team activities and defender responses during an engagement
+Serving as referee between Red Team activities and defender responses during an engagement  
 ● Establishing metrics for the engagement  
 ● Coordinating activities on both sides to ensure engagement goals are achieved  
 ● Providing the information required to conduct an efficient engagement  
@@ -1137,7 +1137,7 @@ routed through the Engagement or Exercise Control Group.
 #### Engagement Control Group (ECG)
 
 The Engagement (or Exercise) Control Group is ultimately responsible for all activities conducted
-during the engagement. This responsibility includes:
+during the engagement. This responsibility includes:  
 ● Approving the engagement schedule, objectives, and directives  
 ● Approving the Red Team objective targets for inclusion in engagement planning  
 ● Establishing a time-coordinated blacklist for the environment (if required)  
