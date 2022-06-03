@@ -1116,14 +1116,15 @@ numerous roles and groups.
 The White Cell primarily enforces the Rules of engagement to ensure neither Red Team nor defender
 activities cause unexpected problems in the operational or target environment. The White Cell is
 often tasked with:
-Serving as referee between Red Team activities and defender responses during an engagement  
+```
+● Serving as referee between Red Team activities and defender responses during an engagement  
 ● Establishing metrics for the engagement  
 ● Coordinating activities on both sides to ensure engagement goals are achieved  
 ● Providing the information required to conduct an efficient engagement  
 ● Assisting with deconfliction activities between the Red Team and the defenders  
 ● Scoring the engagement (if applicable)  
-● Providing a consolidated list of lessons learned obtained through observation during and
-after—action request immediately following the engagement  
+● Providing a consolidated list of lessons learned obtained through observation during and after—action request immediately following the engagement  
+```
 The White Cell is also responsible for correlating activities conducted by the Red Team with actions
 performed by the defenders (including times, systems, networks, team communications, etc.). This
 data is beneficial to the defenders as well as to the control group in identifying shortfalls in the
@@ -1137,17 +1138,16 @@ routed through the Engagement or Exercise Control Group.
 #### Engagement Control Group (ECG)
 
 The Engagement (or Exercise) Control Group is ultimately responsible for all activities conducted
-during the engagement. This responsibility includes:  
+during the engagement. This responsibility includes: 
+```
 ● Approving the engagement schedule, objectives, and directives  
 ● Approving the Red Team objective targets for inclusion in engagement planning  
 ● Establishing a time-coordinated blacklist for the environment (if required)  
-● Providing the environment information needed to construct scenarios that meet all
-objectives for the engagement  
+● Providing the environment information needed to construct scenarios that meet all objectives for the engagement  
 ● Providing management and direction for the execution of the engagement  
-● Determining if, when, and what information should be provided to the defender during
-execution (a.k.a. injects)  
-● Determining when actions should be implemented as part of an engagement operational
-impact  
+● Determining if, when, and what information should be provided to the defender during execution (a.k.a. injects)  
+● Determining when actions should be implemented as part of an engagement operational impact  
+```
 Most often, the ECG is composed of one or two senior managers from the target environment (for
 example, a Chief Information Officer or Chief Operating Officer), one member from the Information
 Technology department of the organization, a White Cell liaison, and a Red Team liaison. Others can
@@ -1186,21 +1186,18 @@ and operators and is commonly referred to as Red Team instead of Red Cell.
 
 A Red Team should have a lead for each engagement. The lead may perform the role of the action
 officer, the engagement lead, an operator, the customer interface, and, often, an analyst. In general, the
-Red Team lead:
-Provides overall direction and guidance for the team
-Provides information and research data for all laws, regulations, policies, programs,
-and operations
-Provides oversight for operational planning and execution
-Coordinates with each of the roles within the Red Team engagement
-
-
+Red Team lead:  
 ```
-Plans and manages the budget, personnel, and equipment
-Provides oversight for the team calendar
-Provides information related to engagements, capabilities, technology, and trends
-Provisions training and personnel development requirements
-Performs a budget analysis, including equipment and travel
-Identifies technical research and development directions
+● Provides overall direction and guidance for the team  
+● Provides information and research data for all laws, regulations, policies, programs, and operations  
+● Provides oversight for operational planning and execution  
+● Coordinates with each of the roles within the Red Team engagement
+● Plans and manages the budget, personnel, and equipment  
+● Provides oversight for the team calendar  
+● Provides information related to engagements, capabilities, technology, and trends  
+● Provisions training and personnel development requirements  
+● Performs a budget analysis, including equipment and travel  
+● Identifies technical research and development directions
 ```
 When planning or executing an engagement, the Red Team Lead:
 Oversees coordination with all stakeholders for the purpose of engagement execution
@@ -1215,17 +1212,19 @@ report
 
 Red Team operators are the individuals who execute the actions required for an engagement to meet
 the goals. Each Red Team operator complies with all Red Team policies and regulations under the
-direction of the Red Team Lead. In general, the operator:
-Executes engagement requirements as directed
-Complies with all laws, regulations, policies, programs, and Rules of Engagement
-Implements the team’s operational methodology and TTPs
-Identifies and has input to target environment deficiencies
-Researches and develops new exploit and tests tools for functionality
-Performs Open Source Intelligence as required for the engagement
-Identifies and assesses actions that reveal system vulnerabilities and capabilities
-Assists the Red Team Lead in the development of the final engagement report
-Performs physical assessment support under the direction of Red Team Lead
-Executes operational impacts as approved by the ECG
+direction of the Red Team Lead. In general, the operator:  
+```
+● Executes engagement requirements as directed  
+● Complies with all laws, regulations, policies, programs, and Rules of Engagement  
+● Implements the team’s operational methodology and TTPs  
+● Identifies and has input to target environment deficiencies  
+● Researches and develops new exploit and tests tools for functionality  
+● Performs Open Source Intelligence as required for the engagement  
+● Identifies and assesses actions that reveal system vulnerabilities and capabilities  
+● Assists the Red Team Lead in the development of the final engagement report  
+● Performs physical assessment support under the direction of Red Team Lead  
+● Executes operational impacts as approved by the ECG  
+```
 
 #### Blue Cell
 
