@@ -1521,22 +1521,28 @@ can use this to build a scorecard of how well they can defend against the variou
 
 #### MITRE ATT&CK Tactics
 
-**Initial Access**
-The initial access tactic represents the vectors adversaries use to gain an initial foothold within a
-network.
+**Initial Access**  
+```
+The initial access tactic represents the vectors adversaries use to gain an initial foothold within a network.
+```
 
-**Execution**
+**Execution**  
+```
 The execution tactic represents techniques that result in execution of threat-controlled code on a local
 or remote system. This tactic is often used in conjunction with initial access as a means of executing
 code once access is obtained, and lateral movement to expand access to remote systems on a network.
+```
 
-**Persistence**
+**Persistence**  
+```
 Persistence is any access, action, or configuration change to a system that gives a threat a persistent
 presence on that system. Adversaries will often need to maintain access to systems through
 interruptions such as system restarts, loss of credentials, or other failures that would require a remote
 access tool to restart or alternate backdoor for them to regain access.
+```
 
-**Privilege escalation**
+**Privilege escalation**  
+```
 Privilege escalation is the result of actions that allows a threat to obtain a higher level of permissions
 on a system or network. Certain tools or actions require a higher level of privilege to work and are
 likely necessary at many points throughout an operation. Adversaries can enter a system with
@@ -1545,16 +1551,18 @@ administrator or SYSTEM/root level privileges. A user account with administrator
 also be used. User accounts with permissions to access specific systems (or perform specific
 functions necessary for adversaries to achieve their objective) may also be considered an escalation
 of privilege.
+```
 
-**Defense evasion**
-
-
+**Defense evasion**  
+```
 Defense evasion consists of techniques a threat may use to evade detection or avoid other defenses.
 Sometimes these actions are the same as or variations of techniques in other categories that have the
 added benefit of subverting a particular defense or mitigation. Defense evasion may be considered a
 set of attributes the threat applies to all other phases of the operation.
+```
 
-**Credential access**
+**Credential access**  
+```
 Credential access represents techniques resulting in access to or control over system, domain, or
 service credentials that are used within an enterprise environment. Adversaries will likely attempt to
 obtain legitimate credentials from users or administrator accounts (local system administrator or
@@ -1562,31 +1570,41 @@ domain users with administrator access) to use within the network. This allows t
 the identity of the account, with all of that account's permissions on the system and network, and
 makes it harder for defenders to detect the threat. With sufficient access within a network, a threat can
 create accounts for later use within the environment.
+```
 
-**Discovery**
+**Discovery**  
+```
 Discovery consists of techniques that allow the threat to gain knowledge about the system and internal
 network. When adversaries gain access to a new system, they must orient themselves to what they
 now have control of and what benefits operating from that system give to their current objective or
 overall goals during the intrusion. The operating system provides many native tools that aid in this
 post-compromise information-gathering phase.
+```
 
-**Lateral movement**
+**Lateral movement**  
+```
 Lateral movement consists of techniques that enable a threat to access and control remote systems on
 a network and could, but does not necessarily, include execution of tools on remote systems. The
 lateral movement techniques could allow a threat to gather information from a system without needing
 additional tools, such as a remote access tool.
+```
 
-**Collection**
+**Collection**  
+```
 Collection consists of techniques used to identify and gather information, such as sensitive files, from
 a target network prior to exfiltration. This category also covers locations on a system or network
 where the threat may look for information to exfiltrate.
+```
 
-**Exfiltration**
+**Exfiltration**  
+```
 Exfiltration refers to techniques and attributes that result or aid in the threat removing files and
 information from a target network. This category also covers locations on a system or network where
 the threat may look for information to exfiltrate.
+```
 
-**Command and Control**
+**Command and Control**  
+```
 The command and control tactic represents how adversaries communicate with systems under their
 control within a target network. There are many ways a threat can establish command and control,
 with various levels of covertness, depending on system configuration and network topology. Due to
@@ -1594,7 +1612,7 @@ the wide degree of variation available to the threat at the network level, only 
 factors were used to describe the differences in command and control. There are still a great many
 specific techniques within the documented methods, largely due to how easy it is to define new
 protocols and use existing, legitimate protocols and network services for communication.
-
+```
 
 
 ### Creating a Threat Profile by Decomposing a Threat
