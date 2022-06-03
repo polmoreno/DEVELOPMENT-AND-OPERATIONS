@@ -1402,20 +1402,18 @@ goal and optionally the characteristics of specific threat actors or threat grou
 following when planning how a threat will be used during an engagement.
 
 ```
-● Threat landscape
-What are the target’s characteristics?
-What specific TTPs will be required to operate in that environment?
-● Threat to the target environment
-What are the current threats to an environment identified through OSINT?
-What are the current threat concerns of the customer, current issue, or previous
-events?
-● Real-world examples of threats
-What current or prior threats are of concern?
-● Threat in scenario or engagement conditions
-How will the engagement scenario impact the threat landscape?
-● Level of threat capability the team will attempt to emulate
-Is the threat capability or level (simple to advanced) important in the
-engagement scenario?
+● Threat landscape  
+    ● What are the target’s characteristics?  
+    ● What specific TTPs will be required to operate in that environment?  
+● Threat to the target environment  
+    ● What are the current threats to an environment identified through OSINT?  
+    ● What are the current threat concerns of the customer, current issue, or previous events?  
+● Real-world examples of threats  
+    ● What current or prior threats are of concern?  
+● Threat in scenario or engagement conditions  
+    ● How will the engagement scenario impact the threat landscape?  
+● Level of threat capability the team will attempt to emulate  
+    ● Is the threat capability or level (simple to advanced) important in the engagement scenario?  
 ```
 A factor Red Team leaders must consider is the realism of the threat. While some organizations may
 intentionally decide not to unleash the full capabilities of the threat (e.g., due to the level of target
