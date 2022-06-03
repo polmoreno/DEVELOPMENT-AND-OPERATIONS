@@ -1620,21 +1620,15 @@ protocols and use existing, legitimate protocols and network services for commun
 Threat profiles can be built by decomposing existing threats into core components then recomposing
 them into profiles a Red Team can use to describe and execute a Red Team engagement.
 
-```
+
 The Management Challenge
-When a Red Team is asked to perform threat emulation of
-a specific actor, the limits of budget, time, and effort can
-easily be pushed to the edge.
 ```
-```
-Strong Red Team leadership is required to bridge the gap
-of realism and effectiveness when emulating a threat.
-Breaking down a threat into its components and choosing
-those items that best exercise the engagement’s goals
-provides leadership a roadmap of how the threat will be
-accurately represented. In this way, a threat can be
-emulated within a budget, time, and resource-constrained
-environment.
+When a Red Team is asked to perform threat emulation of a specific actor, 
+the limits of budget, time, and effort can easily be pushed to the edge.  
+Strong Red Team leadership is required to bridge the gap of realism and effectiveness when emulating a threat.
+Breaking down a threat into its components and choosing those items that best exercise the engagement’s goals
+provides leadership a roadmap of how the threat will be accurately represented. In this way, a threat can be
+emulated within a budget, time, and resource-constrained environment.
 ```
 Creating a threat profile is a great way of establishing the rules as to how a Red Team will act and
 operate. These act as a roadmap for a Red Team by providing guidance on how and what type of
@@ -1648,57 +1642,38 @@ immensely improve the final report.
 #### Threat Profile Example (Simplified)
 
 ```
-Category Description
-```
-```
-Description General mid-tiered threat that uses
-common offensive tools and techniques.
-```
-```
-Goal and
-Intent
-```
-```
-Exist in the network to enumerate
-systems and information in order to
-maintain Command and Control to
-support future attacks.
-```
-```
-Key IOCs Cobalt Strike HTTPS beacon on TCP
-443, Payload:
-c:\programdata\microsoft\iexplore.exe,
-Timestamp: 7/13/2009 10:04 PM, MD5:
-```
-
-```
-a7705501c5e216b56cf49dcf540184d0
-```
-```
-C2
-Overview
-```
-```
-HTTPS on port 443 Cobalt Strike
-Beacon with a five-minute callback time.
-Calling directly to threat-owned
-domains. TTPs (Enumeration, Delivery,
-Lateral Movement, Privilege Escalation,
-etc.) Assumed Breach Model, no initial
-delivery via exploitation. POST-
-exploitation via Cobalt Strike
-commands. Enumeration and lateral
-movement via Cobalt Strike and native
-Windows commands. Privilege
-escalation limited and determined POST-
-exploitation.
-```
-```
-Exploitation Assumed Breach Model, no exploitation.
-```
-```
-Persistence User-level persistence using Microsoft
-Outlook rule triggered by specific email.
+| Category        	| Description                                                    	|
+|-----------------	|----------------------------------------------------------------	|
+| Description     	| General mid-tiered threat that uses                            	|
+|                 	| common offensive tools and techniques.                         	|
+|                 	|                                                                	|
+| Goal and Intent 	| Exist in the network to enumerate                              	|
+|                 	| systems and information in order to                            	|
+|                 	| maintain Command and Control to                                	|
+|                 	| support future attacks.                                        	|
+|                 	|                                                                	|
+| Key IOCs        	| Cobalt Strike HTTPS beacon on TCP                              	|
+|                 	| 443, Payload:                                                  	|
+|                 	| c:\programdata\microsoft\iexplore.exe,                         	|
+|                 	| Timestamp: 7/13/2009 10:04 PM, MD5:                            	|
+|                 	| a7705501c5e216b56cf49dcf540184d0                               	|
+|                 	|                                                                	|
+| C2 Overview     	| HTTPS on port 443 Cobalt Strike                                	|
+|                 	| Beacon with a five-minute callback time.                       	|
+|                 	| Calling directly to threat-owned                               	|
+|                 	| domains. TTPs (Enumeration, Delivery,                          	|
+|                 	| Lateral Movement, Privilege Escalation,                        	|
+|                 	| etc.) Assumed Breach Model, no initial                         	|
+|                 	| delivery via exploitation. POST-exploitation via Cobalt Strike 	|
+|                 	| commands. Enumeration and lateral                              	|
+|                 	| movement via Cobalt Strike and native                          	|
+|                 	| Windows commands. Privilege                                    	|
+|                 	| escalation limited and determined POST-exploitation            	|
+|                 	|                                                                	|
+| Exploitation    	| Assumed Breach Model, no exploitation.                         	|
+|                 	|                                                                	|
+| Persistence     	| User-level persistence using Microsoft                         	|
+|                 	| Outlook rule triggered by specific email.                      	|
 ```
 The above is a simplified example profile from an actual Red Team engagement. This engagement
 was one part of a series of assessments designed to test a Blue Team’s capability of detecting and
@@ -1751,11 +1726,9 @@ described are not only are useful in performing an engagement but can help confi
 actions are threat faithful. Threat faithful engagements that closely mimic a realistic threat, are very
 believable and a great way to demonstrate practical adversarial activity.
 
-For more detailed information on this attack, read the following:
-1. Hack Back!, [http://pastebin.com/raw/0SNSvyjJ.](http://pastebin.com/raw/0SNSvyjJ.)
-
-
+For more detailed information on this attack, read the following:  
 ```
+1. Hack Back!, [http://pastebin.com/raw/0SNSvyjJ.](http://pastebin.com/raw/0SNSvyjJ.)
 2. Hacking Team, https://wikileaks.org/hackingteam/emails/.
 3. Hacking Team, https://en.wikipedia.org/wiki/Hacking_Team.
 4. .Hack Back!, http://pastebin.com/raw/GPSHF04A.
@@ -1782,8 +1755,6 @@ root access to the device and was used as the initial entry point. Internal enum
 after this initial access. The enumeration revealed a MongoDB instance that required no
 authentication. This database provided access to an audio recording that was part of an audio spying
 application. These recordings were interesting but not detrimental. Fisher wanted to damage this
-
-
 company and expose them for involvement is something more severe than selling spying software.
 Further exploration led to the identification of this damaging information. The significant data was
 found in an unsecured iSCSI server that contained backup VMware .vmdk files and other beneficial
@@ -1811,44 +1782,29 @@ threat attacks a target. Analysis can be used to validate TTPs plans or to learn
 can be applied to future engagements. Although this was an illegal attack against a company, it
 provided useful insights into how a threat thinks and acts.
 
-A simple threat profile can be developed to provide a general description of the threat using the
-
-
-HackingTeam attack.
+A simple threat profile can be developed to provide a general description of the threat using the HackingTeam attack.
 
 **Questions to consider regarding Red Team scoping.**
 
 ```
-1) Could your Red Team perform these actions?
-```
-```
+1) Could your Red Team perform these actions?  
 If not, consider your team’s ability to emulate these actions and possibly enhancing with
-training or internal development.
-```
-```
-2) Do you have access to zero-days? If not, how would you emulate this sort of attack?
-```
-```
+training or internal development.  
+
+2) Do you have access to zero-days? If not, how would you emulate this sort of attack?  
 Many teams do not have zero-days or time allocated to develop them. Consider using white
-carded scenarios to emulate these types of attacks.
-```
-```
-3) This attack took six weeks,100+ hours, and a single person to complete. This is a great
-metric for scope duration. Could your team do the same?
-```
-```
+carded scenarios to emulate these types of attacks.  
+
+3) This attack took six weeks,100+ hours, and a single person to complete. This is a great metric for scope duration. Could your team do the same?
 Does your team have the necessary skills, knowledge, abilities, tools, TTPs, etc. to perform
-within the same timeframe? Consider adjusting your timeline and hour allocation to
-accommodate your team’s capabilities.
-```
-```
-4) Would you scope an engagement with the same staff and time parameters?
-```
-```
+within the same timeframe? Consider adjusting your timeline and hour allocation to accommodate your team’s capabilities.  
+
+4) Would you scope an engagement with the same staff and time parameters?  
+
 Team’s should not operate alone. No matter what issue a team has with staffing or budget,
 an engagement should have at least twice this staffing. As for time, six weeks may be longer
 than possible. If so, consider what is in or out of scope. Consider using the assumed breach
-model to help utilize resources efficiently.
+model to help utilize resources efficiently.  
 ```
 
 ### Threat Perspective
