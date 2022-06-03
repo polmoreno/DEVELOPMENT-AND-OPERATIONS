@@ -1468,21 +1468,17 @@ Understanding threat TTPs are extremely useful to both the Red and the Blue Team
 understanding of TTP's is one of the most effective ways to classify and characterize threats by
 actions.
 
-Consider these questions when planning threat TTP’s
-(Don’t forget to consider the red team’s ability to implement these)
-What is the threat’s preferred method of gaining initial access? Web misconfigurations?
-Known vulnerabilities? Phishing?
-Are there trends in the Indicators of Compromise (IOCs)? Things such as file locations,
-filenames, system calls, anomalous traffic, etc.
-How does the threat perform operations and maintenance against a target? Memory
-resident? Binaries? Python? WMI? PowerShell? VBS?
-How does the Command and Control (C2) operate? Using what protocols?
-Is persistence established? What are the threat’s preferred methods?
-
-
+Consider these questions when planning threat TTP’s  
+(Don’t forget to consider the red team’s ability to implement these)  
 ```
-Does the threat have a standard or common motive and intent?
+● What is the threat’s preferred method of gaining initial access? Web misconfigurations? Known vulnerabilities? Phishing? 
+● Are there trends in the Indicators of Compromise (IOCs)? Things such as file locations, filenames, system calls, anomalous traffic, etc.    
+● How does the threat perform operations and maintenance against a target? Memory resident? Binaries? Python? WMI? PowerShell? VBS?  
+● How does the Command and Control (C2) operate? Using what protocols?  
+● Is persistence established? What are the threat’s preferred methods?  
+● Does the threat have a standard or common motive and intent?  
 ```
+
 A Red Team’s analysis of a threat’s intent, capabilities, and TTPs provides the information required
 to create the threat profile. This profile enables the threat characterization used for targeted reviews,
 assessments, training, and exercises.
