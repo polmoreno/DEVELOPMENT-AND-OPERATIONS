@@ -1315,10 +1315,10 @@ Physical
 ● Off-limits materials within the target space (e.g., sensitive documents or equipment)  
 ```
 
-**Authorized Actions:** Types of activities approved for the engagement
-**Restricted Actions:** Types of activities restricted during the engagement (if any)
-**Approval Process**
-The process for requesting approval of additional activities during engagement execution  
+**Authorized Actions:** Types of activities approved for the engagement  
+**Restricted Actions:** Types of activities restricted during the engagement (if any)  
+**Approval Process:**
+The process for requesting approval of additional activities during engagement execution    
 ● Approval process  
 ● Points of contact (name, role, phone, email, office location)  
 ● Alternate POC  
@@ -1349,25 +1349,23 @@ management and accepting the risk guidelines into the team’s objectives during
 Before and throughout the event, the Red Team Lead may request the TA and ECG to assess all risks
 associated with current Red Team activities and vice versa.
 
-Risk Management assists the engagement planning by:
-Conserving the limited resources used throughout an engagement
-Identifying potential risks early to avert this unwarranted risk
-Making an informed decision as to the course of action implementation (or alternate)
-Identifying feasible and effective control measures to ensure an engagement meets
-assessment goals without introducing unnecessary risk to the safety and health of the
-target
-Providing alternatives for objective or goal accomplishment when a risk is too high.
+Risk Management assists the engagement planning by:  
+```
+● Conserving the limited resources used throughout an engagement
+● Identifying potential risks early to avert this unwarranted risk
+● Making an informed decision as to the course of action implementation (or alternate)
+● Identifying feasible and effective control measures to ensure an engagement meets assessment goals without introducing unnecessary risk to the safety and health of the target
+● Providing alternatives for objective or goal accomplishment when a risk is too high.
+```
 
-Risk Management does not:
-Limit the Red Team’s ability to operate to the degree where engagement’s goals can not
-be met
-Completely dissolve all risk (it manages risk)
-Mandate a decision on activity (it provides guidance to the ECG on mitigations or
-alternate decisions)
-Have the authority to violate the law even to support the successful execution of an
-engagement
-Eliminate requirements for SOP and TTP exercise
-
+Risk Management does not:  
+```
+● Limit the Red Team’s ability to operate to the degree where engagement’s goals can not be met  
+● Completely dissolve all risk (it manages risk)  
+● Mandate a decision on activity (it provides guidance to the ECG on mitigations or alternate decisions)  
+● Have the authority to violate the law even to support the successful execution of an engagement  
+● Eliminate requirements for SOP and TTP exercise  
+```
 What does this mean in practical execution?
 
 Every engagement must include risk management in planning and execution. Security testers and Red
