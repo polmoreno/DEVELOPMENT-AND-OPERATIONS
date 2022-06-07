@@ -1858,6 +1858,8 @@ of an outsider, nearsider, or insider.
 |                               	| The individual may be an                   	|
 |                               	| unknowing target during                    	|
 |                               	| initial access                             	|
+|---------------------------------------------------------------------------------------|
+
 ```
 There are several methods used to gain access to a target system. Initial access is debated too often
 during Red Team planning. Using a diagram like the one below during planning can help you decide a
