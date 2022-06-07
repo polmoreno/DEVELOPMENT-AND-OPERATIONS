@@ -1849,7 +1849,7 @@ of an outsider, nearsider, or insider.
 |                               	| target assets or modifies                  	|
 |                               	| target assets to cause failure             	|
 |                               	|-----------------------------------------------|
-|                               	| An example of a nonmalicious insider is an 	|
+|                               	| An example of a non-malicious insider is an 	|
 |                               	| employee on the sales staff                	|
 |                               	| who has authorized access                  	|
 |                               	| to the systems, networks,                  	|
@@ -1859,7 +1859,6 @@ of an outsider, nearsider, or insider.
 |                               	| unknowing target during                    	|
 |                               	| initial access                             	|
 |---------------------------------------------------------------------------------------|
-
 ```
 There are several methods used to gain access to a target system. Initial access is debated too often
 during Red Team planning. Using a diagram like the one below during planning can help you decide a
@@ -1872,16 +1871,12 @@ engagement somewhere inside this network. Forcing a team to establish access fro
 network could waste the limited engagement time on steps that do not directly support engagement
 goals.
 
-```
 How to use this diagram in planning
-This diagram can be used to help plan starting points
-based on the threat perspective. Don’t begin with the
-assumption that all engagements must start from the
-outside. Discuss the goals of the engagement along with
-the desired scenario. Suggest a few points on the diagram
-that best illustrates the scenario. Discuss how this point
-represents the engagement scenario. Use the point that will
-best lead to the achievement of engagement goals.
+```
+This diagram can be used to help plan starting points based on the threat perspective. Don’t begin with the
+assumption that all engagements must start from the outside. Discuss the goals of the engagement along with
+the desired scenario. Suggest a few points on the diagram that best illustrates the scenario. Discuss how this point
+represents the engagement scenario. Use the point that will best lead to the achievement of engagement goals.
 ```
 
 ### Threat Scenario
@@ -1924,11 +1919,10 @@ impacts against an organization to measure security operations as a whole.
 
 Threat Emulation is the process of mimicking the TTPs of a specific threat. A Red Team performs
 threat emulation by acting as a representative threat. Threats of any variety can be emulated. This can
-include:
-Zero-day or custom attacks
-Script kiddie to advanced threat
-Emulation of specific threat tools or techniques (botnets, DDOS, ransomware, specific
-malware, APT, etc.)
+include:  
+Zero-day or custom attacks  
+Script kiddie to advanced threat  
+Emulation of specific threat tools or techniques (botnets, DDOS, ransomware, specific malware, APT, etc.)  
 
 Scenario-driven assessments are typically driven by the emulation of some level of threat. This may
 be a specific threat, such as the Havex trojan used by Energetic Bear / Crouching Yeti / Dragonfly, or
@@ -1972,18 +1966,15 @@ final goal is reached.
 A Full Engagement Model begins with the threat outside an organization. The threat must perform
 Open Source Intelligence (OSINT), reconnaissance, and enumeration to determine a path into the
 network. Once inside a network, the Red Team will continue to execute its plan using its TTPs. This
-will continue until the Red Team is stopped or completes its goal. Characteristics of the Full
-Engagement Model:
-Begins on day 1 of adversarial activity
-Red Team must perform all phases (Get In, Stay In, and Act; to be discussed further in
-the text)
-Typically longer than other engagement types, as adequate time is needed to perform all
-phases
-Red Team must be able to get in or have a backup "white carding" plan
-With condensed execution timelines, it is common for time to run out before operational
-impacts can be executed
-Contingency plans must be made to ensure that required impacts are executed
-
+will continue until the Red Team is stopped or completes its goal. Characteristics of the Full Engagement Model:  
+```
+● Begins on day 1 of adversarial activity  
+● Red Team must perform all phases (Get In, Stay In, and Act; to be discussed further in the text)  
+● Typically longer than other engagement types, as adequate time is needed to perform all phases  
+● Red Team must be able to get in or have a backup "white carding" plan  
+● With condensed execution timelines, it is common for time to run out before operational impacts can be executed  
+● Contingency plans must be made to ensure that required impacts are executed  
+```
 #### Assumed Breach Model
 
 The Assumed Breach Model assumes a threat has some level of access to a target at the initiation of
@@ -1993,16 +1984,15 @@ attack timeline. Assuming someone can breach a network is often argued by less m
 who assume Red Teams must prove they can “get in” before beginning. When is this proof important?
 It is important ONLY if measuring the ability a threat has to "get in" is important. If this is not a key
 goal, using the Assumed Breach Model will save time, effort, and money; and will free the Red Team
-
-
-to explore higher impact goals. Characteristics of the Assumed Breach Model:
-Begins after a threat has breached an organization
-Red Team focuses on the Stay In and Act phases
-More efficient use of limited resources (time, money, and staff)
-Requires providing access to the Red Team. This is commonly done by launching a Red
-Team’s malware, providing access to a specific asset, or providing passwords
-Operational impacts and goals must still be achieved
-
+to explore higher impact goals. Characteristics of the Assumed Breach Model:  
+```
+● Begins after a threat has breached an organization  
+● Red Team focuses on the Stay In and Act phases  
+● More efficient use of limited resources (time, money, and staff)  
+● Requires providing access to the Red Team. This is commonly done by launching a Red  
+● Team’s malware, providing access to a specific asset, or providing passwords  
+● Operational impacts and goals must still be achieved  
+```
 ```
 Consider This
 Assuming a breach can lead to disbelief in the results.
