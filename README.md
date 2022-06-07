@@ -1814,82 +1814,50 @@ perspective is used to build and shape a threat profile or scenario. A threat's 
 of an outsider, nearsider, or insider.
 
 ```
-Outsider
-```
-```
-An entity that has no
-legitimate access to specific
-software, systems, and
-networks. An outsider is
-anyone outside an
-organization.
-```
-```
-An example would be a
-competitor’s employee who
-would not have authorized
-physical or digital access to
-any systems, network,
-software, or hardware.
-```
-```
-Nearsider
-```
-```
-An entity that has no
-legitimate access to specific
-software, systems, and
-networks but may have
-physical access to buildings
-and equipment or access to
-systems that integrate with
-target assets
-```
-```
-An example would be
-janitorial staff. They would
-not likely have authorized
-digital access to any
-systems or networks, but
-may have physical access to
-buildings, communication
-facilities, systems,
-networks, etc.
-```
-```
-Insider
-```
-```
-An entity that has legitimate
-access to specific software,
-systems, and networks and
-has physical access to
-buildings and equipment
-```
-```
-An example of a malicious
-insider is a rogue system
-administrator who has
-authorized, privileged
-access and willingly
-removes information from
-target assets or modifies
-target assets to cause failure
-```
-```
-An example of a non-
-malicious insider is an
-employee on the sales staff
-who has authorized access
-to the systems, networks,
-software, and hardware
-required to perform sales.
-The individual may be an
-unknowing target during
-```
-
-```
-initial access
+|---------------------------------------------------------------------------------------|
+| 				     Outsider                                        	|
+|---------------------------------------------------------------------------------------|
+| An entity that has no         	| An example would be a                      	|
+| legitimate access to specific 	| competitor’s employee who                  	|
+| software, systems, and        	| would not have authorized                  	|
+| networks. An outsider is      	| physical or digital access to              	|
+| anyone outside an             	| any systems, network,                      	|
+| organization.                 	| software, or hardware.                     	|
+|                               	|                                            	|
+|---------------------------------------------------------------------------------------|
+| 				    Nearsider                                          	|
+|---------------------------------------------------------------------------------------|
+| An entity that has no         	| An example would be                        	|
+| legitimate access to specific 	| janitorial staff. They would               	|
+| software, systems, and        	| not likely have authorized                 	|
+| networks but may have         	| digital access to any                      	|
+| physical access to buildings  	| systems or networks, but                   	|
+| and equipment or access to    	| may have physical access to                	|
+| systems that integrate with   	| buildings, communication                   	|
+| target assets                 	| facilities, systems,                       	|
+|                               	| networks, etc.                             	|
+|                               	|                                            	|
+|---------------------------------------------------------------------------------------|
+| 				      Insider                                          	|
+|---------------------------------------------------------------------------------------|
+| An entity that has legitimate 	| An example of a malicious                  	|
+| access to specific software,  	| insider is a rogue system                  	|
+| systems, and networks and     	| administrator who has                      	|
+| has physical access to        	| authorized, privileged                     	|
+| buildings and equipment       	| access and willingly                       	|
+|                               	| removes information from                   	|
+|                               	| target assets or modifies                  	|
+|                               	| target assets to cause failure             	|
+|                               	|-----------------------------------------------|
+|                               	| An example of a nonmalicious insider is an 	|
+|                               	| employee on the sales staff                	|
+|                               	| who has authorized access                  	|
+|                               	| to the systems, networks,                  	|
+|                               	| software, and hardware                     	|
+|                               	| required to perform sales.                 	|
+|                               	| The individual may be an                   	|
+|                               	| unknowing target during                    	|
+|                               	| initial access                             	|
 ```
 There are several methods used to gain access to a target system. Initial access is debated too often
 during Red Team planning. Using a diagram like the one below during planning can help you decide a
