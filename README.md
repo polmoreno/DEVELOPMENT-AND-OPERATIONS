@@ -1984,7 +1984,8 @@ attack timeline. Assuming someone can breach a network is often argued by less m
 who assume Red Teams must prove they can “get in” before beginning. When is this proof important?
 It is important ONLY if measuring the ability a threat has to "get in" is important. If this is not a key
 goal, using the Assumed Breach Model will save time, effort, and money; and will free the Red Team
-to explore higher impact goals. Characteristics of the Assumed Breach Model:  
+to explore higher impact goals.  
+Characteristics of the Assumed Breach Model:  
 ```
 ● Begins after a threat has breached an organization  
 ● Red Team focuses on the Stay In and Act phases  
@@ -1995,25 +1996,21 @@ to explore higher impact goals. Characteristics of the Assumed Breach Model:
 ```
 ```
 Consider This
-Assuming a breach can lead to disbelief in the results.
-All too often, defensive staff and even senior managers
-attempt to downplay legitimate Red Team activities. With
-the assumed breach, more immature organizations may
-attempt to do so by hinging an activity’s success to being
-“provided access to the system or network” rather than
-recognize the lessons learned by understanding how the
-defending team was able to execute its defensive
-strategies.
+Assuming a breach can lead to disbelief in the results. All too often, defensive staff and even senior managers
+attempt to downplay legitimate Red Team activities. With the assumed breach, more immature organizations may
+attempt to do so by hinging an activity’s success to being “provided access to the system or network” rather than
+recognize the lessons learned by understanding how the defending team was able to execute its defensive strategies.
 ```
 #### Custom Breach Model
 
 Custom breach models allow the Red Team to design scenarios that enable the test or measurement of
-specific areas of concern to the target. A Custom Engagement Model:
-May start at any point in a threat cycle
-Focuses on any of the phases as designed by the goals and objectives
-Is highly efficient where limited staff, time, and funds are available
-Is nearly always announced and coordinated with real-time interaction
-
+specific areas of concern to the target. A Custom Engagement Model:  
+```
+● May start at any point in a threat cycle  
+● Focuses on any of the phases as designed by the goals and objectives  
+● Is highly efficient where limited staff, time, and funds are available  
+● Is nearly always announced and coordinated with real-time interaction  
+```
 The Red Team should most often use an **_Assume Breach_** strategy. This strategy was made popular by
 Microsoft and is admittedly more philosophy than deduction. Reactively waiting for evidence of a
 breach causes companies to reveal not only that they have been compromised but that they have been
@@ -2026,18 +2023,19 @@ Although it is commonly thought that adversaries can clean up after themselves, 
 impossible to remove all evidence. A good security operations team has the potential to find even the
 most advanced adversaries. Evidence is always left behind. Indicators of Compromise (IOCs) are
 artifacts (bits of information) that identify or describe threat actions. An IOC can be anything used to
-identify a threat action including, but not limited to:
-Unusual network traffic
-Unusual user activity
-Geographic-specific connections
-Increased network traffic
-Increased database reads
-Unusual file changes or modifications
-Registry changes or modifications
-Specific naming or usage conventions
-Identifying actions or action attempts
-Signs of DOS/DDOS
-
+identify a threat action including, but not limited to:  
+```
+● Unusual network traffic  
+● Unusual user activity  
+● Geographic-specific connections  
+● Increased network traffic  
+● Increased database reads  
+● Unusual file changes or modifications  
+● Registry changes or modifications  
+● Specific naming or usage conventions  
+● Identifying actions or action attempts  
+● Signs of DOS/DDOS  
+```
 Most security organizations rely on some trigger to take action. Systems such as network sensors,
 security sensors, or even end-users typically trigger an investigation of "strange" behavior. When a
 security team responds to a trigger, they are challenged to test their ability to leverage IOCs to
@@ -2057,14 +2055,12 @@ In order to control IOCs, a robust set of TTPs must exist. Part of these TTPs ar
 support a Red Team's capability. The tools must not only provide capability but also must be
 understood. This is often done through tool usage and modification. Tools usage and modification
 should be built into a standard attack platform. If the platform is managed and maintained, a common
-baseline is ready for use. As a general rule, a Red Team should:
-Know the tools used, how they operate, and what actions are conducted
-Recompile tools (rename functions; remove help, comments, and unused code/strings;
-etc.)
-Control User-Agents
-Understand which IOCs are generated by an action
-Blend in until timing is appropriate
-
+baseline is ready for use. As a general rule, a Red Team should:  
+● Know the tools used, how they operate, and what actions are conducted  
+● Recompile tools (rename functions; remove help, comments, and unused code/strings; etc.)  
+● Control User-Agents  
+● Understand which IOCs are generated by an action  
+● Blend in until timing is appropriate  
 
 The following are common indicators and just a small example to help think about the indicators that
 must be controlled.
@@ -2077,14 +2073,11 @@ the word sqlmap sqlmap/1.0-dev-xxxxxxx (http://sqlmap.org) This is very common.
 ```
 Binaries may have signatures that can be detected
 ● Modification and recompiling may be necessary to change the signature
-● The likelihood of Antivirus detection may be decreased by removing comments and other
-user output before compiling
+● The likelihood of Antivirus detection may be decreased by removing comments and other user output before compiling
 ```
 ```
 Focus Point
-The end state of threat planning is an ability to portray the
-threat as closely as possible to enable the ability to advise
-the target of implications to the target environment.
+The end state of threat planning is an ability to portray the threat as closely as possible to enable the ability to advise the target of implications to the target environment.
 ```
 
 ### Engagement Concepts
