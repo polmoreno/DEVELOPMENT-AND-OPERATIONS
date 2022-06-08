@@ -2326,13 +2326,11 @@ incident response or other security operations.
 General guidelines to handling data generated or gathered during a Red Team engagement is critical.
 All Red Team members should be responsible for safeguarding all target (a.k.a. customer) data,
 including:
-Personally, Identifiable Information (PII)—information that can be used to uniquely
-identify, contact, or locate a single person or that can be used with other sources to
-uniquely identify a single individual
-Privacy Act information in accordance with established regulations, policies, and
-procedures for handling restricted and sensitive information
-Other Industry BBP data
-
+```
+● Personally, Identifiable Information (PII)—information that can be used to uniquely identify, contact, or locate a single person or that can be used with other sources to uniquely identify a single individual  
+● Privacy Act information in accordance with established regulations, policies, and procedures for handling restricted and sensitive information  
+● Other Industry BBP data
+```
 A Red Team should avoid the data mining of files containing Privacy Act, medical, justice, worship
 or religious pursuit, or any other protected or privileged information. If protected or privileged
 information is encountered, the Red Team should pause actions gaining or providing access, protect
@@ -2363,14 +2361,12 @@ General controls and suggestions to consider when safeguarding sensitive data fo
 required and incorporate them into your ROE template.
 
 **Policy Controls**
-Policy controls implemented by the Red Team should include:
-A Red Team Non-Disclosure Agreement signed by each Red Team member
-
-
+Policy controls implemented by the Red Team should include:  
 ```
-Data training (identifying and avoiding PII, PIA data, etc.)
-Ethics training
-Individual background checks
+● A Red Team Non-Disclosure Agreement signed by each Red Team member  
+● Data training (identifying and avoiding PII, PIA data, etc.)  
+● Ethics training  
+● Individual background checks  
 ```
 **Physical Controls**
 Multiple levels of physical controls should exist to protect engagement tools and operating systems
@@ -2379,51 +2375,33 @@ controls employed (e.g., locks, identification stickers, safes, storage cabinets
 strongboxes) and their appropriate usage. Every Red Team member is personally responsible for the
 protection of target data.
 
-The recommended security mechanisms for securing target assets include:
-Tools, computing systems, and target data should be stored inside an isolated, secured
-room and controlled only by the Red Team.
-Minimize contact between the team and external entities (physical internal/external
-access controls into the Red Team space/setup).
-When not in use, all data and equipment should be removed and placed into lockable
-cases, safes, or storage cabinets.
-When traveling, laptops and hard drives will be secured (in a hotel safe, tethered, in a
-tethered lockbox, etc.) at all times and never left unsecured in a car, hotel, customer
-space, etc.
-All visitors to a Red Team space will be escorted.
-Target data should be handled only by Red Team personnel with a need to know.
-At the conclusion of the engagement, all target information will be returned to the
-customer or destroyed using defined procedures.
-
-**Software Controls**
-The following software controls, designed to ensure the confidentiality, anonymity, and safety of
-information should be employed:
-Each host and guest operating system should be encrypted
-Use an effective password policy, and consider (should use) a multifactor protected
-password database to store unique passwords for each engagement
-Each host and guest operating system should be protected with a “strong” password
-Each host and guest operating system should employ a host-based firewall specific to
-the engagement
-When possible, communications should be encrypted
-Note, the Red Team should never use unsecured file systems or communications for
-team-developed engagement operations (i.e., FTP, Telnet, HTTP, VNC, WEP, etc.)
-Use (more) secure mechanisms for communications (i.e., HTTPS, WebDAV, SSH,
-radmin, RDP, etc.)
-The data and tools utilized during an engagement should be stored in an encrypted
-container and moved to the working directory only when needed
-All systems, storage, data, and tools should be encrypted at all times (data in transit,
-data at rest)
-The use of well-known and community-tested high-strength encryption algorithms is
-
-
+The recommended security mechanisms for securing target assets include:  
 ```
-recommended
-All data and tools transferred to or from target systems should be hashed using MD5,
-SHA1, or SHA256 and added to the OPLOG as discussed in the Data Collection section
-All access, movement, and use of data and tools should be added to the OPLOG
-If a tool is no longer needed for a task, it should be removed from the target environment
-All Red Team tools and software should be removed from the target environment at the
-end of the engagement. If cleanup is not possible, the TA and ECG should be notified and
-provided with the appropriate details.
+● Tools, computing systems, and target data should be stored inside an isolated, secured room and controlled only by the Red Team.  
+● Minimize contact between the team and external entities (physical internal/external access controls into the Red Team space/setup).  
+● When not in use, all data and equipment should be removed and placed into lockable cases, safes, or storage cabinets.  
+● When traveling, laptops and hard drives will be secured (in a hotel safe, tethered, in a tethered lockbox, etc.) at all times and never left unsecured in a car, hotel, customer space, etc.  
+● All visitors to a Red Team space will be escorted.  
+● Target data should be handled only by Red Team personnel with a need to know.  
+● At the conclusion of the engagement, all target information will be returned to the customer or destroyed using defined procedures.  
+```
+**Software Controls**
+The following software controls, designed to ensure the confidentiality, anonymity, and safety of information should be employed:  
+```
+● Each host and guest operating system should be encrypted  
+● Use an effective password policy, and consider (should use) a multifactor protected password database to store unique passwords for each engagement  
+● Each host and guest operating system should be protected with a “strong” password  
+● Each host and guest operating system should employ a host-based firewall specific to the engagement  
+● When possible, communications should be encrypted  
+● Note, the Red Team should never use unsecured file systems or communications for team-developed engagement operations (i.e., FTP, Telnet, HTTP, VNC, WEP, etc.)  
+● Use (more) secure mechanisms for communications (i.e., HTTPS, WebDAV, SSH, radmin, RDP, etc.)  
+● The data and tools utilized during an engagement should be stored in an encrypted container and moved to the working directory only when needed  
+● All systems, storage, data, and tools should be encrypted at all times (data in transit, data at rest)  
+● The use of well-known and community-tested high-strength encryption algorithms is recommended  
+● All data and tools transferred to or from target systems should be hashed using MD5, SHA1, or SHA256 and added to the OPLOG as discussed in the Data Collection section  
+● All access, movement, and use of data and tools should be added to the OPLOG  
+● If a tool is no longer needed for a task, it should be removed from the target environment  
+● All Red Team tools and software should be removed from the target environment at the end of the engagement. If cleanup is not possible, the TA and ECG should be notified and provided with the appropriate details.
 ```
 **Two Person Integrity (TPI)**
 A key factor in data collection and execution is two-person integrity (TPI). Two-person integrity
@@ -2443,6 +2421,7 @@ Engagement Planning is crucial to effectively managing potential engagement risk
 executing to achieve the desired goals and objectives, and providing the information required to
 improve both organizational and defensive capabilities. Although all planning elements play an
 important role in engagement success, be especially mindful to place additional attention on:
+```
 Roles and Responsibilities
 Rules of Engagement
 Threat Planning
@@ -2450,7 +2429,7 @@ Operational Impacts
 Deconfliction
 Data Handling
 Funding
-
+```
 
 ### Homework
 
