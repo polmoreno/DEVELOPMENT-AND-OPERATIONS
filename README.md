@@ -2098,18 +2098,17 @@ At a high level, a Red Team must move through these three phases to complete an 
 through a legitimate compromise or access is directly granted as part of an assumed breach scenario,
 such as an insider threat scenario.
 
-### Can an organization detect a threat gaining access to its network?
+``` Can an organization detect a threat gaining access to its network? ```  
 
 **Stay In -** Establish persistence or a permanent presence. Red Team engagements are typically longer
 than other types of tests. A Red Team usually establishes persistence or a permanent presence in order
 to survive the duration of the engagement.
 
-### Can an organization detect or prevent a threat from living in its network?
-
+``` Can an organization detect or prevent a threat from living in its network? ```  
 
 **Act -** Finally, a Red Team performs operational impacts against the target
 
-### What impacts can a threat perform based on the capabilities it gained during Get In and Stay In?
+``` What impacts can a threat perform based on the capabilities it gained during Get In and Stay In? ```  
 
 #### Phase Mapping
 
