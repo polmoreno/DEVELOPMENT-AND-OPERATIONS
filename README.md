@@ -2516,12 +2516,12 @@ information.
 //repository/engagement_name/0-admin
 
 ```
-Administrative event information—approved IP lists, ROE, briefings, etc.
+● Administrative event information—approved IP lists, ROE, briefings, etc.
 ```
 //repository/engagement_name/1-osint
 
 ```
-Pre-event collected OSINT information
+● Pre-event collected OSINT information
 ```
 //repository/engagement_name/2-recon
 
@@ -2529,8 +2529,8 @@ Reconnaissance information (DNS lookups, NMAP scans, eyewitness information, etc
 //repository/engagement_name/3-targets
 
 ```
-Per-target specific information (local users, file trees, command output, etc.)
-Domain-specific information (DSQUERY, domain users, domain controllers, file shares)
+● Per-target specific information (local users, file trees, command output, etc.)  
+● Domain-specific information (DSQUERY, domain users, domain controllers, file shares)
 ```
 //repository/engagement_name/3-targets/ip_hostname/exfil
 
@@ -2573,10 +2573,9 @@ logs/redteamconsole1/20190308_151312_CDT.terminal.log.raw)
 Daily OPLOGs are stored here (example: //repository/engagement_name/6-
 logs/readteamconsole1/20190308_151820_OPLOG.xls|csv|etc.).
 ```
-```
-Example of the data
-repository file structure
-```
+
+Example of the data repository file structure
+
 
 ### Data Collection
 
@@ -2585,99 +2584,92 @@ enable the replication of activities and results, and identify items of signific
 operators. Final data sets should include:
 
 ```
-● Pre-event data (OSINT, ROE, POC list, etc.)
-● Execution data
-Operator logs (manual data collection)
-Automated data collection and logs
-Screenshots
-● Post-event data (data archive, closeout brief if performed, and final report)
+● Pre-event data (OSINT, ROE, POC list, etc.)  
+● Execution data  
+        ○ Operator logs (manual data collection)  
+        ○ Automated data collection and logs  
+        ○ Screenshots  
+● Post-event data (data archive, closeout brief if performed, and final report)  
 ```
 #### Activity Logs
 
 All activities related to the Red Team operation should be logged as soon as the engagement begins
 and only terminate after all activity related to the engagement is completed.
 
-Examples of events to be logged include:
-● Scanning activities
-● Exploit events
-● Stimulation efforts
-● Deconfliction requests
-● Target information discovered
-● Targets acquired and lost
-● System events (outages, downtime, etc.)
-● Login attempts
-● Credentials captured
-● Credentials used
-● Files system modifications
-● Modifying or disabling security controls
-● Modification or suppression of security alerts or logs
-● Methods of access
-● Methods of persistence employed
-● Command and Control channels established
-● Requests to increase, decrease, or pause activity
-● ROE conflicts, requests, and modifications
+Examples of events to be logged include:  
+```
+● Scanning activities  
+● Exploit events  
+● Stimulation efforts  
+● Deconfliction requests  
+● Target information discovered  
+● Targets acquired and lost  
+● System events (outages, downtime, etc.)  
+● Login attempts  
+● Credentials captured  
+● Credentials used  
+● Files system modifications  
+● Modifying or disabling security controls  
+● Modification or suppression of security alerts or logs  
+● Methods of access  
+● Methods of persistence employed  
+● Command and Control channels established  
+● Requests to increase, decrease, or pause activity  
+● ROE conflicts, requests, and modifications  
+```
 
 All data collected during the engagement should be logged, filed according to data type, and stored in
 an engagement-specific file share, preferably in real time. As discussed in the Handling Client Data
 section, this file share should be located on a mountable, encrypted volume within a centralized
-server or NAS.
+server or NAS.  
 
-```
 Focus Point
 ```
-
-```
-It’s important to impose the value of failed actions. Many
-operators capture only successful actions performed
-during the engagement. In many instances, the failure of a
-specific action (and its associated details) provides more
-value to the target as well as to the Red Team than many
-successes.
+It’s important to impose the value of failed actions. Many operators capture only successful actions performed
+during the engagement. In many instances, the failure of a specific action (and its associated details) provides more
+value to the target as well as to the Red Team than many successes.
 ```
 #### Operator Logs
 
 As stated previously, all activities should be logged accurately and concisely. At a minimum, the
-following information must be collected and logged for each action performed:
-● Start Timestamp (UTC Recommended)
-● End Timestamp (UTC Recommended)
-● Source IP (Attack/Test System IP address)
-● Source Hostname
-● Destination IP (Target IP Address)
-● Destination Hostname
-● Destination Port (Target Port)
-● Destination System Name
-● Pivot IP (if applicable, list IP of any system used as a pivot, port forwarder, etc.)
-● Pivot Hostname
-● Pivot Ports (if applicable, list send and receive ports leveraged in pivot system)
-● URL (Note, it is important to capture the FULL URL of the Target instance)
-● Tool/Application
-● Action (What activity or action was performed)
-● Command (Full command)
-● Output (Command output or response)
-● Description (why or for what purpose was the action was performed)
-● Result (Success, Failed, Achieved, etc.)
-● System Modification (Modified file, dropped binary location, enabled functions, etc.)
-● Comments
-● Screenshot (File name of screenshot)
-● Operator Name
-
+following information must be collected and logged for each action performed:  
+```
+● Start Timestamp (UTC Recommended)  
+● End Timestamp (UTC Recommended)  
+● Source IP (Attack/Test System IP address)  
+● Source Hostname  
+● Destination IP (Target IP Address)  
+● Destination Hostname  
+● Destination Port (Target Port)  
+● Destination System Name  
+● Pivot IP (if applicable, list IP of any system used as a pivot, port forwarder, etc.)  
+● Pivot Hostname  
+● Pivot Ports (if applicable, list send and receive ports leveraged in pivot system)  
+● URL (Note, it is important to capture the FULL URL of the Target instance)  
+● Tool/Application  
+● Action (What activity or action was performed)  
+● Command (Full command)  
+● Output (Command output or response)  
+● Description (why or for what purpose was the action was performed)  
+● Result (Success, Failed, Achieved, etc.)  
+● System Modification (Modified file, dropped binary location, enabled functions, etc.)  
+● Comments  
+● Screenshot (File name of screenshot)  
+● Operator Name  
+```
 Remember: When creating log entries, documenting actions, uploading/downloading files, dropping
 binaries, etc. It is beneficial to record using the YYYYMMDD_HHMM_IP_Description format.
 
 Examples:
-
 ```
 ● Start Timestamp: Target Action
-○ 20170308_151801
+        ○ 20170308_151801
 ● Screenshot of Nmap port 445
-○ 20170308_1518_10.10.1.106_nmap445.png
+        ○ 20170308_1518_10.10.1.106_nmap445.png
 ● Screenshot of open smb share
-○ 20170308_1519_10.10.1.106_smb_share.png
-```
-
-```
+        ○ 20170308_1519_10.10.1.106_smb_share.png
 ● Screenshot of password file
-○ 20170308_1525_10.10.1.106_smb_share_passwords.txt
+        ○ 20170308_1525_10.10.1.106_smb_share_passwords.txt
 ```
 Detailed logs provide a snapshot of where an operator is during an engagement and can be used to
 derive the status of an engagement as a whole. This type of information is critical to tracing steps
