@@ -2098,26 +2098,18 @@ At a high level, a Red Team must move through these three phases to complete an 
 through a legitimate compromise or access is directly granted as part of an assumed breach scenario,
 such as an insider threat scenario.
 
-### Can an organization detect a threat gaining
-
-### access to its network?
+### Can an organization detect a threat gaining access to its network?
 
 **Stay In -** Establish persistence or a permanent presence. Red Team engagements are typically longer
 than other types of tests. A Red Team usually establishes persistence or a permanent presence in order
 to survive the duration of the engagement.
 
-### Can an organization detect or prevent a threat
-
-### from living in its network?
+### Can an organization detect or prevent a threat from living in its network?
 
 
 **Act -** Finally, a Red Team performs operational impacts against the target
 
-### What impacts can a threat perform based on
-
-### the capabilities it gained during Get In and
-
-### Stay In?
+### What impacts can a threat perform based on the capabilities it gained during Get In and Stay In?
 
 #### Phase Mapping
 
@@ -2128,31 +2120,30 @@ environment. Several examples of this categorization have been provided below.
 
 ##### GET IN
 
-Reconnaissance
-● Perform Open Source Intelligence (OSINT) against the target.
-● Search using open, unauthenticated sources:
-○ Target websites
-○ Social media
-○ Search engines
-○ Public code repositories
-○ Alternate target sites
-External enumeration
-● Identify external assets:
-○ Perform a reverse DNS scan to identify registered hosts
-○ Identify URLs and other external touch points from the scan and OSINT
-● Evaluate the web presence:
-○ Browse as a normal user through a web proxy to capture intelligence and
-
-
+Reconnaissance  
 ```
-understanding
-○ Identify known vulnerabilities and vulnerable conditions
-○ Do not send attack code at this time
-● Execution and exploitation
-○ Attempt to exploit targets based on current knowledge
-○ Perform situational awareness on the target
-○ Attempt local privilege elevation
-○ Attempt domain or other system-level privilege elevation
+● Perform Open Source Intelligence (OSINT) against the target.  
+● Search using open, unauthenticated sources:  
+        ○ Target websites  
+        ○ Social media  
+        ○ Search engines  
+        ○ Public code repositories  
+        ○ Alternate target sites  
+```
+External enumeration  
+```
+● Identify external assets:  
+        ○ Perform a reverse DNS scan to identify registered hosts  
+        ○ Identify URLs and other external touch points from the scan and OSINT  
+● Evaluate the web presence:  
+        ○ Browse as a normal user through a web proxy to capture intelligence and understanding  
+        ○ Identify known vulnerabilities and vulnerable conditions  
+        ○ Do not send attack code at this time  
+● Execution and exploitation  
+        ○ Attempt to exploit targets based on current knowledge  
+        ○ Perform situational awareness on the target  
+        ○ Attempt local privilege elevation  
+        ○ Attempt domain or other system-level privilege elevation  
 ```
 ##### STAY IN
 
