@@ -2256,7 +2256,7 @@ At a minimum, deconfliction documentation should include:
 ● Destination of activities (as appropriate for the engagement type)  
         ○ Segment, Range, Application, Host, IP, Building, Campus, etc.  
         ○ In most scenarios, the destination is not provided  
-                - Deconfliction performed via TA/Whitecell  
+                ■ Deconfliction performed via TA/Whitecell  
 ● Description of the activity
 ```
 In the event deconfliction is requested, the Red Team Lead should work with the responsible
