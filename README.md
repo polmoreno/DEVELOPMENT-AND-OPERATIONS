@@ -2146,49 +2146,43 @@ External enumeration
 ```
 ##### STAY IN
 
-Post-exploitation
-● Continue internal and domain enumeration
-● Identify domain users/groups/memberships
-● Identify the IP space
-● Identify file shares
-● Establish persistence
-● Use the persistence plan to place agents on target systems
-● Move laterally
+Post-exploitation  
+```
+● Continue internal and domain enumeration  
+● Identify domain users/groups/memberships  
+● Identify the IP space  
+● Identify file shares  
+● Establish persistence  
+● Use the persistence plan to place agents on target systems  
+● Move laterally  
+```
 
 **ACT**
 
-Operational Impacts
-● Perform a realistic simulation against target systems
-● Does not need to be highly complex
-● Does not need to leverage known or traditional vulnerabilities
-● Does not always require administrative (local/domain) privileges
-● Does require an actual impact to the target environment
-● Does require input from the ECG and TA
-● Does require notification to the ECG and TA when the operational impact is executed
-○ Avoids unwanted (and possibly catastrophic) defensive actions
-● Does need to exercise at least one of the target’s detection, incident response, continuity,
-and recovery plans and procedures
-
+Operational Impacts  
 ```
+● Perform a realistic simulation against target systems  
+● Does not need to be highly complex  
+● Does not need to leverage known or traditional vulnerabilities  
+● Does not always require administrative (local/domain) privileges  
+● Does require an actual impact to the target environment  
+● Does require input from the ECG and TA  
+● Does require notification to the ECG and TA when the operational impact is executed  
+        ○ Avoids unwanted (and possibly catastrophic) defensive actions  
+● Does need to exercise at least one of the target’s detection, incident response, continuity, and recovery plans and procedures  
+```
+
 Operational impacts are a key distinguisher for Red Teaming engagements vs. other types of tests
-```
-```
-Red Team Tip
-Operational Impacts provide real insight to the ability
-security operations has to defend against threats
-```
-```
-Vulnerabilities will be discovered and leveraged;
-however, vulnerabilities are a byproduct of a Red Team
-engagement, not the focus. A Red Team’s true value is
-assisting the target identify administrative, technical, and
-```
 
 ```
-procedural controls that limit impacts to the organization
-even when vulnerable to the latest “zero-day
-vulnerability”.
+Red Team Tip  
+Operational Impacts provide real insight to the ability security operations has to defend against threats  
+
+Vulnerabilities will be discovered and leveraged; however, vulnerabilities are a byproduct of a Red Team
+engagement, not the focus. A Red Team’s true value is assisting the target identify administrative, technical, and
+procedural controls that limit impacts to the organization even when vulnerable to the latest “zero-day vulnerability”.
 ```
+
 #### Operational Impacts
 
 As with any security assessment, risk is what moves an organization to act. Operational impacts are a
@@ -2219,20 +2213,16 @@ but can be executed on test and development environments if they are representat
 
 ```
 Focus Point
-Test environments rarely model production to the level
-where operational impacts are felt. The technologies may
-match, but the people and processes typically do not.
-Focusing on only the test environment can lead to an
+Test environments rarely model production to the level where operational impacts are felt. The technologies may
+match, but the people and processes typically do not. Focusing on only the test environment can lead to an
 unrealistic view of how the impact affects an organization.
 ```
+
 Buy-in from management for permission to perform operational impacts can be very difficult. If an
 organization is highly risk-averse, these impacts may seem too costly or dangerous. Organizations that
 expose their systems to a full-scale attack that includes operational impacts will definitely feel the
 pain. However, detailed planning and execution limits real-world impacts, manages potential risks,
-identifies gaps in both security and operations, and provides extremely valuable lessons learned to all
-
-
-stakeholders.
+identifies gaps in both security and operations, and provides extremely valuable lessons learned to all stakeholders.
 
 
 ### Deconfliction
