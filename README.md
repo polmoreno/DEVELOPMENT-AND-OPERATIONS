@@ -2690,7 +2690,7 @@ reproduce results, and support recommendations. Automated collection, if employe
 complements the Red Team workflow and enables the operator to continue operations with the
 manual capture of data pertinent to the activity performed.
 
-**Terminal Logs**
+**Terminal Logs**  
 All Red Team engagement systems should have automated collection of raw terminal/console data.
 Each command should be prefixed with the operator's IP address and UTC timestamp. While there are
 many methods of automating this tagging and collection (TMUX, Script, Screen, etc.), it's more
@@ -2698,27 +2698,25 @@ important that data is accurately captured than be captured in a different manne
 tagged logs to a location such as /root/logs/terminal/ can significantly simplify the consolidation of
 terminal logs.
 
-**Commercial Tools**
+**Commercial Tools**  
 Most commercial tools used for penetration testing or Red Teaming inherently have some level of
 logging capability. Some have the ability to redirect log outputs to a specific location, while others
 require the operator to trigger log generation. In either case, it is recommended that these logs be
 captured and stored in a location such as /root/logs/commercial_tool/.
 
-**Custom Tools**
+**Custom Tools**  
 Any capable Red Team will have custom tools either generated for all events or created for a specific
 engagement. These tools should leverage the ability to create logs during execution. When building
 these tools, the Red Team should consider capturing all data required of the Operator Log and quite
 possibly creating log entries in the process. Each data point should be captured in the same
 YYYYMMDD_HHMM_IP_Description format (for example, 20170308_151312_UTC.terminal.log.raw).
 
-**Consolidation**
+**Consolidation**  
 The daily transfer of these logs to the engagement repository is recommended. The preference should
-
-
 be to create a backup or rollup script that copies each set of logs to the repository when executed at
 end-of-day.
 
-**Screenshots!**
+**Screenshots!**  
 Details concerning Red Team actions are often met with disbelief. Even when the team has
 undeniable evidence of access to a highly restrictive application, network, or physical area, target
 personnel (management as well as employees) sometimes have issues conceding that access was
@@ -2777,43 +2775,39 @@ documentation. Many actions are not fully captured, some actions are never captu
 failures are ignored. Each action performed provides value to the target as well as the target
 defenders. Incomplete logs prevent the Red Team from providing a complete and accurate depiction
 of the actions, obstacles, and defensive strengths and weaknesses of the target (a.k.a. Red Team
-mission failure).
+mission failure).  
 
 As previously covered, there are several methods to ensure that logs are appropriately captured and
-stored:
-● Automated logging of the terminal: All terminal actions are logged, timestamped, and saved
-to a predefined location
-● Tool logs: Most commercial tools have some capability to log actions and produce a raw or
-a final report
-● Custom tools logs: If you write a custom tool/script, it should output a log of actions and
-results
+stored:  
+```
+● Automated logging of the terminal: All terminal actions are logged, timestamped, and saved to a predefined location  
+● Tool logs: Most commercial tools have some capability to log actions and produce a raw or a final report  
+● Custom tools logs: If you write a custom tool/script, it should output a log of actions and results  
 ● Operator logs: By far, these are the most important logs. A log may show the action
 performed and the result; however, only the operator can accurately note the way the action
-was performed, which led them to the decision, and their interpretation of the result
+was performed, which led them to the decision, and their interpretation of the result  
 ● Screenshots: Terminal logs are great for the operator and even better as supporting artifacts;
 however, they may mean nothing to senior-level executives (or even to some IT
 professionals). Screenshots before, during, and following the execution of an action hold
 much more weight than a terminal log, tool log, or operator log (often, it may just be a
-screenshot of the terminal during execution)
+screenshot of the terminal during execution)  
+```
 
 #### Consult with Peers
-
 
 No matter how long you have been performing IT or security, consult your peers before taking action.
 This is especially true during exploitation and Command and Control setup. Simple mistakes often
 lead to Red Team discovery too early in the engagement. Look at the command below. The command
 could be run as to provide general situational awareness on a Linux system. What is the expected
 output of the following command?
-netstat –antb
+```netstat –antb```
 
 The command above is a netstat command that can be executed on a Windows host. Linux does not
-have the "b" option and produces an "invalid option" response. Think about it:
+have the "b" option and produces an "invalid option" response. Think about it:  
 
-Have you ever typed ifconfig instead of ipconfig?
-
-Have you ever typed rm * in the wrong directory?
-
-Have you ever entered credentials only to discover they were "fat fingered" (after an access error)?
+Have you ever typed ```ifconfig``` instead of ipconfig?  
+Have you ever typed ```rm *``` in the wrong directory?  
+Have you ever entered credentials only to discover they were "fat fingered" (after an access error)?  
 
 While these are oversimplifications, they represent the need for peer review on tools, C2, setup,
 execution, and even cleanup. Mistakes can lead to accidental exposure on a Red Team engagement.
@@ -2823,38 +2817,34 @@ This can cause significant setbacks and reduce the quality of an engagement.
 
 Knowing what functionality a tool provides is only one-third of the equation. Before a new tool
 (script, application, binary, process, etc.) is used on a target system, it must be tested, undergo an
-internal vetting process and be added to an official toolset.
-So how do we complete the equation? By asking:
-● What artifacts does the tool leave behind?
-● Are any files modified during execution?
-● Are there tales in the network traffic?
+internal vetting process and be added to an official toolset.  
+So how do we complete the equation? By asking:  
+```
+● What artifacts does the tool leave behind?  
+● Are any files modified during execution?  
+● Are there tales in the network traffic?  
 ● Does the tool have negative impacts on specific versions of an OS? (It works fine on
-Windows 8 but causes a system error on Windows 10)
-● Does the tool attempt to run as a specific user or, worse, create a user/group?
-● Does the tool try to call home for updates?
-○ This can trigger defensive alerts identifying unauthorized persons or software on
-the network
-
-Think about psexec.. What is it? The most common answer refers to the PsExec.exe tool from
-
-SysInternals[13].
+Windows 8 but causes a system error on Windows 10)  
+● Does the tool attempt to run as a specific user or, worse, create a user/group?  
+● Does the tool try to call home for updates?  
+        ○ This can trigger defensive alerts identifying unauthorized persons or software on the network  
+```
+Think about psexec.. What is it? The most common answer refers to the PsExec.exe tool from SysInternals[13].
 
 What does it do? At a high level, it executes commands on local or remote Windows system.
 
 What does it do in terms of indicators?
-● Copies a service file to the remote system
-● Enters a service key into the Registry
-● Creates a prefetch file
-
-
 ```
-● Creates an entry in the Application Compatibility Cache
-● Creates a login event
-● Creates a profile folder for the remote user
-● Attempts to remove the service file and key when exiting (not always successful)
+● Copies a service file to the remote system  
+● Enters a service key into the Registry   
+● Creates a prefetch file  
+● Creates an entry in the Application Compatibility Cache  
+● Creates a login event  
+● Creates a profile folder for the remote user  
+● Attempts to remove the service file and key when exiting (not always successful)  
 ```
-What happens when using the –e option? –s option?
-How does this differ from psexec for PowerShell?
+What happens when using the –e option? –s option?  
+How does this differ from psexec for PowerShell?  
 
 In short, you must understand how tools or technique interacts with a target, what network traffic it
 may generate, and what traces it may leave behind. In the case of psexec, this can be considered a
@@ -2865,12 +2855,14 @@ result PsExec.exe provide without the tool itself.
 
 After gaining access to a remote system or application, perform situational awareness before moving
 on.
-● Understand the environment you are in. (Is the target in scope?)
-● What protections exist on the system or network?
-● What are the risks of being caught, and what attack paths does the system provide?
-● Are there pre-established connections to other network resources?
-● Who is currently logged into the system?
-● Who has recently logged into the system?
+```
+● Understand the environment you are in. (Is the target in scope?)  
+● What protections exist on the system or network?  
+● What are the risks of being caught, and what attack paths does the system provide?  
+● Are there pre-established connections to other network resources?  
+● Who is currently logged into the system?  
+● Who has recently logged into the system?  
+```
 
 #### Minimize callback (C2) volume
 
@@ -2878,7 +2870,8 @@ Unless a host-based protection mechanism is triggered, it is more likely to be d
 a defender's recognition or analysis of traffic on the network. To avoid early detection follow good
 tradecraft procedure to limit and control the amount of traffic generated during an engagement. There
 are several general concepts that, if followed, increase the success of the engagement while
-decreasing the chances of being discovered:
+decreasing the chances of being discovered:  
+```
 ● Keep traffic internal to a network: One of the most common issues, and one you should
 always attempt to change, is the limited number of sensors inside a network. Most network
 protections are currently applied at the boundary.
@@ -2886,16 +2879,13 @@ protections are currently applied at the boundary.
 least two outbound sources for C2 redundancy; however, use only one for operations
 (considered an interactive tier). The second (a long- or short-haul tier) is dormant or
 extremely slow and used as a backup if/when the primary is discovered.
+```
 
-#### Do not use unencrypted channels for C2 (unless blending into
-
-#### network traffic)
+#### Do not use unencrypted channels for C2 (unless blending into network traffic)
 
 Command and Control data exiting the network must be encrypted. An IDS or other network defense
 will detect cleartext data, such as uploading a binary, issuing an operating system command, or using
 a web shell. It has become common for IPSs/IDSs to detect specific strings discovered in cleartext
-
-
 traffic. For example, "C:\Windows\System32" has become a common trigger for investigation.
 
 Some defenders have even gone the extra mile in legitimizing a potential threat. Assume the defenders
@@ -2908,14 +2898,13 @@ typing lowercase commands in Windows. The defender ignores "C:\Windows\System32"
 Internal encryption is another example of where peers should be consulted to determine the best
 course of action before deploying C2 further into a network.
 
-The encryption of internal C2 traffic depends upon several different factors:
-Are there sensors inside the network?
-Are there other encrypted communications occurring between target systems?
-Would encrypted traffic stand out more than unencrypted traffic?
-
-#### Do not attempt to exploit or attack unencrypted websites or
-
-#### applications
+The encryption of internal C2 traffic depends upon several different factors:  
+```
+● Are there sensors inside the network?  
+● Are there other encrypted communications occurring between target systems?  
+● Would encrypted traffic stand out more than unencrypted traffic?  
+```
+#### Do not attempt to exploit or attack unencrypted websites or applications
 
 As tempting as it may be, do not attack unencrypted websites. Simple attacks can trigger IDSs.
 Always know your target IP space. There are likely several websites available for review. Proper
@@ -2924,23 +2913,19 @@ Include IP addresses, URLs, an educated guess at the functions, ports, protocols
 
 ```
 Focus Point
-Prior to performing any exploitation and attacks against a
-web server, refer to your Rules of Engagement and fully
-understand:
-Who actually owns the website?
-Who owns the system where the website is
-hosted?
-Who owns the back-end application?
-Have proper approvals been obtained for
-testing?
+Prior to performing any exploitation and attacks against a web server, refer to your Rules of Engagement and fully
+understand:  
+● Who actually owns the website?  
+● Who owns the system where the website is hosted?  
+● Who owns the back-end application?  
+● Have proper approvals been obtained for testing?  
 ```
-#### Do not execute from non-executable locations
 
+#### Do not execute from non-executable locations
 ```
 ● Execution in a Windows environment must occur in a location typical of Windows
 ● Executable locations such as c:\programdata, c:\progam files, and c:\windows\ are common
-● Execution from locations such as c:\windows\temp should never occur or be used with an
-understanding of risk
+● Execution from locations such as c:\windows\temp should never occur or be used with an understanding of risk
 ```
 
 #### Do not use binaries for initial capabilities
@@ -2948,23 +2933,23 @@ understanding of risk
 As a general rule, do not drop binaries on the system. First, use built-in commands to achieve your
 goals. This is not always possible, and binaries may be required; however, binaries **must** be vetted,
 obfuscated, and tested against detection before use.
+```
 ● Ensure all other “Do's and Don’ts" are met for all binaries
 ● Consult a senior operator before dropping any binary
+```
 
 #### Do not download restricted datasets
 
 NEVER download (or remove from the target network) any PII, HIPAA, PCI, or other restricted
 datasets. A good rule of thumb is to annotate the type of data, location, access method, and level of
-access to restricted data in the log.
-● Ensure the log notes include a reference to the type of data discovered for quick reference
-● Take a screenshot of the displayed filename and location (assuming the filename has no
-restricted data included)
-● Screenshot a portion of the dataset without capturing the restricted data. The operator may
-do so for proof of access.
-● If the data set is of concern, attempt to copy the file to a new name in the same location. This
-will validate access without exposing the data.
-● DO NOT take screenshots of the data itself!
-
+access to restricted data in the log.  
+```
+● Ensure the log notes include a reference to the type of data discovered for quick reference  
+● Take a screenshot of the displayed filename and location (assuming the filename has no restricted data included)  
+● Screenshot a portion of the dataset without capturing the restricted data. The operator may do so for proof of access.  
+● If the data set is of concern, attempt to copy the file to a new name in the same location. This will validate access without exposing the data.  
+● DO NOT take screenshots of the data itself!  
+```
 
 ### Execution Concepts
 
@@ -3004,24 +2989,19 @@ In summary, many exploits have known signatures and can be easily detected or ha
 unintended damage or impacts to a target. A Red Team Operator should always understand the
 exploit, its code, and know its IOCs to manage the risk of exposure or damage to a target.
 
-Popular places to find exploits:
-● Metasploit: [http://www.metasploit.com](http://www.metasploit.com) – public exploits and zero days
-● ExploitHub: [http://www.exploithub.com](http://www.exploithub.com) – commercial exploit clearinghouse for nonzero days
-● Exploit DB: [http://www.exploit-db.com](http://www.exploit-db.com) – repository of exploits maintained by Offensive Security
-● Other exploit clearing houses
-
-
+Popular places to find exploits:  
 ```
+● Metasploit: [http://www.metasploit.com](http://www.metasploit.com) – public exploits and zero days  
+● ExploitHub: [http://www.exploithub.com](http://www.exploithub.com) – commercial exploit clearinghouse for nonzero days  
+● Exploit DB: [http://www.exploit-db.com](http://www.exploit-db.com) – repository of exploits maintained by Offensive Security  
+● Other exploit clearing houses  
+```
+
 Focus Point
-A target environment may have multiple exploitable
-vulnerabilities. Only those that enable meeting the goals
-and objectives of the engagement should be considered for
-exploitation. Document all identified exploitable
-vulnerabilities but use only those required to achieve
-engagement objectives.
 ```
-```
-Always consider the risk in every action taken.
+A target environment may have multiple exploitable vulnerabilities. Only those that enable meeting the goals
+and objectives of the engagement should be considered for exploitation. Document all identified exploitable
+vulnerabilities but use only those required to achieve engagement objectives. Always consider the risk in every action taken.
 ```
 #### Exploitation without Exploits
 
