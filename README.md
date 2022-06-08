@@ -2289,66 +2289,34 @@ incidents.
 #### Deconfliction Process
 
 ```
-1. All alerts and incidents, whether real-world or alleged Red Team activity, should
-immediately be reported and acted upon in accordance with standard incident response
-policies and practices.
-2. The appropriate read-in security operations, incident response, threat intelligence, or
-management personnel (e.g., Trusted Agent) will promptly notify the Red Team Lead
-(or designated proxy) of any reported incidents. This notification must include the
-source, destination, action, time of action, and alert source.
-3. The appropriate response team will continue to perform operations per policy and
-practice.
-4. The Red Team Lead will determine if the alert or activity was generated or performed
-by the Red Team. This determination will be made by a thorough event operator log
-review as well as direct operator interaction.
-5. The Red Team Lead will provide the Trusted Agent a confirmation or denial of Red
-Team activity.
-a. If the activity is real, deconfliction is complete.
-i. The Read Team will stand down on any assets involved in the
-incident (if used) or temporarily add those assets to a
-restricted assets list.
-ii. The response team will continue operations
-b. If Red Team activity, deconfliction activities will continue.
-i. The Trusted Agent must not provide this information to the
-security or response team until after completing the process
-```
-
-6. The Red Team Lead and the trusted agent will evaluate the following for determining
-what (if any) information should be provided to the response team:
-a. The extent to which the activity will cause unnecessary notification of
-senior organizational management
-b. Activities to be performed by the response team in accordance with
-policies and practices
-c. How response activities will impact the availability and effectiveness of
-the team to detect, identify, and respond to other incidents
-d. How response activities will impact the systems and networks of the
-incident location
-e. How response activities will impact daily operations for those outside the
-appropriate response teams
-f. Amount of effort required to accurately identify and isolate the Red Team
-vs. the benefits of responding to the incident for training, tooling, and
-metrics purposes
-7. The evaluation actions can be agreed upon by the Red Team Lead and Trusted agent or,
-if required, escalated to the appropriate management level (ECG) for approval.
-8. The Incident evaluation recommendation should indicate if Red Team and response
-teams will continue full-scope activities, if the information will be provided to
-constrain activities to an acceptable level of effort, or if operations will be halted.
-a. If no information is provided to the response team, full-scope activities
-should resume. The response teams should not be notified of Red Team
-activity.
-b. If information is provided, all teams must log the information and time
-provided and the response teams should proceed with response activities
-using the provided information as “Threat Intelligence“ or “guidelines.“
-c. If specific actions are determined to be too high level of effort all teams
-must adjust current activity to accommodate the exclusion of effort. This
-can be:
-i. Continuance of Red Team but halt of response activities
-ii. Continuance of response but halt of Red Team activities
-iii. Continuance of Red Team but reduced response activities
-iv. Continuance of response but reduced Red Team activities
-v. Or halt of all activities
-9. Final deconfliction determinations will be actioned and recorded for event reporting as
-well as after-action review
+1. All alerts and incidents, whether real-world or alleged Red Team activity, should immediately be reported and acted upon in accordance with standard incident response policies and practices.  
+2. The appropriate read-in security operations, incident response, threat intelligence, or management personnel (e.g., Trusted Agent) will promptly notify the Red Team Lead (or designated proxy) of any reported incidents. This notification must include the source, destination, action, time of action, and alert source.  
+3. The appropriate response team will continue to perform operations per policy and practice.  
+4. The Red Team Lead will determine if the alert or activity was generated or performed by the Red Team. This determination will be made by a thorough event operator log review as well as direct operator interaction.  
+5. The Red Team Lead will provide the Trusted Agent a confirmation or denial of Red Team activity.  
+        a. If the activity is real, deconfliction is complete.
+                i. The Read Team will stand down on any assets involved in the incident (if used) or temporarily add those assets to a restricted assets list.  
+                ii. The response team will continue operations  
+        b. If Red Team activity, deconfliction activities will continue.
+                i. The Trusted Agent must not provide this information to the security or response team until after completing the process  
+6. The Red Team Lead and the trusted agent will evaluate the following for determining what (if any) information should be provided to the response team:  
+        a. The extent to which the activity will cause unnecessary notification of senior organizational management  
+        b. Activities to be performed by the response team in accordance with policies and practices  
+        c. How response activities will impact the availability and effectiveness of the team to detect, identify, and respond to other incidents  
+        d. How response activities will impact the systems and networks of the incident location  
+        e. How response activities will impact daily operations for those outside the appropriate response teams  
+        f. Amount of effort required to accurately identify and isolate the Red Team vs. the benefits of responding to the incident for training, tooling, and metrics purposes  
+7. The evaluation actions can be agreed upon by the Red Team Lead and Trusted agent or, if required, escalated to the appropriate management level (ECG) for approval.  
+8. The Incident evaluation recommendation should indicate if Red Team and response teams will continue full-scope activities, if the information will be provided to constrain activities to an acceptable level of effort, or if operations will be halted.  
+        a. If no information is provided to the response team, full-scope activities should resume. The response teams should not be notified of Red Team activity.  
+        b. If information is provided, all teams must log the information and time provided and the response teams should proceed with response activities using the provided information as “Threat Intelligence“ or “guidelines.“  
+        c. If specific actions are determined to be too high level of effort all teams must adjust current activity to accommodate the exclusion of effort. This can be:  
+                i. Continuance of Red Team but halt of response activities  
+                ii. Continuance of response but halt of Red Team activities  
+                iii. Continuance of Red Team but reduced response activities  
+                iv. Continuance of response but reduced Red Team activities  
+                v. Or halt of all activities  
+9. Final deconfliction determinations will be actioned and recorded for event reporting as well as after-action review  
 After Action Reviews may be used to stimulate improvements to the deconfliction process as well as
 incident response or other security operations.
 
