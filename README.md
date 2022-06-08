@@ -2172,12 +2172,8 @@ Operational Impacts
 ● Does need to exercise at least one of the target’s detection, incident response, continuity, and recovery plans and procedures  
 ```
 
-Operational impacts are a key distinguisher for Red Teaming engagements vs. other types of tests
-
+Operational impacts are a key distinguisher for Red Teaming engagements vs. other types of tests and provide real insight to the ability security operations has to defend against threats  
 ```
-Red Team Tip  
-Operational Impacts provide real insight to the ability security operations has to defend against threats  
-
 Vulnerabilities will be discovered and leveraged; however, vulnerabilities are a byproduct of a Red Team
 engagement, not the focus. A Red Team’s true value is assisting the target identify administrative, technical, and
 procedural controls that limit impacts to the organization even when vulnerable to the latest “zero-day vulnerability”.
@@ -2207,7 +2203,7 @@ systems not critical to engagement objectives. If actions directly conflict with
 the Red Team Lead must ensure that the ECG and TA fully and completely understand the
 ramifications of each action (to include future operational impacts).
 
-The level of depth and the impact can be as "painful " as an organization is willing to explore. These
+The level of depth and the impact can be as "painful" as an organization is willing to explore. These
 impacts are typically performed against live production systems to have the highest level of fidelity
 but can be executed on test and development environments if they are representative.
 
