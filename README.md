@@ -2360,7 +2360,7 @@ playground.” This access must be respected, and the data captured must be prot
 General controls and suggestions to consider when safeguarding sensitive data follow. Adjust them as
 required and incorporate them into your ROE template.
 
-**Policy Controls**
+**Policy Controls**  
 Policy controls implemented by the Red Team should include:  
 ```
 ● A Red Team Non-Disclosure Agreement signed by each Red Team member  
@@ -2368,7 +2368,7 @@ Policy controls implemented by the Red Team should include:
 ● Ethics training  
 ● Individual background checks  
 ```
-**Physical Controls**
+**Physical Controls**  
 Multiple levels of physical controls should exist to protect engagement tools and operating systems
 from intentional or unintentional loss. Red Team personnel should be familiar with all physical
 controls employed (e.g., locks, identification stickers, safes, storage cabinets, and lockable
@@ -2385,7 +2385,7 @@ The recommended security mechanisms for securing target assets include:
 ● Target data should be handled only by Red Team personnel with a need to know.  
 ● At the conclusion of the engagement, all target information will be returned to the customer or destroyed using defined procedures.  
 ```
-**Software Controls**
+**Software Controls**  
 The following software controls, designed to ensure the confidentiality, anonymity, and safety of information should be employed:  
 ```
 ● Each host and guest operating system should be encrypted  
@@ -2403,7 +2403,7 @@ The following software controls, designed to ensure the confidentiality, anonymi
 ● If a tool is no longer needed for a task, it should be removed from the target environment  
 ● All Red Team tools and software should be removed from the target environment at the end of the engagement. If cleanup is not possible, the TA and ECG should be notified and provided with the appropriate details.
 ```
-**Two Person Integrity (TPI)**
+**Two Person Integrity (TPI)**  
 A key factor in data collection and execution is two-person integrity (TPI). Two-person integrity
 (used to verify activities performed during the engagement) should be maintained at all times. A team
 member should review, understand, and provide a “sanity check” for each action/command
