@@ -3676,22 +3676,20 @@ References
 
 Engagement execution involves all efforts from the end of planning to the start of culmination and
 reporting, including the build-out of infrastructure. The execution phase is simply the practical
-application of the "why" and "how" from planning.
+application of the "why" and "how" from planning.  
 
-Also remember:
-● Good tradecraft is more valuable than any individual capability
-● Sometimes the best way to exploit a system is to avoid using exploits
-● A detailed C2 plan and defined infrastructure can be the difference between a successful
-and unsuccessful engagement
-● Tools are enablers, nothing more
-○ Know your tools and when to (or when not to) execute them
-○ Ensure you understand why a tool is executed, what it does, and what indicators
-(or artifacts) it provides!
-● Log, log, log!
-
+Also remember:  
+```
+● Good tradecraft is more valuable than any individual capability  
+● Sometimes the best way to exploit a system is to avoid using exploits  
+● A detailed C2 plan and defined infrastructure can be the difference between a successful and unsuccessful engagement  
+● Tools are enablers, nothing more  
+        ○ Know your tools and when to (or when not to) execute them  
+        ○ Ensure you understand why a tool is executed, what it does, and what indicators (or artifacts) it provides!  
+● Log, log, log!  
+```
 
 ### Homework
-
 ```
 1. Expand the data handling guide to include data repository and storage guidelines
 2. Develop a data collection process and workflow for operators. Consider manual and
