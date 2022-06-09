@@ -3020,7 +3020,7 @@ Good Red Team Operators regularly explore and practice many means of remote expl
 compromise. This is an ever-changing area of security. Research and practice are needed to keep
 current on modern techniques.
 
-**Web Application Vulnerability**
+**Web Application Vulnerability**  
 Security has increased over the years, and the number of traditional memory corruption exploits has
 dropped significantly. This has driven threats to search for alternate means of gaining access to a
 target. Web applications are excellent targets for exploitation and remote code execution. Although
@@ -3029,15 +3029,13 @@ This makes web applications prime doorways into a network as even the most basic
 provide a backdoor to a threat. In short, web applications are one of the most effective ways to gain
 remote access to an environment.
 
-**Security Misconfigurations**
+**Security Misconfigurations**  
 Security has improved over the years, and the number of traditional memory corruption exploits has
 dropped significantly. This has driven threats to search for alternate means of gaining access to a
 target. Web applications are excellent targets for exploitation and remote code execution. Although
 web applications have been around for years, their security defenses are still quite weak and
 misunderstood. This misunderstanding makes web applications prime doorways into a network as
 even the most basic application can provide a backdoor to a threat. In short, web applications can be
-
-
 one of the most effective ways to gain remote access to an environment.
 
 Misconfigured network security rules often provide multiple paths for threat traversal. When systems
@@ -3049,7 +3047,7 @@ way, when threats use valid credentials, they look and feel like insiders. It ca
 Blue Team to distinguish between a threat and a valid user. These are important measurements of
 security operations capability.
 
-**Poor or Lack of Security Monitoring**
+**Poor or Lack of Security Monitoring**  
 A lack of security monitoring allows a threat to use a more extensive toolset. Tools or techniques that
 may be loud or trigger a response may work just fine in an unmonitored environment. This oversight
 provides a threat with much greater flexibility and capability. A Red Team can take advantage of an
@@ -3062,29 +3060,35 @@ made by a threat. Defensive tools are great but must be configured and tested to
 operating as expected. Remember, the primary role of the Red Team is to facilitate the improvement
 of an organization's defensive posture.
 
-**Social Engineering (SE)**
+**Social Engineering (SE)**  
 Social engineering is exploiting weaknesses in human nature. Red Team engagements often rely on
 social engineering to support goals. This is typically used in the following areas:
 
-Phishing
-● Sending an email to entice an end-user to provide sensitive information or to deliver a payload
-● Can be used to deliver a malicious payload
-● Can be used to facilitate in-person SE
-● Can be used to facilitate physical access
-Telephoning/Texting
-● Calling or texting to entice an end-user to provide sensitive information
-● Can be used to facilitate either phishing or in-person SE
-● Can be used to facilitate physical access
-In-person pretexting
-● In-person social engineering is typically used to support a physical breach
+Phishing  
+```
+● Sending an email to entice an end-user to provide sensitive information or to deliver a payload  
+● Can be used to deliver a malicious payload  
+● Can be used to facilitate in-person SE  
+● Can be used to facilitate physical access  
+```
+
+Telephoning/Texting  
+```
+● Calling or texting to entice an end-user to provide sensitive information  
+● Can be used to facilitate either phishing or in-person SE  
+● Can be used to facilitate physical access  
+```
+
+In-person pretexting  
+```
+● In-person social engineering is typically used to support a physical breach  
+```
 
 **Use Caution**
 Social engineering (especially Phishing) works, period. But, this is not always the best option. There
 are political risks associated with SE a user. For example, Phishing campaigns that work well may
 harass or even embarrass end users. Use caution when creating a phishing campaign. Many targets of
 phishing require the campaign to be approved before the emails are sent. This may protect the
-
-
 organization but can also limit the success rate of a phish. In cases where phishing is risky, consider
 white carding. A solid strategy is to send a phishing email to a trusted insider. That person will click
 links or provide information as directed by the phish. This allows a phishing payload to be delivered
@@ -3095,14 +3099,15 @@ Team is to bypass the security protections designed to protect users from themse
 A phish that leads to the compromise of a single system may be acceptable. A phish that leads to the
 compromise of an organization is not acceptable as multiple failures must have occurred in
 organizational controls (technical, policy, procedural, etc.). The authors are aware these are
-controversial statements and provide the following concepts for thought.
+controversial statements and provide the following concepts for thought.  
 
-```
 Consider This
+```
 A phishing attack leading to organizational compromise is
 NOT the fault of an end-user. Instead, it is the insufficient
 security controls of a target environment!
 ```
+
 As noted above, Social Engineering simply works. Users are often provided many different types of
 training on social engineering, phishing, information security, operational security, etc.; however, a
 well researched, constructed, and targeted phish will be successful in most scenarios. This idea has
