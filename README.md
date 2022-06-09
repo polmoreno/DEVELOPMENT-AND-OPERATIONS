@@ -3165,10 +3165,10 @@ following before running a vulnerability scanner:
 ● Will exploitation of a vulnerability provide a path that is beneficial to a Red Team’s goal?
 (Remember that vulnerability identification is typically not a Red Team engagement goal.)  
 ```
-```
+
 Remember This
-Just because a target is vulnerable, doesn't mean it must be
-exploited!
+```
+Just because a target is vulnerable, doesn't mean it must be exploited!
 ```
 #### NMAP and network scanning
 
@@ -3269,8 +3269,6 @@ modules, and post-exploitation modules. Metasploit is a great exploitation frame
 enumeration, and post-exploitation capabilities can provide a team with a great deal of capabilities.
 While Metasploit is a great resource, caution must be taken when using Metasploit's Meterpreter
 payload. Meterpreter is not a bad payload choice for Command and Control, but like any tool, it must
-
-
 be understood and adequately tuned before use. This tool has been examined and analyzed in great
 depths. This has led to a highly capable toolset, but it can be profiled and identified by a competent
 security team.
@@ -3391,31 +3389,33 @@ C2 fall into three categories.
 ```
 Synchronous C2 operates in real-time. A constant stream of communications is required to maintain
 the C2 channel. Asynchronous C2 communications offer many benefits to a Red Team over
-synchronous communications by:
+synchronous communications by:  
+```
 ● Controlling when and how often communications are sent - A C2 agent can poll as quickly
-as near real-time or may check in once a day, week, or month
+as near real-time or may check in once a day, week, or month  
 ● Bypassing firewalls through egress communication - Clients are typically not accessible
-from outside a network but can reach assets on the internet through outbound
-communication
-● Not requiring a constant, established connection
+from outside a network but can reach assets on the internet through outbound communication  
+● Not requiring a constant, established connection  
+```
 
 On-demand C2 is unique and operates only when needed. Communications occur only when triggered
 by an operator. Tools such as email or web shells can provide excellent on-demand C2 channels.
 Choosing your Command and Control (C2) mechanisms is a critical step in designing your C2 plan
 for an engagement.
 
-#### C2 Channels
+#### C2 Channels  
 
 There are numerous methods for establishing C2. Each of these methods use a C2 Channel for primary
 communications. While any channel can be used, it is recommended to use a channel that blends in
-with organizational traffic. Commonly used C2 channels include:
-● HTTP/HTTPS
-● DNS
-● SMB
-● SSH
+with organizational traffic. Commonly used C2 channels include:  
+```
+● HTTP/HTTPS  
+● DNS  
+● SMB  
+● SSH  
+```
 
-
-#### Establishing a C2 Infrastructure
+#### Establishing a C2 Infrastructure  
 
 A well thought out and designed C2 plan can make the difference between a successful or a failed
 engagement. The C2 environment is the heart and lifeline for all threat communications.
@@ -3424,28 +3424,21 @@ As part of creating and maintaining an infrastructure for your Red Team operatio
 following at a minimum:
 
 ```
-● A variety of domain names—preferably .com, .net, and .org sites related to the
-organization(s) being assessed
-Ensure domains are properly categorized (BlueCoat, WebPulse, OpenDNS,
-PhishTank)
-Use Top Level Domains (TLD) common to your target area or usage
-● Valid SSL certificates for those domains
-● Internet-accessible servers (VPS or physical)
-Separated for phishing, redirecting, and C2 servers
-● Installed and configured C2 platforms
+● A variety of domain names—preferably .com, .net, and .org sites related to the organization(s) being assessed  
+        ○ Ensure domains are properly categorized (BlueCoat, WebPulse, OpenDNS, PhishTank)  
+        ○ Use Top Level Domains (TLD) common to your target area or usage  
+● Valid SSL certificates for those domains  
+● Internet-accessible servers (VPS or physical)  
+        ○ Separated for phishing, redirecting, and C2 servers  
+● Installed and configured C2 platforms  
 ```
-For more information, detailed C2 design information is maintained regularly by Jeff Dimmock
 
-(@bluescreenofjeff[17]) can be found at the following:
-● Designing Effective Covert Red Team Attack Infrastructure –
-https://bluescreenofjeff.com/2017-12-05-designing-effective-covert-red-team-attack-
-infrastructure/#references
-
-
+For more information, detailed C2 design information is maintained regularly by Jeff Dimmock @bluescreenofjeff[17]) can be found at the following:  
 ```
-● Red Team Infrastructure Wiki – https://github.com/bluscreenofjeff/Red-Team-Infrastructure-
-Wiki
+● Designing Effective Covert Red Team Attack Infrastructure – ttps://bluescreenofjeff.com/2017-12-05-designing-effective-covert-red-team-attack-infrastructure/#references  
+● Red Team Infrastructure Wiki – https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki
 ```
+
 #### C2 Tools
 
 Although Red Teams use similar offensive security tools as that of penetration testers, there are tools
@@ -3459,53 +3452,41 @@ exploitation capability, a Red Team’s focus is on their use for post-exploitat
 duration needed.
 
 ```
-2019, Year of the C2
-In and around the year 2019, tremendous growth in the
-number of C2 frameworks occurred. Dozens of C2
-frameworks were released or seriously updated. This
-increase provided new options to Red Teams by providing
-new protocols, more cross-platform support, and new
-operator interfaces.
-```
-**CobaltStrike[18]**
-
-```
-● Commercial software from Strategic Cyber, LLC.
-● Command and Control payload is known as a beacon
-● An earlier project, Armitage, is a free tool by Raphael Mudge. It is often confused with the
-free version of Cobalt Strike but has a very different code base
-● Described as “Cobalt Strike is software for Adversary Simulations and Red Team
-Operations.”
-● Supports both asynchronous and synchronous C2 communication
-```
-**Empire[19]**
-
-```
-● Open source software
-● Command and Control payload is known as an agent
-● Described as “Empire is a pure PowerShell post-exploitation agent built on
-cryptologically-secure communications and a flexible architecture.”
-● Supports both asynchronous and synchronous C2 communication
-● Officially retired as a project in 2019
+2019, Year of the C2  
+In and around the year 2019, tremendous growth in the umber of C2 frameworks occurred. Dozens of C2
+frameworks were released or seriously updated. This ncrease provided new options to Red Teams by providing
+new protocols, more cross-platform support, and new perator interfaces.
 ```
 
+**CobaltStrike[18]**  
 ```
-Tweet announcing the
-retirement of Empire
+● Commercial software from Strategic Cyber, LLC.  
+● Command and Control payload is known as a beacon  
+● An earlier project, Armitage, is a free tool by Raphael Mudge. It is often confused with the free version of Cobalt Strike but has a very different code base  
+● Described as “Cobalt Strike is software for Adversary Simulations and Red Team perations.”  
+● Supports both asynchronous and synchronous C2 communication  
 ```
+
+**Empire[19]**  
+```
+● Open source software  
+● Command and Control payload is known as an agent  
+● Described as “Empire is a pure PowerShell post-exploitation agent built on ryptologically-secure communications and a flexible architecture.”  
+● Supports both asynchronous and synchronous C2 communication  
+● Officially retired as a project in 2019  
+```
+
+Tweet announcing the etirement of Empire
+
 **Metasploit**
+```
+● Open source and commercial software is maintained by Rapid7  
+● Highly capable penetration testing and exploitation framework with some Red Team post-exploitation support  
+● Command and Control payload is known as Meterpreter  
+● Communication is generally synchronous  
+```
 
-```
-● Open source and commercial software is maintained by Rapid7
-● Highly capable penetration testing and exploitation framework with some Red Team post-
-exploitation support
-● Command and Control payload is known as Meterpreter
-```
-
-```
-● Communication is generally synchronous
-```
-**Other C2**
+**Other C2**  
 Cobalt Strike, Empire, and Metasploit are simply three C2 examples selected due to being commonly
 known and widely used. In 2018 and 2019 numerous tools and frameworks for command and control
 were announced and released. This trend will likely continue for future years. If building a C2
@@ -3513,8 +3494,7 @@ framework isn’t possible given the team’s time or budget, the authors recomm
 potential frameworks, testing of each, and selecting the framework(s) that best meet the need for the
 current effort.
 
-#### C2 Redirectors
-
+#### C2 Redirectors  
 C2 redirectors are pivots designed to separate communications between a target and C2 servers.
 They are designed to protect the C2 servers' IP addresses from identification. Redirectors are what
 the target will see as malicious. The target may observe any IP address or domain name associated
@@ -3540,32 +3520,29 @@ Virtual Private Services such as Amazon EC2, Digital Ocean, and Linode are great
 internet-accessible redirectors. Redirector servers can be easily deployed or torn down. Most
 service providers offer an API that allows the deployment and destruction of redirectors to be
 scripted and automated. Redirectors can be made to be highly resistant to removal or to be even more
-
 obfuscated. Techniques such as Domain Fronting[20] take advantage of the trust in highly trusted CDNs.
 A reverse HTTP proxy, such as Apache mod_rewrite, can be used to tune HTTP traffic to obfuscate
 better or hide malicious traffic.
 
-Deploying Redirectors
+Deploying Redirectors  
 There are several ways to redirect traffic. Here are a couple of quick examples for Linux and
 Windows ‘dumb pipe’ redirectors. A dumb pipe redirctors is the process of redircting traffic from on
 TCP port to another.
 
-
-Linux:
+Linux:  
 Create a cron job to start a socat script that redirects TCP 443 from the redirector to 10.10.10.10:
-
 ```
 crontab -e
 @reboot /usr/bin/socat TCP-LISTEN:443,fork / TCP:10.10.10.10:443 &
 ```
-Windows:
-Use the netsh command to create a persistent port redirection rule that redirects TCP 443 from the
-redirector to 10.10.10.10:
 
+Windows:  
+Use the netsh command to create a persistent port redirection rule that redirects TCP 443 from the edirector to 10.10.10.10:  
 ```
 netsh interface portproxy add v4tov4 listenport=443 listenaddress=10.20.20.20
 connectport=443 connectaddress=10.10.10.10
 ```
+
 There are several methods and techniques for redirection. The examples in this book focus on
 exposing the need that redirectors are critical to an engagement. Red Team operators must include a
 set of processes and technical approaches in the Red Team toolbox.
@@ -3580,97 +3557,94 @@ categories: Interactive, Short Haul, and Long Haul. These are sometimes labeled 
 There is nothing unique to each tier other than how they are used, and the deployment of redirectors is
 independent of the C2 tier.
 
-The general rules to maintain multiple tiers are:
+The general rules to maintain multiple tiers are:  
+```
+● Maintain discipline in each tier, and use it only for its intended purpose  
+● Only pass or establish new sessions down  
+        ○ Long Haul can pass only to Short Haul or Interactive  
+        ○ Short can pass to Interactive  
+        ○ Interactive can pass only to other interactive sessions  
+● For each tier, use a different profile—communication type, ports, protocols, callback times, etc.
+```
 
-● Maintain discipline in each tier, and use it only for its intended purpose
-● Only pass or establish new sessions down
-Long Haul can pass only to Short Haul or Interactive
-Short can pass to Interactive
-Interactive can pass only to other interactive sessions
-● For each tier, use a different profile—communication type, ports, protocols, callback times,
-etc.
 Slow down callback time when not in use
 Of course, there are exceptions to these rules. A Red Team must be flexible to achieve goals. If a rule
 is violated, be aware of the exposure risks before performing an action. For example, say that a Long
 Haul server dies after it is initially established. A Short or Interactive tier may be needed to
 reestablish the Long Haul.
 
-Tiers and Their Uses
+Tiers and Their Uses:  
 
-
-**Interactive (Tier 3)**
-● Used for general commands, enumeration, scanning, data exfiltration, etc.
-● This tier has the most interaction and is at the greatest risk of exposure
-● Plan to lose access from communication failure, agent failure, or Blue Team actions
+**Interactive (Tier 3)**  
+● Used for general commands, enumeration, scanning, data exfiltration, etc.  
+● This tier has the most interaction and is at the greatest risk of exposure  
+● Plan to lose access from communication failure, agent failure, or Blue Team actions  
 ● Run enough interactive sessions to maintain access (Although interactive, this doesn’t mean
 blasting the client with packets). Use good judgment to minimize interaction to just enough to
-perform an action
+perform an action  
 
-**Short Haul (Tier 2)**
-● Used as a backup to reestablish interactive sessions.
-● Use covert communications that blend in with the target.
-● Slow callback times. Callback times in the 12–24 hr. range are common.
+**Short Haul (Tier 2)**  
+● Used as a backup to reestablish interactive sessions.  
+● Use covert communications that blend in with the target.  
+● Slow callback times. Callback times in the 12–24 hr. range are common.  
 
-**Long Haul (Tier 1)**
-● Used to reestablish short haul C2
-● Slow callback times. Callback times of 24+ hours (often a few days) are common.
+**Long Haul (Tier 1)**  
+● Used to reestablish short haul C2  
+● Slow callback times. Callback times of 24+ hours (often a few days) are common.  
 
-**C2 Infrastructure Rules**
-● C2 servers do not directly communicate with targets
-● Targets and C2 servers communicate through a redirector
-● Tiers should be used for their intended purposes
-Tier 1 – Low and slow, intended for long-term persistence
-Tier 2 – Mid-speed communications, designed to reestablish interactive C2
-Tier 3 – An Interactive tier designed to perform everyday commands near real
-time or as operationally required
-New C2 must remain at the same tier or lower (never higher):
-Tier 1 – Tier1 or Tier 2
-Tier 2 – Tier 2 or Tier 3
-Tier 3 – Tier 3
-**When can you violate a rule?**
+**C2 Infrastructure Rules**  
+```
+● C2 servers do not directly communicate with targets  
+● Targets and C2 servers communicate through a redirector  
+● Tiers should be used for their intended purposes  
+        ○ Tier 1 – Low and slow, intended for long-term persistence  
+        ○ Tier 2 – Mid-speed communications, designed to reestablish interactive C2  
+        ○ Tier 3 – An Interactive tier designed to perform everyday commands near real time or as operationally required  
+        ○ New C2 must remain at the same tier or lower (never higher):  
+                ■ Tier 1 – Tier1 or Tier 2  
+                ■ Tier 2 – Tier 2 or Tier 3  
+                ■ Tier 3 – Tier 3  
+```
+**When can you violate a rule?**  
 The only time C2 is passed is when C2 is initially established. An Interactive tier may be used to
 establish higher levels of access but is highly discouraged. There is a risk of exposing higher tiers.
 Caution must be used when setting up initial access.
 
+```
+This diagram can help illustrate the tiers and the relationships of how to share information between each.
+```
 
-```
-This diagram can help illustrate the tiers and the relationships of how to share information between
-each.
-```
-**C2 Multi-tier Design**
+**C2 Multi-tier Design**  
 Designing a C2 infrastructure is one of the most critical tasks when planning a Red Team engagement.
 C2 infrastructure planning involves choosing the number and type of C2 servers, whether to use IP
 addresses or domain names, the C2 protocols, and how or if to use redirectors. The decision of each
 is directly related to a Red Team’s goals. If a team is engaging a target in a full-scale Red Team
 operation, stealth and covert channels will be good choices.
 
-Typical C2 Design for a Full-Scale Red Team Operation
+Typical C2 Design for a Full-Scale Red Team Operation  
+```
+● Three C2 servers with an Interactive tier, Short Haul server, and Long Haul server  
+● Multiple redirectors  
+● One or two carefully chosen domain names for each IP address (preferably with history and categorization)  
+● Direct communication between the target and C2 does not occur. All traffic pivots through a redirection server  
+● The use of common protocols on standard ports to blend (HTTP, HTTPS, SSH, DNS)  
+● Communications are encrypted  
+```
 
-```
-● Three C2 servers with an Interactive tier, Short Haul server, and Long Haul server
-● Multiple redirectors
-● One or two carefully chosen domain names for each IP address (preferably with history and
-categorization)
-● Direct communication between the target and C2 does not occur. All traffic pivots through a
-redirection server
-● The use of common protocols on standard ports to blend (HTTP, HTTPS, SSH, DNS)
-● Communications are encrypted
-```
 If a team is emulating a specific threat or trying to stimulate a Blue Team’s response, stealth may not
 be as important.
 
-Typical C2 Design for Emulating a Threat Designed to Stimulate Blue (Exercises)
-
-
+Typical C2 Design for Emulating a Threat Designed to Stimulate Blue (Exercises)  
 ```
-● One or two C2 servers. All tiers are used for interaction with the target
-● Redirectors are not in use
-● IP addresses are used instead of domain names
-● The target and C2 directly communicate
-● The use of common protocols on standard or nonstandard ports (HTTP, HTTPS)
-● Communications may or may not be encrypted
+● One or two C2 servers. All tiers are used for interaction with the target  
+● Redirectors are not in use  
+● IP addresses are used instead of domain names  
+● The target and C2 directly communicate  
+● The use of common protocols on standard or nonstandard ports (HTTP, HTTPS)  
+● Communications may or may not be encrypted  
 ```
-#### Domain Fronting
+
+#### Domain Fronting  
 
 Domain Fronting is a technique developed to support the bypass of censorship by routing traffic
 through legitimate and highly trusted domains. There are many services that support Domain Fronting,
@@ -3685,14 +3659,12 @@ the ability to use it. As of the writing of this book it is still an option, but
 change over time.
 
 References
-1. Red Team Infrastructure Wiki, https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki#domain-fronting.
-2. Domain Fronting Via Cloudfront Alternate Domains, https://www.mdsec.co.uk/2017/02/domain-fronting-via-
-cloudfront-alternate-domains/.
-3. High-reputation Redirectors and Domain Fronting, https://blog.cobaltstrike.com/2017/02/06/high-reputation-
-redirectors-and-domain-fronting/.
-4. Finding Frontable Domains, https://github.com/rvrsh3ll/FindFrontableDomains
-
-
+```
+1. Red Team Infrastructure Wiki, https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki#domain-fronting.  
+2. Domain Fronting Via Cloudfront Alternate Domains, https://www.mdsec.co.uk/2017/02/domain-fronting-via-cloudfront-alternate-domains/.  
+3. High-reputation Redirectors and Domain Fronting, https://blog.cobaltstrike.com/2017/02/06/high-reputation-redirectors-and-domain-fronting/.  
+4. Finding Frontable Domains, https://github.com/rvrsh3ll/FindFrontableDomains  
+```
 
 ### Key Chapter Takeaways
 
