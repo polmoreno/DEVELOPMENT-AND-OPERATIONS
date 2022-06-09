@@ -3084,7 +3084,7 @@ In-person pretexting
 ● In-person social engineering is typically used to support a physical breach  
 ```
 
-**Use Caution**
+**Use Caution**  
 Social engineering (especially Phishing) works, period. But, this is not always the best option. There
 are political risks associated with SE a user. For example, Phishing campaigns that work well may
 harass or even embarrass end users. Use caution when creating a phishing campaign. Many targets of
@@ -3158,14 +3158,13 @@ performing the scan from a burnable source that is dedicated to louder activitie
 sensitive sources from being exposed.
 
 In the end, the choice of when or how to use a vulnerability scanner comes to risk. Think about the
-following before running a vulnerability scanner:
-● Does the risk of exposure from running a generally loud tool outweigh the potential
-knowledge learned?
-● Are there other ways to identify a vulnerability without using the automated scanner?
+following before running a vulnerability scanner:  
+```
+● Does the risk of exposure from running a generally loud tool outweigh the potential knowledge learned?  
+● Are there other ways to identify a vulnerability without using the automated scanner?  
 ● Will exploitation of a vulnerability provide a path that is beneficial to a Red Team’s goal?
-(Remember that vulnerability identification is typically not a Red Team engagement goal.)
-
-
+(Remember that vulnerability identification is typically not a Red Team engagement goal.)  
+```
 ```
 Remember This
 Just because a target is vulnerable, doesn't mean it must be
@@ -3198,53 +3197,61 @@ Nmap -sT -T2 -n -Pn -oA <date/time_target> -p 80,443,8080 10.10.10.1-100
 ```
 Here is the breakdown of the command arguments:
 
--sT
+-sT  
+```
 ● This forces Nmap to perform a full connect scan. Nmap’s default is –sS, or a stealth scan. A
 full scan completes the full TCP handshake (SYN,SYN/ACK,ACK) and sends a (RST) to
 gracefully tear down the connection. A –sS scan sends only SYN and waits for a response
 or timeout. A full connection is not established. Although the term stealth is used, this
 behavior can indicate a scan is being run against a target. In general, full connect scans
 produce less triggers through network security devices. This is especially true when they
-are executed very slowly.
-
--T2
+are executed very slowly.  
+```
+-T2  
+```
 ● This is an Nmap timing template. They range from 0–5. The template names are paranoid
-(0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5).
+(0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5).  
 ● According to the Nmap documents, “While -T0 and -T1 may be useful for avoiding IDS
 alerts, they will take an extraordinarily long time to scan thousands of machines or ports.
 For such a long scan, you may prefer to set the exact timing values you need rather than rely
-on the canned -T0 and -T1 values.”
-
-
+on the canned -T0 and -T1 values.”  
 ● The bottomline: control the speed of a scan to balance the gathering of information with
-sending packets too quickly.
-● Nmap has many other timing control options. Refer to the help document for details.
+sending packets too quickly.  
+● Nmap has many other timing control options. Refer to the help document for details.  
+```
 -Pn
-● Treat all hosts as online—skip host discovery.
-● This disables the default tests Nmap uses to discover if a host is online.
+```
+● Treat all hosts as online—skip host discovery.  
+● This disables the default tests Nmap uses to discover if a host is online.  
 ● If no host discovery options are given, Nmap sends an ICMP echo request, a TCP SYN
 packet to port 443, a TCP ACK packet to port 80, and an ICMP timestamp request. (For
 IPv6, the ICMP timestamp request is omitted, because it is not part of ICMPv6.) These
-defaults are equivalent to the -PE -PS443 -PA80 -PP options.
+defaults are equivalent to the -PE -PS443 -PA80 -PP options.  
 ● For machines on a local Ethernet network, ARP scanning will still be performed (unless --
 disable-arp-ping or --send-ip is specified), because Nmap needs MAC addresses to further
-scan target hosts. In previous versions of Nmap, -Pn was -P0 and -PN.
+scan target hosts. In previous versions of Nmap, -Pn was -P0 and -PN.  
+```
 -n
-● Never do DNS resolution.
+```
+● Never do DNS resolution.  
 ● This is recommended as a default. If the DNS servers are public, this is not as much of an
 issue. If you are using a target’s DNS servers, sending DNS queries to perform a port scan
-may be considered unnecessary.
+may be considered unnecessary.  
+```
 -oA
-● Output in three formats (normal, greppable, and xml).
-● Data collection is extremely important during a Red Team engagement. Using Nmap’s built-
-in feature allows results to be captured and potentially parsed by other tools.
+```
+● Output in three formats (normal, greppable, and xml).  
+● Data collection is extremely important during a Red Team engagement. Using Nmap’s built-in 
+feature allows results to be captured and potentially parsed by other tools.  
+```
 -p
-● The ports to scan.
+```
+● The ports to scan.  
 ● Setting the specific ports is a best practice. Using Nmap’s default may be helpful in finding
-unknown services, but a target intellectual guess can help find specific services.
+unknown services, but a target intellectual guess can help find specific services.  
 ● If you are looking for web servers, choose ports that would most likely be associated with
-your target. OSINT and recon prior to a scan will help determine the appropriate ports to
-enumerate.
+your target. OSINT and recon prior to a scan will help determine the appropriate ports to enumerate.
+```
 
 Please note that even with these suggestions, there are situations when stealth or risk tolerance less
 important. Perhaps you are using Nmap to trigger a Blue response. A loud scan may be needed to gain
@@ -3268,36 +3275,40 @@ be understood and adequately tuned before use. This tool has been examined and a
 depths. This has led to a highly capable toolset, but it can be profiled and identified by a competent
 security team.
 
-Pros and Cons of Meterpreter
-PROS
-● Tremendous amount of capability and flexibility
-● Large contributor base
-● Large selection of post-exploitation modules
-● Easy to use
-● Stable
+Pros and Cons of Meterpreter  
+PROS  
+```
+● Tremendous amount of capability and flexibility  
+● Large contributor base  
+● Large selection of post-exploitation modules  
+● Easy to use  
+● Stable  
+```
 
 CONS
-● Synchronous communication.
+```
+● Synchronous communication.  
 ● Well-Known IOCs. (Source code modification is required to minimize these.)
-
+```
 Msfconsole can be tuned using resource files. Resource files are simply a set of msfconsole
 commands saved to a script. If scripts are saved to: ~/.msf4/msfconsole.rc
 A few recommended base msfconsole settings to consider:
 
 ```
-# ~/.msf4/msfconsole.rc
-spool /root/.msf4/spool.log
-setg ConsoleLogging true
-setg verbose true
-setg LogLevel 5
-setg SessionLogging true
-setg TimestampOutput true
-setg PromptTimeFormat %Y%m%d.%H%M%S%z
-setg PROMPT %T S:%S J:%J
-setg ExitOnSession false
-setg DisableCourtesyShell true
-load sounds #optional
+# ~/.msf4/msfconsole.rc  
+spool /root/.msf4/spool.log  
+setg ConsoleLogging true  
+setg verbose true  
+setg LogLevel 5  
+setg SessionLogging true  
+setg TimestampOutput true  
+setg PromptTimeFormat %Y%m%d.%H%M%S%z  
+setg PROMPT %T S:%S J:%J  
+setg ExitOnSession false  
+setg DisableCourtesyShell true  
+load sounds #optional  
 ```
+
 These settings will set up console logging, increase the log verbosity, enable session logging,
 standardize the timestamp, add information to the console prompt, set exitonsession to keep listeners
 from dying, disable the courtesy shell, and load sounds. Sounds are optional but can be useful
@@ -3313,37 +3324,37 @@ exploits, but is generally not appropriate for command and control.
 A web shell is server-side code that acts as a “shell,” remote administration tool, or control panel
 allowing a user to issue remote commands to be executed by a web server. Whoever controls the web
 shell has the ability to execute operating system commands on the target web server. The successful
-
-
 exploitation of a web application is needed to deploy a web shell. Web shells can be written in any
 web language, such as PHP, ASP, ASPX, Perl, Ruby, Python, JSP, Java, etc.
-**Web Shell Examples**
+
+**Web Shell Examples**  
+```
 ● China Chopper – A small web shell packed with features. It has several Command and
-Control features, including a password brute force capability
+Control features, including a password brute force capability  
 ● WSO – Stands for "web shell by orb" and has the ability to masquerade as an error page
-containing a hidden login form
+containing a hidden login form  
 ● C99 – A version of the WSO shell with additional functionality. It can display the server’s
-security measures and contains a self-delete function
+security measures and contains a self-delete function  
 ● B374K – A PHP-based web shell with common functionalities such as viewing processes
-and executing commands
+and executing commands  
+```
 
 Why would a threat use a web shell? Remote code execution flaws are limited and have forced the
 heavy use of client exploitation; however, web applications are still very valuable doors into a
 network, and directly compromising a network via remote means provides many options to a threat.
 Web applications are commonly overlooked, misconfigured, and riddled with flaws. Executing
 operating system commands with an on-demand tool is a perfect Long Haul solution and, therefore, a
-perfect target for a Red Team.
+perfect target for a Red Team.  
 
-A Red Team must be aware of common IOCs generated by the deployment of a web shell:
-
-● The exploitation of a web application flaw must occur
-The server attack surface is limited to file upload flaws, RFI flaws, or
-application security flaws
-This can trigger an alert depending on the type of exploitation or flaw
-● Web server files will be added or modified
-Source code modification or the direct modification of an application’s source
-code will occur
-Integrity monitoring may alert defenses to these changes
+A Red Team must be aware of common IOCs generated by the deployment of a web shell:  
+```
+● The exploitation of a web application flaw must occur  
+        ○ The server attack surface is limited to file upload flaws, RFI flaws, or application security flaws    
+        ○ This can trigger an alert depending on the type of exploitation or flaw  
+● Web server files will be added or modified  
+        ○ Source code modification or the direct modification of an application’s source code will occur  
+        ○ Integrity monitoring may alert defenses to these changes  
+```
 Although the vulnerabilities required for web shell deployment comprise a small subset of
 application security, those paths are worth pursuing as a threat.
 
