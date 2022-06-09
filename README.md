@@ -3576,21 +3576,27 @@ reestablish the Long Haul.
 Tiers and Their Uses:  
 
 **Interactive (Tier 3)**  
+```
 ● Used for general commands, enumeration, scanning, data exfiltration, etc.  
 ● This tier has the most interaction and is at the greatest risk of exposure  
 ● Plan to lose access from communication failure, agent failure, or Blue Team actions  
 ● Run enough interactive sessions to maintain access (Although interactive, this doesn’t mean
 blasting the client with packets). Use good judgment to minimize interaction to just enough to
 perform an action  
+```
 
 **Short Haul (Tier 2)**  
+```
 ● Used as a backup to reestablish interactive sessions.  
 ● Use covert communications that blend in with the target.  
 ● Slow callback times. Callback times in the 12–24 hr. range are common.  
+```
 
-**Long Haul (Tier 1)**  
+**Long Haul (Tier 1)** 
+```
 ● Used to reestablish short haul C2  
 ● Slow callback times. Callback times of 24+ hours (often a few days) are common.  
+```
 
 **C2 Infrastructure Rules**  
 ```
