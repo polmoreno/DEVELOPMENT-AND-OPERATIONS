@@ -4139,7 +4139,6 @@ impairing factors) measured as:
 The 5x5 risk matrix is an extended version of the 3x3. The usage is the same but provides a bit more
 granularity. This can help fine-tune the rating but suffers from similar limitations. It does offer a
 method to view risk in terms of operations instead of discrete vulnerabilities. The version presented
-
 has been adopted and modified from the U.S. Army[21] and NIST[22] to focus on operation impact
 instead of mission impact.
 
@@ -4157,9 +4156,6 @@ impairing factors) measure as:
 
 ```
 ● Catastrophic – Direct impact, usually of long duration if not permanent
-```
-
-```
 ● Critical – Significant impact: stops or halts operation
 ● Moderate – Noticeable loss: reduces/slows operation/production
 ● Marginal – Limited loss: noticed but does not halt operation
@@ -4202,54 +4198,39 @@ mitigation to the observation or finding.
 **Tiered Matrix**
 
 ```
-Category Rating
-```
-```
-1 The correction is readily available in the
-environment but has not been implemented or
-applied.
-```
-```
-2 The correction or mitigation is readily
+| Category 	| Rating                                          	|
+|----------	|-------------------------------------------------	|
+| 1        	| The correction is readily available in the      	|
+|          	| environment but has not been implemented or     	|
+|          	| applied.                                        	|
+|          	|                                                 	|
+| 2        	| The correction or mitigation is readily         	|
+|          	| available in the environment or public, but     	|
+|          	| something such as policy, procedure, politics,  	|
+|          	| contracts, training, etc. prevents              	|
+|          	| implementation or application                   	|
+|          	|                                                 	|
+| 3        	| The correction or mitigation is not readily     	|
+|          	| available in any industry or sector. Research   	|
+|          	| or additional effort is required to investigate 	|
+|          	| to determine a correction or mitigation plan.   	|
 ```
 
-```
-available in the environment or public, but
-something such as policy, procedure, politics,
-contracts, training, etc. prevents
-implementation or application.
-```
-```
-3 The correction or mitigation is not readily
-available in any industry or sector. Research
-or additional effort is required to investigate
-to determine a correction or mitigation plan.
-```
-```
 Example Diagram Summarizing Categories
-```
-```
+
+
+
 Example snippet from a report showing how to use category rating
-```
-```
-Author’s Thoughts
-```
-Very few things should be labeled 3. There’s almost
-
 
 ```
-always an acceptable mitigation/workaround.
+Author’s Thoughts  
+Very few things should be labeled 3. There’s almost always an acceptable mitigation/workaround.  
+
+Many will likely be labeled 2. This should be cause for policy or process change and could be used to justify additional training.  
+
+Anything labeled 1 should be of great concern to the organization, division, or management. Often indicates a lack of effort.
 ```
-```
-Many will likely be labeled 2. This should be cause for
-policy or process change and could be used to justify
-additional training.
-```
-```
-Anything labeled 1 should be of great concern to the
-organization, division, or management. Often indicates a
-lack of effort.
-```
+
 It is important to note that this method of categorization requires open and effective communication
 between the Red Team and the organization. Internal Red Teams may have the organizational
 knowledge and experience required to categorize their observations. However, as most Red Teams
@@ -4271,7 +4252,6 @@ great way to both describe and illustrate this concept is the Pyramid of Pain.
 
 
 The Pyramid of Pain[24] was created and described by David Bianco in 2013 and revised later in
-
 2014. The pyramid describes types of indicators that may be used to detect threat activities and how
 much pain will be caused (to the threat) if a Blue Team is able to deny a threat the ability to perform
 actions that generate those IOCs. What does this mean in terms of a Red Team engagement? Red
@@ -4286,193 +4266,105 @@ into their actions provide defenders a manageable way to understand the effectiv
 defensive strategy. Blue Teams can become more effective and better protect against any threat
 instead of defending against a single piece of malware.
 
-```
 A Blue Team Perspective
-Detection in Depth
-Detection Engineering (the process of creating detection
-logic for attacker activity) is an often misunderstood
-discipline. It is common to see these “detections” labeled
-as good or bad, but detection logic isn’t inherently either.
-The misunderstanding tends to occur when someone’s
-expectations of specific logic don’t align with reality. To
-be successful in detection, it is important to build a
 ```
-
+Detection in Depth  
+Detection Engineering (the process of creating detection logic for attacker activity) is an often misunderstood
+discipline. It is common to see these “detections” labeled as good or bad, but detection logic isn’t inherently either.
+The misunderstanding tends to occur when someone’s expectations of specific logic don’t align with reality. To
+be successful in detection, it is important to build a detection mesh that combines precise indicators with low
+false-positive expectations (signatures) with broad indicators with low false-negative expectations
+(behavioral detections). I refer to this concept as Detection in Depth. This approach ensures that analysts can rely on
+high signal detection of known bad activity, while also expecting that the mesh will stand up to evasion attempts.  
+- Jared Atkinson, Microsoft MVP, @jaredcatkinson  
+    Introducing the Funnel of Fidelity - https://posts.specterops.io/introducing-the-funnel-of-fidelity-b1bb59b04036
 ```
-detection mesh that combines precise indicators with low
-false-positive expectations (signatures) with broad
-indicators with low false-negative expectations
-(behavioral detections). I refer to this concept as Detection
-in Depth. This approach ensures that analysts can rely on
-high signal detection of known bad activity, while also
-expecting that the mesh will stand up to evasion attempts.
-```
-- Jared Atkinson, Microsoft MVP, @jaredcatkinson
-    Introducing the Funnel of Fidelity -
-    https://posts.specterops.io/introducing-the-funnel-of-
-    fidelity-b1bb59b04036
 
 What are some examples of defensible actions that would make a threat’s ability to operate difficult?
 
 ```
-Defensive
-Action
-```
-```
-Description
-```
-```
-Prevent client-to-
-client
-communication
-```
-```
-Preventing these communications
-limits a threat's ability to move freely
-throughout the network, reduces the
-likelihood of privileged account
-discovery, forces an increase in time
-and effort (more activities and
-artifacts), and ,therefore, can increase
-the defender's ability to detect.
-```
-```
-Prevent server-
-to-client
-communication
-```
-```
-Assuming the network has prevented
-client-to-client communications, the
-only option a threat has is to attempt
-access to a server, but cannot
-communicate server to the client.
-```
-```
-Block outbound
-server
-communications
-```
-```
-There are very few instances where a
-server needs to communicate with a
-system external to the network. These
-are exceptions and should be managed
-to allow only connections to the
-required external asset or IP and
-allow only the use of required ports
-and protocols.
-```
-```
-Clear cached
-administrative
-credentials
-```
-```
-Cached credential discovery is a
-common and primary method in which
-threats escalate privileges.
-```
-
-Reset the
-KRBTGT
-Account
-
-```
-Reset the KRBTGT account twice
-within a limited time-frame followed
-by the changing of all administrative
-credentials. These resets limit a
-threat's ability to maintain access after
-credential changes.
-```
-Perform a
-sensitive items
-review
-
-```
-Perform frequent search and
-discovery activities for critical items
-stored across organizational assets
-(Passwords, Configs, Privacy of
-Information Act (PIA) data,
-Intellectual Property, etc.)
-```
-Block and
-Disable non-
-required ports,
-protocols, and
-services (PPS)
-
-```
-Both internal and external systems and
-network devices should disable and
-block PPS that aren't required for the
-network. Limit PPS to only what is
-required for each specific system.
-```
-Implement
-separation of
-accounts and
-privileges
-
-```
-Users should be limited to only what
-is required to perform daily tasks.
-Standard users often do not require
-elevated privileges on a daily basis.
-In rare scenarios where a user needs
-elevation often, require the use of a
-secondary account with only the
-access required and no external
-communications ability.
-```
-Ensure group
-permissions are
-appropriately
-identified and
-mapped
-
-```
-This recommendation has multiple
-applications; however, the main focus
-is nested groups and permissions.
-```
-Implement
-Microsoft Local
-Administrator
-Password
-Solution (LAPS)
-
-```
-No two local accounts have the same
-password. A client-side component
-generates a random password, updates
-the LAPS password on the Active
-Directory computer account, and sets
-the password locally.
-```
-Multi-Factor
-Authentication
-
-```
-Additional security control and
-protection that requires more than one
-authenticator or authentication factor
-```
-
-```
-for successful authentication.
-```
-```
-Application
-Whitelisting
-```
-```
-Implement Application Whitelisting
-only after all of the prior
-recommendations have been
-implemented.
+|-----------------------------------------------------------------------------------------------|
+| Defensive Action                         	| Description                               	|
+|-----------------------------------------------|-----------------------------------------------|
+| Prevent client-to-client communication   	| Preventing these communications           	|
+|                                          	| limits a threat's ability to move freely  	|
+|                                          	| throughout the network, reduces the       	|
+|                                          	| likelihood of privileged account          	|
+|                                          	| discovery, forces an increase in time     	|
+|                                          	| and effort (more activities and           	|
+|                                          	| artifacts), and ,therefore, can increase  	|
+|                                          	| the defender's ability to detect.         	|
+|-----------------------------------------------------------------------------------------------|
+| Prevent serverto-client-communication    	| Assuming the network has prevented        	|
+|                                          	| client-to-client communications, the      	|
+|                                          	| only option a threat has is to attempt    	|
+|                                          	| access to a server, but cannot            	|
+|                                          	| communicate server to the client.         	|
+|-----------------------------------------------------------------------------------------------|
+| Block outbound server communications     	| There are very few instances where a      	|
+|                                          	| server needs to communicate with a        	|
+|                                          	| system external to the network. These     	|
+|                                          	| are exceptions and should be managed      	|
+|                                          	| to allow only connections to the          	|
+|                                          	| required external asset or IP and         	|
+|                                          	| allow only the use of required ports      	|
+|                                          	| and protocols.                            	|
+|-----------------------------------------------------------------------------------------------|
+| Clear cached administrative credentials  	| Cached credential discovery is a          	|
+|                                          	| common and primary method in which        	|
+|                                          	| threats escalate privileges.              	|
+|-----------------------------------------------------------------------------------------------|
+| Reset the KRBTGT Account                 	| Reset the KRBTGT account twice            	|
+|                                          	| within a limited time-frame followed      	|
+|                                          	| by the changing of all administrative     	|
+|                                          	| credentials. These resets limit a         	|
+|                                          	| threat's ability to maintain access after 	|
+|                                          	| credential changes                        	|
+|-----------------------------------------------------------------------------------------------|
+| Perform a sensitive items review         	| Perform frequent search and               	|
+|                                          	| discovery activities for critical items   	|
+|                                          	| stored across organizational assets       	|
+|                                          	| (Passwords, Configs, Privacy of           	|
+|                                          	| Information Act (PIA) data,               	|
+|                                          	| Intellectual Property, etc.)              	|
+|-----------------------------------------------------------------------------------------------|
+| Block and Disable nonrequired ports,     	| Both internal and external systems and    	|
+| protocols, and services (PPS)            	| network devices should disable and        	|
+|                                          	| block PPS that aren't required for the    	|
+|                                          	| network. Limit PPS to only what is        	|
+|                                          	| required for each specific system         	|
+|-----------------------------------------------------------------------------------------------|
+| Implement separation of accounts         	| Users should be limited to only what      	|
+| and privileges                           	| is required to perform daily tasks.       	|
+|                                          	| Standard users often do not require       	|
+|                                          	| elevated privileges on a daily basis.     	|
+|                                          	| In rare scenarios where a user needs      	|
+|                                          	| elevation often, require the use of a     	|
+|                                          	| secondary account with only the           	|
+|                                          	| access required and no external           	|
+|                                          	| communications ability                    	|
+|-----------------------------------------------------------------------------------------------|
+| Ensure group permissions are             	| This recommendation has multiple          	|
+| appropriately identified and mapped      	| applications; however, the main focus     	|
+|                                          	| is nested groups and permissions.         	|
+|-----------------------------------------------------------------------------------------------|
+| Implement Microsoft Local Administrator  	| No two local accounts have the same       	|
+| Password Solution (LAPS)                 	| password. A client-side component         	|
+|                                          	| generates a random password, updates      	|
+|                                          	| the LAPS password on the Active           	|
+|                                          	| Directory computer account, and sets      	|
+|                                          	| the password locally                      	|
+|-----------------------------------------------------------------------------------------------|
+| Multi-Factor Authentication              	| Additional security control and           	|
+|                                          	| protection that requires more than one    	|
+|                                          	| authenticator or authentication factor    	|
+|                                          	| for successful authentication             	|
+|-----------------------------------------------------------------------------------------------|
+| Application Whitelisting                 	| Implement Application Whitelisting        	|
+|                                          	| only after all of the prior               	|
+|                                          	| recommendations have been                 	|
+|                                          	| implemented.                              	|
+|-----------------------------------------------------------------------------------------------|
 ```
 This list is comprised of list of preventable controls (Mitigation Strategies Part 1[25] and Part 2[26])
 and is a great list of starter techniques a Red Team can use to apply Red Team techniques that directly
@@ -4494,102 +4386,54 @@ tools to better protect against threats by comparing what was discovered against
 **Types of Observations that Should Be Documented**
 
 ```
-Observation to be
-Documented
-```
-```
-Description
-```
-```
-Key actions that led
-from initial access
-to the final goal
-```
-```
-Actions that describe how access
-was gained as various phases of the
-engagement.
-```
-```
-Include
-● Initial access
-● Lateral movement
-● Privilege escalation
-```
-```
-Command and
-Control
-```
-```
-Overview of C2 design and
-architecture.
-```
-```
-Include
-● Network information (IP
-addresses, domain name, ports,
-protocols, etc.)
-● Include agent information
-(binaries, scripts, locations, and
-Registry changes)
-● Include persistence methods
-```
-```
-Reconnaissance
-actions
-```
-```
-Steps taken to perform
-reconnaissance or situational
-awareness.
-```
-```
-Include
-● Techniques used that help
-identify potential indicators
-```
-
-```
-● Include key pieces of
-information gathered
-```
-```
-Interesting
-observations that
-assisted the red
-team during the
-engagement
-```
-```
-Operators often take advantage of
-unique situations to support an
-engagement. This is often non-
-technical in nature. Observations
-related to people, processes, and
-technology should be documented.
-```
-```
-Include
-● Logic flaws found in the
-environment
-● Response (or lack of) from
-defenders
-```
-```
-Interesting
-observations that
-may be of concern
-but that are not
-directly related to
-the engagement
-```
-```
-Engagement offer a unique view to a
-range of systems. Operators often
-find interesting paths or other
-observations that may or may not
-have been explored. These should
-be documented.
+|---------------------------------------------------------------------------------------|
+| Observation to be Documented     	| Description                             	|
+|---------------------------------------|-----------------------------------------------|
+| Key actions that led from        	| Actions that describe how access        	|
+| initial accessto the final goal  	| was gained as various phases of the     	|
+|                                  	| engagement.                             	|
+|                                  	| Include                                 	|
+|                                  	|      ● Initial access                   	|
+|                                  	|      ● Lateral movement                 	|
+|                                  	|      ● Privilege escalation             	|
+|---------------------------------------------------------------------------------------|
+| Command and Control              	| Overview of C2 design and architecture. 	|
+|                                  	| Include                                 	|
+|                                  	|      ● Network information (IP          	|
+|                                  	|      addresses, domain name, ports,     	|
+|                                  	|      protocols, etc.)                   	|
+|                                  	|      ● Include agent information        	|
+|                                  	|      (binaries, scripts, locations, and 	|
+|                                  	|      Registry changes)                  	|
+|                                  	|      ● Include persistence methods      	|
+|---------------------------------------------------------------------------------------|
+| Reconnaissance actions           	| Steps taken to perform reconnaissance   	|
+|                                  	| or situational awareness.               	|
+|                                  	| Include                                 	|
+|                                  	|      ● Techniques used that help        	|
+|                                  	|      identify potential indicators      	|
+|                                  	|      ● Include key pieces of            	|
+|                                  	|      information gathered               	|
+|---------------------------------------------------------------------------------------|
+| Interesting observations that    	| Operators often take advantage of       	|
+| assisted the red team during the 	| unique situations to support an         	|
+| engagement                       	| engagement. This is often nontechnical  	|
+|                                  	| in nature. Observations related to      	|
+|                                  	| people, processes, and technology       	|
+|                                  	| should be documented.                   	|
+|                                  	| Include                                 	|
+|                                  	|      ● Logic flaws found in the         	|
+|                                  	|      environment                        	|
+|                                  	|      ● Response (or lack of) from       	|
+|                                  	|      defenders                          	|
+|---------------------------------------------------------------------------------------|
+| Interesting observations that    	| Engagement offer a unique view to a     	|
+| may be of concern but that are   	| range of systems. Operators often       	|
+| not directly related to the      	| find interesting paths or other         	|
+| engagement                       	| observations that may or may not        	|
+|                                  	| have been explored. These should        	|
+|                                  	| be documented.                          	|
+|---------------------------------------------------------------------------------------|
 ```
 A single observation should Include the following elements (a complete example is available on the
 companion website)
@@ -4598,9 +4442,9 @@ companion website)
 ● Observation title
 ● A narrative description
 ● Technical details
-○ Source/destination IP addresses
-○ Tools or techniques
-○ Results (Including impacts)
+        ○ Source/destination IP addresses
+        ○ Tools or techniques
+        ○ Results (Including impacts)
 ● Screenshots
 ```
 
@@ -4625,8 +4469,7 @@ better off and implement more robust improvement to their security operations.
 
 ```
 Focus Point
-Although Findings and recommendations are not the focus
-of a Red Team engagement or always requested, they
+Although Findings and recommendations are not the focus of a Red Team engagement or always requested, they
 should always be included in an appendix.
 ```
 After observations are analyzed and understood, the Red Team has an understanding of how the
@@ -4641,8 +4484,6 @@ observations mapped to the defense's ability to impact the threat actions. This 
 The right of the image describes the issue and provides a recommendation. If the target organization
 implements the recommendation, the Red Team estimates the defensive posture and impact to the
 threat. In this case, to challenging or annoying.
-
-
 Reporting does not explicitly need to display this diagram, but the concept should be understood in
 the report context. Note, as with the attack diagram, images assist understanding. Including visuals,
 along with text, dramatically increases the chances of ingestion and application.
@@ -4656,22 +4497,21 @@ narrative and highlight the key observations made by operators during engagement
 
 Applying a risk rating can be difficult as red team observations are often one-sided. Consider
 applying ratings by directly working with a risk team or individuals from the security operations
-team. Use these tips to apply a rating in cases where the red team will provide a rating.
+team. Use these tips to apply a rating in cases where the red team will provide a rating.  
+```
 ● Use an observation section to support the attack narrative
 ● Use a findings section to track and define technical flaws
 ● Apply the three-tiered rating technique for observations
 ● Apply a 5x5 rating techniques for technical findings
-
+```
 
 ### Homework
-
 ```
-1. Develop a custom report template
-2. Create a collection of observations to enable consistent wording when reporting on
-repeated observations in the attack narrative.
-3. Create a findings section to track technical findings (similar to a penetration test report).
-4. Develop an attack flow diagram template.
-5. Develop an attack flow narrative template.
+1. Develop a custom report template  
+2. Create a collection of observations to enable consistent wording when reporting on repeated observations in the attack narrative.  
+3. Create a findings section to track technical findings (similar to a penetration test report).  
+4. Develop an attack flow diagram template.  
+5. Develop an attack flow narrative template.  
 ```
 
 ## Summary
@@ -4709,9 +4549,7 @@ encourage each other to document their actions properly.
 
 ```
 http://redteam.guide
-Don’t forget to visit the companion website,
-http://redteam.guide for additional information, Red Team
-templates, and other guides.
+Don’t forget to visit the companion website, http://redteam.guide for additional information, Red Team templates, and other guides.
 ```
 
 ## Conclusion
@@ -4742,13 +4580,13 @@ Templates and examples can be found on the companion website, [http://redteam.gu
 
 ### Adversarial Mindset Challenge
 
-**Description**
+**Description**  
 In the exercise, you’ll quickly complete a series of puzzle challenges designed to encourage critical
 thinking in a short time frame. This is designed to be a fun way to begin understanding the skills
 needed to plan and execute a red team plan.
 
-**Instructions**
-Follow each puzzle’s instructions
+**Instructions**  
+Follow each puzzle’s instructions  
 Set a time and complete the puzzles within 5 minutes.
 
 **STOP here and prepare to begin when ready**
