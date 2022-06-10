@@ -3847,8 +3847,9 @@ impacts and reinforces interaction.
 ● Focus on the chronological summary of observations (story of the event)  
 ● Highlight critical observations  
 ● Inform the audience that this brief is merely a summary. The final report will contain all event details   
-
+```
 Optional  
+```
 ● Include additional information security or technical staff  
 ● Include critical system experts  
 ● Include legal staff  
