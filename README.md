@@ -4015,13 +4015,10 @@ assumed breach model. This engagement was used to train a new red team using a s
 engagement. The engagement goals included the following:
 
 ```
-● Train and expose a new red team to the red team processes
-● Measure the ability a threat has to move laterally
-● Measure the defender’s ability to detect C2 traffic and binaries
-```
-
-```
-● Measure the ability to perform and subsequently detect critical data exfiltration
+● Train and expose a new red team to the red team processes  
+● Measure the ability a threat has to move laterally  
+● Measure the defender’s ability to detect C2 traffic and binaries  
+● Measure the ability to perform and subsequently detect critical data exfiltration  
 ```
 This Red Team engagement was designed as C2 training for a new Red Team and to educate a Blue
 Team on threat techniques. The Red Team designed and staged Command and Control with specific
@@ -4035,10 +4032,8 @@ image is truly immense. Diagrams are not required but are highly encouraged.
 
 ```
 Consider This
-The authors of this book often only use diagrams to drive
-executive or technical briefings verses using a long text
-driven document or PowerPoint presentation. Graphical
-presentations are a great way to convey the complex
+The authors of this book often only use diagrams to drive executive or technical briefings verses using a long text
+driven document or PowerPoint presentation. Graphical presentations are a great way to convey the complex
 actions of a Red Team engagement.
 ```
 
@@ -4068,22 +4063,18 @@ eventually steals proprietary data as a planned goal. The technical flaw is impo
 documented but is only one of a series of steps. This series of steps can be used to detail the
 observation a threat has regarding freedom of movement.
 
-```
 Example Observation
-The red team was able to move freely through the target’s
-network with little to no resistance. The initial
-compromised host provided the initial stepping stone but
-was soon abandoned once freedom of movement was
-established. The red team did not observe any preventive
-or detective controls that would indicate the organization
-was aware of the threat activity. This freedom of
-movement was key in providing the ability to exfiltrate
+```
+The red team was able to move freely through the target’s network with little to no resistance. The initial
+compromised host provided the initial stepping stone but was soon abandoned once freedom of movement was
+established. The red team did not observe any preventive or detective controls that would indicate the organization
+was aware of the threat activity. This freedom of movement was key in providing the ability to exfiltrate
 sensitive data from the target.
 ```
+
 The Red Team is driven by goals intended to stimulate or measure not only technical flaws but
 security operations as a whole. This includes people, processes, and technology. A Red Team report
 uses a story-based format where observations rather than of findings are listed.
-
 
 ### Risk Rating and Metrics
 
