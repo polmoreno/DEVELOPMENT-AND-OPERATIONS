@@ -2596,6 +2596,8 @@ Daily OPLOGs are stored here (example: //repository/engagement_name/6-
 logs/readteamconsole1/20190308_151820_OPLOG.xls|csv|etc.).
 ```
 
+![Alt Image](./Images/17.png)
+
 Example of the data repository file structure
 
 
@@ -3437,6 +3439,8 @@ with organizational traffic. Commonly used C2 channels include:
 ● SSH  
 ```
 
+![Alt Image](./Images/18.png)
+
 #### Establishing a C2 Infrastructure  
 
 A well thought out and designed C2 plan can make the difference between a successful or a failed
@@ -3497,6 +3501,8 @@ new protocols, more cross-platform support, and new perator interfaces.
 ● Supports both asynchronous and synchronous C2 communication  
 ● Officially retired as a project in 2019  
 ```
+
+![Alt Image](./Images/19.png)
 
 Tweet announcing the etirement of Empire
 
@@ -3638,6 +3644,8 @@ The only time C2 is passed is when C2 is initially established. An Interactive t
 establish higher levels of access but is highly discouraged. There is a risk of exposing higher tiers.
 Caution must be used when setting up initial access.
 
+![Alt Image](./Images/20.png)
+
 ```
 This diagram can help illustrate the tiers and the relationships of how to share information between each.
 ```
@@ -3722,6 +3730,8 @@ automated collection options
 ```
 
 ## Engagement Culmination
+
+![Alt Image](./Images/21.png)
 
 Following the execution phase, each engagement includes a series of activities required for a
 successful close-out, clean-up, and final reporting. This section walks through the steps needed to
@@ -4001,6 +4011,8 @@ quality, professional report.
 
 ## Engagement Reporting
 
+![Alt Image](./Images/22.png)
+
 Reports are the final product and the only evidence of an engagement. The reporting phase is a
 critical aspect of a Red Team engagement. Reports should enable the organization to replicate the
 actions and results of the Red Team and are the last form of evidence that can be analyzed and used to
@@ -4025,6 +4037,8 @@ levels of defense.
 
 
 ### Attack Flow Diagrams
+
+![Alt Image](./Images/23.png)
 
 Everyone has heard that an image is worth a thousand words. The same applies when generating
 reports. This is especially true in those containing complex threads and activities. Red Teaming is
@@ -4140,6 +4154,8 @@ terms of risk to operations. This leads to ratings focused at the technical leve
 doesn't always provide leadership the view needed to make an informed decision on applying
 mitigations using their limited resources.
 
+![Alt Image](./Images/24.png)
+
 Likelihood: The probability that an event will occur:
 
 ```
@@ -4163,6 +4179,8 @@ granularity. This can help fine-tune the rating but suffers from similar limitat
 method to view risk in terms of operations instead of discrete vulnerabilities. The version presented
 has been adopted and modified from the U.S. Army[21] and NIST[22] to focus on operation impact
 instead of mission impact.
+
+![Alt Image](./Images/25.png)
 
 Probability: The likeliness that an event will occur:
 
@@ -4237,10 +4255,11 @@ mitigation to the observation or finding.
 |          	| or additional effort is required to investigate 	|
 |          	| to determine a correction or mitigation plan.   	|
 ```
+![Alt Image](./Images/26.png)
 
 Example Diagram Summarizing Categories
 
-
+![Alt Image](./Images/27.png)
 
 Example snippet from a report showing how to use category rating
 
@@ -4272,6 +4291,7 @@ more beneficial to provide security operations with a list of actions, processes
 would make a threat's ability to operate (move, gather data, and cause impact) much more difficult. A
 great way to both describe and illustrate this concept is the Pyramid of Pain.
 
+![Alt Image](./Images/28.png)
 
 The Pyramid of Pain[24] was created and described by David Bianco in 2013 and revised later in
 2014. The pyramid describes types of indicators that may be used to detect threat activities and how
@@ -4469,6 +4489,7 @@ companion website)
         ○ Results (Including impacts)
 ● Screenshots
 ```
+![Alt Image](./Images/29.png)
 
 Example Observation
 
@@ -4499,6 +4520,8 @@ defense fared against the attack, but this understanding is often one-sided. I c
 exact recommendation or remediations. It can be beneficial to provide a relationship instead of a
 direct recommendation. A relationship that gives an overall picture of an engagement will help
 describe how improvements will increase security.
+
+![Alt Image](./Images/30.png)
 
 The details in this example are not important. The mapping of observation to recommendation in
 relationship to the pyramid of pain is the focus. The left of the image shows the red team's
@@ -4620,18 +4643,21 @@ Instructions:
 Placing your pen on the page only once, draw four straight lines that pass through all nine dots
 without lifting the pen from the page.
 
+![Alt Image](./Images/31.png)
 
 #### Maze Challenge
 
 Instructions:
 Draw a line from the laptop to the data center.
 
+![Alt Image](./Images/32.png)
 
 #### Triangle Puzzle
 
 Instructions:
 Count the triangles. How many are shown?
 
+![Alt Image](./Images/33.png)
 
 #### Word Puzzle
 
@@ -4652,12 +4678,16 @@ Given the red dots are areas in which combat aircraft are often hit during engag
 following diagram indicate? What would be your recommendations for additional armoring of the
 aircraft?
 
+![Alt Image](./Images/34.png)
+
 
 ### Mindset Challenge Comments and Answers
 
 #### 9 Dot Challenge
 
 Possible answers.
+
+![Alt Image](./Images/35.png)
 
 Did you come up with something different? The point of this exercise to support the phrase “think
 outside the box”. Do not limit yourself by what’s presented and focus on measuring what “Is” vs what
@@ -4666,6 +4696,8 @@ outside the box”. Do not limit yourself by what’s presented and focus on mea
 #### Maze Challenge
 
 Possible Answers
+
+![Alt Image](./Images/36.png)
 
 How does your solution compare? The point of this exercise is similar to the prior. Don’t let
 assumptions and limitations prevent possible solutions. A good Red Teamer is able to understand and
@@ -4792,6 +4824,8 @@ United States and Europe
 ```
 IOCs from the actor Energetic Bear and the HAVEX malware
 
+![Alt Image](./Images/37.png)
+
 **Actor**
 ```
 ● Associated with the Russian Federation
@@ -4836,6 +4870,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\InternetRegistry
 ```
 
 **HAVEX Payload Delivery**
+
+![Alt Image](./Images/38.png)
 
 ```
 Energetic Bear used three major methods to deliver malware.
@@ -4929,10 +4965,15 @@ Tips
 ```
 ● Profiles must be technically feasible. If your profile calls for the use of zero-days, make sure you can deliver. (white carding and assumed breach models may help)  
 ● Threat profiles are implemented as part of the C2 plan. They directly influence the selection and configuration of C2. Always consider the technical capabilities and limitations of your C2 platforms when designing a profile  
-2) Develop your profile using the following template then compare to the possible solution.
 ```
 
+2) Develop your profile using the following template then compare to the possible solution.
+
+![Alt Image](./Images/39.png)
+
 ### Possible Solution
+
+![Alt Image](./Images/40.png)
 
 **Think about the following questions:**
 
