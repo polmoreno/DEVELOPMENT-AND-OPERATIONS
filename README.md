@@ -5225,52 +5225,32 @@ Controls the engagement environment/network. Monitors adherence to the ROE. Coor
 activities required to achieve engagement goals. Correlates Red Team activities with defensive
 actions. Ensures the engagement is conducted without bias to either side.
 
-[1] "Office Space (1999) - IMDb." https://www.imdb.com/title/tt0151804/.
-[2] "Threat | Definition of Threat at Dictionary.com." https://www.dictionary.com/browse/threat.
-[3] "ISO IEC 27000 2014 Information Security Definitions - Praxiom." https://www.praxiom.com/iso-27000-definitions.htm.
-[4] "threat - Glossary | CSRC - NIST Computer Security Resource ...." https://csrc.nist.gov/glossary/term/threat.
-[5] "Reviving DDE: Using OneNote and Excel for Code Execution ...." 29 Jan. 2018, https://enigma0x3.net/2018/01/29/reviving-dde-
-
-using-onenote-and-excel-for-code-execution/.
-[6] "Hashdump without the DC using DCSync (because we all ...." 2 Oct. 2015, https://silentbreaksecurity.com/invoke-dcsync-because-
-
-we-all-wanted-it/.
-[7] "CVE-2017-0144 - The MITRE Corporation." https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0144
-[8] "NIST SP 800-53 - NIST Page." 4 Apr. 2013, https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf.
-[9] "PCI Security Standards Council." https://www.pcisecuritystandards.org/.
-[10] "Health Information Privacy | HHS.gov." https://www.hhs.gov/hipaa/index.html.
-[11] "Cybersecurity Framework | NIST." https://www.nist.gov/cyberframework.
-
-**[12]** "How Hacking Team got hacked | Ars Technica." 19 Apr. 2016, https://arstechnica.com/information-technology/2016/04/how-
-
-hacking-team-got-hacked-phineas-phisher/.
-[13] "PsExec - Windows Sysinternals | Microsoft Docs." 28 Jun. 2016, https://docs.microsoft.com/en-us/sysinternals/downloads/psexec
-[14] "Nmap: the Network Mapper - Free Security ...." https://nmap.org/
-[15] "Nmap Network Scanning—The Official Nmap Project Guide to ...." https://nmap.org/book/.
-[16] "Metasploit | Penetration Testing Software, Pen Testing ...." https://www.metasploit.com/.
-[17] "Jeff Dimmock (@bluscreenofjeff) | Twitter." https://twitter.com/bluscreenofjeff.
-**[18]** "Cobalt Strike." https://www.cobaltstrike.com/..
-**[19]** "PowerShell Empire | Building an Empire with PowerShell." https://www.powershellempire.com/.
-[20] "Domain Fronting - Enterprise | MITRE ATT&CK™." 16 Jan. 2018, https://attack.mitre.org/techniques/T1172/.
-[21] "Risk Management - Army Publishing Directorate - Army.mil." 14 Apr. 2014,
-
-https://armypubs.army.mil/epubs/DR_pubs/DR_a/pdf/web/atp5_19.pdf.
-[22] "NIST Special Publication 800-30 Revision 1, Guide for ...." https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-
-
-30r1.pdf.
-[23] "Chris Crowley (@CCrowMontance) | author of SANS MGT535, MGT517, and SOC-Class." https://twitter.com/ccrowmontance?
-
-lang=en.
-[24] "Enterprise Detection & Response: The ...." [http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html.](http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html.)
-[25] "Threat Mitigation Strategies - Threatexpress." https://threatexpress.com/blogs/2018/threat-mitigation-strategies-observations-
-
-recommendations/..
-[26] "Threat Mitigation Strategies Part 2 - Threatexpress." 15 May. 2018, https://threatexpress.com/blogs/2018/threat-mitigation-
-
-strategies-technical-recommendations-and-info-part-2/.
-[27] "Wald, Abraham. (1943). A Method of Estimating Plane Vulnerability Based on Damage of Survivors. Statistical Research Group,
-
-Columbia University. CRC 432” — reprint from July 1980, [http://www.dtic.mil/get-tr-doc/pdf?](http://www.dtic.mil/get-tr-doc/pdf?)
-AD=ADA091073&Location=U2&doc=GetTRDoc.pdf.
+[1] "Office Space (1999) - IMDb." https://www.imdb.com/title/tt0151804/.  
+[2] "Threat | Definition of Threat at Dictionary.com." https://www.dictionary.com/browse/threat.  
+[3] "ISO IEC 27000 2014 Information Security Definitions - Praxiom." https://www.praxiom.com/iso-27000-definitions.htm.  
+[4] "threat - Glossary | CSRC - NIST Computer Security Resource ...." https://csrc.nist.gov/glossary/term/threat.  
+[5] "Reviving DDE: Using OneNote and Excel for Code Execution ...." 29 Jan. 2018, https://enigma0x3.net/2018/01/29/reviving-dde-using-onenote-and-excel-for-code-execution/.  
+[6] "Hashdump without the DC using DCSync (because we all ...." 2 Oct. 2015, https://silentbreaksecurity.com/invoke-dcsync-because-we-all-wanted-it/.  
+[7] "CVE-2017-0144 - The MITRE Corporation." https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0144  
+[8] "NIST SP 800-53 - NIST Page." 4 Apr. 2013, https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf.  
+[9] "PCI Security Standards Council." https://www.pcisecuritystandards.org/.  
+[10] "Health Information Privacy | HHS.gov." https://www.hhs.gov/hipaa/index.html.  
+[11] "Cybersecurity Framework | NIST." https://www.nist.gov/cyberframework.  
+**[12]** "How Hacking Team got hacked | Ars Technica." 19 Apr. 2016, https://arstechnica.com/information-technology/2016/04/how-hacking-team-got-hacked-phineas-phisher/.  
+[13] "PsExec - Windows Sysinternals | Microsoft Docs." 28 Jun. 2016, https://docs.microsoft.com/en-us/sysinternals/downloads/psexec  
+[14] "Nmap: the Network Mapper - Free Security ...." https://nmap.org/  
+[15] "Nmap Network Scanning—The Official Nmap Project Guide to ...." https://nmap.org/book/.  
+[16] "Metasploit | Penetration Testing Software, Pen Testing ...." https://www.metasploit.com/.  
+[17] "Jeff Dimmock (@bluscreenofjeff) | Twitter." https://twitter.com/bluscreenofjeff.  
+**[18]** "Cobalt Strike." https://www.cobaltstrike.com/..  
+**[19]** "PowerShell Empire | Building an Empire with PowerShell." https://www.powershellempire.com/.  
+[20] "Domain Fronting - Enterprise | MITRE ATT&CK™." 16 Jan. 2018, https://attack.mitre.org/techniques/T1172/.  
+[21] "Risk Management - Army Publishing Directorate - Army.mil." 14 Apr. 2014, https://armypubs.army.mil/epubs/DR_pubs/DR_a/pdf/web/atp5_19.pdf.  
+[22] "NIST Special Publication 800-30 Revision 1, Guide for ...." https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf.  
+[23] "Chris Crowley (@CCrowMontance) | author of SANS MGT535, MGT517, and SOC-Class." https://twitter.com/ccrowmontance?lang=en.  
+[24] "Enterprise Detection & Response: The ...." [http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html.](http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html.)  
+[25] "Threat Mitigation Strategies - Threatexpress." https://threatexpress.com/blogs/2018/threat-mitigation-strategies-observations-recommendations/..  
+[26] "Threat Mitigation Strategies Part 2 - Threatexpress." 15 May. 2018, https://threatexpress.com/blogs/2018/threat-mitigation-strategies-technical-recommendations-and-info-part-2/.  
+[27] "Wald, Abraham. (1943). A Method of Estimating Plane Vulnerability Based on Damage of Survivors. Statistical Research Group,Columbia University. CRC 432” — reprint from July 1980, [http://www.dtic.mil/get-tr-doc/pdf?](http://www.dtic.mil/get-tr-doc/pdf?) AD=ADA091073&Location=U2&doc=GetTRDoc.pdf.
 
 
