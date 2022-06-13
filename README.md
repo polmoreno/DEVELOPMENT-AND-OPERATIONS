@@ -615,7 +615,7 @@ system". In their minds, this is what " **Is** ." When planning a threat scenari
 professional and unbiased approach. The goal is not to prove that you can 'hack' into the system but to
 understand what " **Is** " vs. " **Should Be** ."
 
-![Alt Image](./Images/shouldbe-is.png)
+![Alt Image](./Images/2.png)
 
 Another way to describe this:
 
@@ -705,6 +705,7 @@ operational risk. An inverted triangle can illustrate the relationship of Red Te
 Testing, and Vulnerability Assessments in terms of organizational or operational risk. The depth and
 breadth of each security assessment type, as can be seen, is quite different.
 
+![Alt Image](./Images/3.png)
 
 Vulnerability assessments tend to be broad in coverage but narrow in scope. Consider a vulnerability
 assessment of where the goal is to measure all workstations in an enterprise. The scope is very broad
@@ -819,6 +820,8 @@ activities resulting in effective reporting and responses.
 from a cybersecurity incident. Capabilities are effectively restored when operational
 processes/productions have been impaired.
 
+![Alt Image](./Images/4.png)
+
 
 This diagram helps illustrate IPDRR coverage per engagement type.
 
@@ -870,6 +873,8 @@ the adversarial point of view.
 ```
 
 ## Engagement Planning
+
+![Alt Image](./Images/5.png)
 
 All engagements must start with Engagement Planning, the first step in a Red Team engagement. It is
 not possible to conduct a professional and successful execution without fully understanding the goals
@@ -1232,6 +1237,7 @@ The blue cell is the opposite side of red. Is it all the components defending a 
 cell is typically comprised of blue team members, defenders, internal staff, and an organization’s
 management.
 
+![Alt Image](./Images/6.png)
 
 This diagram shows the relationship and communication paths among the different groups in an
 engagement. The red team lead maintains constant communication with the ECG and white cell. The
@@ -1519,6 +1525,7 @@ has been compiled in ATT&CK. ATT&CK can be thought of like a menu of TTPs. Red t
 this to ensure they have a valid threat profile with a comprehensive set of threat TTPs, and blue teams
 can use this to build a scorecard of how well they can defend against the various TTPs.
 
+![Alt Image](./Images/7.png)
 
 #### MITRE ATT&CK Tactics
 
@@ -1696,6 +1703,7 @@ gaps with alternate TTPs (MITRE ATT&CK is a great source to help fill these gaps
 Threat profiles typically support the engagement story and are used to describe the technical aspects
 of a single C2 channel. A single threat profile is used for each C2 channel.
 
+![Alt Image](./Images/8.png)
 
 At the end of this chapter, you will have the opportunity to work through a threat profile exercise.
 Let’s examine an example of a real attack to illustrate the concept of a threat profile.
@@ -1714,9 +1722,8 @@ documents. The documents were released to WikiLeaks on July 8, 2015. In April 20
 Fisher published a report explaining how the Hacking Team attack was accomplished. It was first
 written in Spanish and later translated into English.
 
-```
-Tweet Sent from HT’s Twitter account after it was controlled by Phineas Fisher
-```
+![Alt Image](./Images/9.png)
+
 Hacking Team, an Italian company, is known for selling intrusion and surveillance software to
 governments, law enforcement agencies, and corporations. We will not focus on whether you agree
 with their practices or not. What is interesting here is the opportunity to review a black hat's
@@ -1739,6 +1746,8 @@ https://www.reddit.com/r/netsec/comments/4f3e6p/full_english_translation_of_phin
 gotten-away-with-it
 ```
 #### How the Hack[12] Went Down
+
+![Alt Image](./Images/10.png)
 
 ```
 Attack Diagram of Hacking Team highlighting major steps
@@ -1783,7 +1792,11 @@ threat attacks a target. Analysis can be used to validate TTPs plans or to learn
 can be applied to future engagements. Although this was an illegal attack against a company, it
 provided useful insights into how a threat thinks and acts.
 
+![Alt Image](./Images/11.png)
+
 A simple threat profile can be developed to provide a general description of the threat using the HackingTeam attack.
+
+![Alt Image](./Images/12.png)
 
 **Questions to consider regarding Red Team scoping.**
 
@@ -1871,6 +1884,8 @@ a threat moving through the company's network. The effective use of resources wo
 engagement somewhere inside this network. Forcing a team to establish access from outside the
 network could waste the limited engagement time on steps that do not directly support engagement
 goals.
+
+![Alt Image](./Images/13.png)
 
 How to use this diagram in planning
 ```
@@ -2093,6 +2108,8 @@ should understand potential impacts if a threat is successful.
 
 #### Execution Phases
 
+![Alt Image](./Images/14.png)
+
 At a high level, a Red Team must move through these three phases to complete an engagement.
 
 **Get In -** Gain access to a network. The Red Team must have access to their target. Access can be
@@ -2117,6 +2134,8 @@ Most penetration testing frameworks are broken down into individual phases that 
 vulnerability identification and exploitation. The Red Team methodology categorizes many of the
 same actions into only three distinct phases with a focus on the impacts caused to the target
 environment. Several examples of this categorization have been provided below.
+
+![Alt Image](./Images/15.png)
 
 ##### GET IN
 
@@ -2445,6 +2464,8 @@ Funding
 ```
 
 ## Engagement Execution
+
+![Alt Image](./Images/16.png)
 
 Engagement execution starts when event information and planning documentation is finalized, and
 preparatory actions for conducting the engagement begins. The execution phase is simply the practical
