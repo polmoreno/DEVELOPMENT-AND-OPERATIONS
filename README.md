@@ -32,6 +32,7 @@ their security posture and adjust its limited security budget and resources to p
 assets. Scenario-based testing and Red Team techniques can be used to determine how an
 organization really stands up to a realistic and determined threat." - Joe Vest and James Tubberville
 
+![Alt Image](./Images/1.png)
 
 ## Preface
 
