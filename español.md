@@ -32,7 +32,7 @@ su postura de seguridad y ajustar su limitado presupuesto y recursos de segurida
 activos más críticos. Las pruebas basadas en escenarios y las técnicas de los equipos rojos pueden utilizarse para determinar cómo una
 organización se enfrenta realmente a una amenaza realista y determinada". - Joe Vest y James Tubberville
 
-Imagen Alt](./Images/1.png)
+![Alt Image](./Images/1.png)
 
 ## Prefacio
 
@@ -615,7 +615,7 @@ sistema de contabilidad". En sus mentes, esto es lo que " **es** ". Cuando se pl
 profesional e imparcial. El objetivo no es demostrar que se puede "hackear" el sistema, sino
 entender lo que " **es** " frente a lo que " **debería ser** ".
 
-Imagen Alt](./Images/2.png)
+![Alt Image](./Images/2.png)
 
 Otra forma de describir esto:
 
@@ -705,7 +705,7 @@ riesgo operativo. Un triángulo invertido puede ilustrar la relación entre el R
 y las evaluaciones de vulnerabilidad en términos de riesgo organizativo u operativo. La profundidad y
 La profundidad y la amplitud de cada tipo de evaluación de la seguridad, como puede verse, es bastante diferente.
 
-Imagen Alt](./Images/3.png)
+![Alt Image](./Images/3.png)
 
 Las evaluaciones de vulnerabilidad tienden a ser amplias en su cobertura pero estrechas en su alcance. Considere una evaluación de vulnerabilidad
 donde el objetivo es medir todas las estaciones de trabajo en una empresa. El alcance es muy amplio
@@ -820,7 +820,7 @@ actividades detectadas que dan lugar a informes y respuestas eficaces.
 de un incidente de ciberseguridad. Las capacidades se restauran efectivamente cuando los procesos/producciones
 procesos/producciones operativos se han visto perjudicados.
 
-Imagen Alt](./Images/4.png)
+![Alt Image](./Images/4.png)
 
 
 Este diagrama ayuda a ilustrar la cobertura del IPDRR por tipo de compromiso.
@@ -874,7 +874,7 @@ el punto de vista del adversario.
 
 ## Planificación del compromiso
 
-Imagen Alt](./Images/5.png)
+![Alt Image](./Images/5.png)
 
 Todos los compromisos deben comenzar con la Planificación del Compromiso, el primer paso en un compromiso del Equipo Rojo. No es posible
 No es posible llevar a cabo una ejecución profesional y satisfactoria sin comprender plenamente los objetivos
@@ -1237,7 +1237,7 @@ La célula azul es el lado opuesto a la roja. Son todos los componentes que defi
 célula azul suele estar compuesta por miembros del equipo azul, defensores, personal interno y la
 dirección de la organización.
 
-Imagen Alt](./Images/6.png)
+![Alt Image](./Images/6.png)
 
 Este diagrama muestra la relación y las vías de comunicación entre los diferentes grupos en un
 compromiso. El líder del equipo rojo mantiene una comunicación constante con el ECG y la célula blanca. El
@@ -1525,7 +1525,7 @@ ha sido recopilada en ATT&CK. El ATT&CK puede considerarse como un menú de TTPs
 pueden utilizarlo para asegurarse de que tienen un perfil de amenaza válido con un conjunto completo de TTPs de amenaza, y los equipos azules
 pueden usar esto para construir una tarjeta de puntuación de lo bien que pueden defenderse contra las diversas TTPs.
 
-Imagen Alt](./Images/7.png)
+![Alt Image](./Images/7.png)
 
 #### Tácticas de MITRE ATT&CK
 
@@ -1703,7 +1703,7 @@ IOCs, visión general del C2, explotación y persistencia)
 Los perfiles de amenaza suelen apoyar la historia de compromiso y se utilizan para describir los aspectos técnicos
 de un único canal C2. Se utiliza un único perfil de amenaza para cada canal C2.
 
-Imagen Alt](./Images/8.png)
+![Alt Image](./Images/8.png)
 
 Al final de este capítulo, tendrá la oportunidad de trabajar en un ejercicio de perfil de amenaza.
 Vamos a examinar un ejemplo de un ataque real para ilustrar el concepto de un perfil de amenaza.
@@ -1722,7 +1722,7 @@ documentos. Los documentos fueron publicados en WikiLeaks el 8 de julio de 2015.
 Fisher publicó un informe en el que explicaba cómo se llevó a cabo el ataque de Hacking Team. Primero fue
 escrito en español y posteriormente traducido al inglés.
 
-![Imagen Alt](./Imágenes/9.png)
+![Alt Image](./Images/9.png)
 
 Hacking Team, una empresa italiana, es conocida por vender software de intrusión y vigilancia a
 gobiernos, agencias policiales y corporaciones. No nos centraremos en si usted está de acuerdo
@@ -1747,7 +1747,7 @@ HackingTeam,
 ```
 #### Cómo se produjo el hackeo[12]
 
-``[Imagen Alt](./Imágenes/10.png)
+![Alt Image](./Images/10.png)
 
 ```
 Diagrama de ataque del equipo de hackers destacando los principales pasos
@@ -1792,7 +1792,7 @@ amenaza real ataca a un objetivo. El análisis puede utilizarse para validar los
 pueden aplicarse a futuros compromisos. Aunque se trataba de un ataque ilegal contra una empresa, proporcionó
 de una empresa, proporcionó información útil sobre la forma de pensar y actuar de una amenaza.
 
-Imagen Alt](./Images/11.png)
+![Alt Image](./Images/11.png)
 
 Se puede desarrollar un perfil de amenaza simple para proporcionar una descripción general de la amenaza utilizando el ataque de HackingTeam.
 
@@ -1885,7 +1885,7 @@ El uso eficaz de los recursos sería comenzar el compromiso en algún lugar dent
 de la red podría desperdiciar el limitado tiempo de la intervención en pasos que no apoyan directamente los objetivos de la intervención.
 objetivos.
 
-Imagen Alt](./Images/13.png)
+![Alt Image](./Images/13.png)
 
 Cómo utilizar este diagrama en la planificación
 ```
@@ -2108,7 +2108,7 @@ debe comprender los impactos potenciales si una amenaza tiene éxito.
 
 #### Fases de ejecución
 
-Imagen Alt](./Images/14.png)
+![Alt Image](./Images/14.png)
 
 En un nivel alto, un Equipo Rojo debe moverse a través de estas tres fases para completar un compromiso.
 
@@ -2126,7 +2126,7 @@ para sobrevivir a la duración del compromiso.
 
 **Actuar -** Por último, un Equipo Rojo realiza impactos operativos contra el objetivo
 
-¿Qué impactos puede realizar una amenaza basándose en las capacidades adquiridas durante la entrada y la permanencia? ```  
+¿Qué impactos puede realizar una amenaza basándose en las capacidades adquiridas durante la entrada y la permanencia?   
 
 #### Mapa de fases
 
@@ -2135,7 +2135,7 @@ la identificación y la explotación de la vulnerabilidad. La metodología de Re
 mismas acciones en sólo tres fases distintas con un enfoque en los impactos causados al entorno
 objetivo. A continuación se ofrecen varios ejemplos de esta categorización.
 
-[Imagen Alt](./Imágenes/15.png)
+![Alt Image](./Images/15.png)
 
 ##### ENTRAR
 
@@ -2465,7 +2465,7 @@ Financiación
 
 ## Ejecución del compromiso
 
-Imagen Alt](./Images/16.png)
+![Alt Image](./Images/16.png)
 
 La ejecución del compromiso comienza cuando se finaliza la información del evento y la documentación de planificación, y
 y comienzan las acciones preparatorias para llevar a cabo el compromiso. La fase de ejecución es simplemente la aplicación práctica
@@ -2596,7 +2596,7 @@ Los OPLOGs diarios se almacenan aquí (ejemplo: //repositorio/nombre_del_compañ
 logs/readteamconsole1/20190308_151820_OPLOG.xls|csv|etc.).
 ```
 
-Imagen Alt](./Imágenes/17.png)
+![Alt Image](./Images/17.png)
 
 Ejemplo de la estructura de archivos del repositorio de datos
 
@@ -3439,7 +3439,7 @@ con el tráfico de la organización. Los canales C2 más utilizados son:
 ● SSH  
 ```
 
-Imagen Alt](./Images/18.png)
+![Alt Image](./Images/18.png)
 
 #### Establecimiento de una infraestructura C2  
 
@@ -3502,7 +3502,7 @@ nuevos protocolos, más soporte multiplataforma y nuevas interfaces de perador.
 ● Se retira oficialmente como proyecto en 2019  
 ```
 
-Imagen Alt](./Images/19.png)
+![Alt Image](./Images/19.png)
 
 Tweet anunciando el etirement de Empire
 
@@ -3644,7 +3644,7 @@ El único momento en el que se pasa el C2 es cuando se establece inicialmente el
 establecer niveles de acceso más altos, pero se desaconseja encarecidamente. Existe el riesgo de exponer los niveles superiores.
 Hay que tener cuidado al establecer el acceso inicial.
 
-Imagen Alt](./Images/20.png)
+![Alt Image](./Images/20.png)
 
 ```
 Este diagrama puede ayudar a ilustrar los niveles y las relaciones de cómo compartir información entre cada uno.
@@ -3731,7 +3731,7 @@ opciones de recogida automatizada
 
 ## Culminación del compromiso
 
-Imagen Alt](./Images/21.png)
+![Alt Image](./Images/21.png)
 
 Tras la fase de ejecución, cada compromiso incluye una serie de actividades necesarias para un
 para el cierre exitoso, la limpieza y la presentación de informes finales. Esta sección recorre los pasos necesarios para
@@ -4011,7 +4011,7 @@ informe de calidad y profesional.
 
 ## Engagement Reporting
 
-Imagen Alt](./Images/22.png)
+![Alt Image](./Images/22.png)
 
 Los informes son el producto final y la única prueba de un compromiso. La fase de elaboración de informes es un
 La fase de elaboración de informes es un aspecto crítico de la intervención del Equipo Rojo. Los informes deben permitir a la organización reproducir las
@@ -4038,7 +4038,7 @@ niveles de defensa.
 
 ### Diagramas de flujo de ataques
 
-Imagen Alt](./Imágenes/23.png)
+![Alt Image](./Images/23.png)
 
 Todo el mundo ha oído decir que una imagen vale más que mil palabras. Lo mismo se aplica cuando se generan
 informes. Esto es especialmente cierto en aquellos que contienen hilos y actividades complejas. El Red Teaming consiste en
@@ -4154,7 +4154,7 @@ en términos de riesgo para las operaciones. Esto lleva a calificaciones centrad
 Si bien esto es útil, no siempre proporciona al liderazgo la visión necesaria para tomar una decisión informada sobre la aplicación de
 mitigación con sus limitados recursos.
 
-Imagen Alt](./Images/24.png)
+![Alt Image](./Images/24.png)
 
 Probabilidad: La probabilidad de que un evento ocurra:
 
@@ -4180,7 +4180,7 @@ método para ver el riesgo en términos de operaciones en lugar de vulnerabilida
 ha sido adoptada y modificada por el Ejército de Estados Unidos[21] y el NIST[22] para centrarse en el impacto de las operaciones
 en lugar del impacto en la misión.
 
-Imagen Alt](./Images/25.png)
+![Alt Image](./Images/25.png)
 
 Probabilidad: La probabilidad de que un evento ocurra:
 
@@ -4255,11 +4255,11 @@ mitigación a la observación o al hallazgo.
 | | o se requiere un esfuerzo adicional para investigar | | | | para determinar una corrección o mitigación.
 | | para determinar un plan de corrección o mitigación.   	
 ```
-Imagen Alt](./Images/26.png)
+![Alt Image](./Images/26.png)
 
 Ejemplo de diagrama que resume las categorías
 
-Imagen Alt](./Images/27.png)
+![Alt Image](./Images/27.png)
 
 Ejemplo de fragmento de un informe que muestra cómo utilizar la clasificación por categorías
 
@@ -4291,7 +4291,7 @@ Sin embargo, es mucho más beneficioso proporcionar a las operaciones de segurid
 dificultarían la capacidad de una amenaza para operar (moverse, recopilar datos y causar impacto). A
 gran manera de describir e ilustrar este concepto es la Pirámide del Dolor.
 
-Imagen Alt](./Images/28.png)
+![Alt Image](./Images/28.png)
 
 La Pirámide del Dolor[24] fue creada y descrita por David Bianco en 2013 y revisada posteriormente en
 2014. La pirámide describe los tipos de indicadores que pueden utilizarse para detectar actividades de amenaza y cuánto
@@ -4489,7 +4489,7 @@ sitio web complementario)
         ○ Resultados (incluidos los impactos)
 ● Capturas de pantalla
 ```
-Imagen Alt](./Imágenes/29.png)
+![Alt Image](./Images/29.png)
 
 Ejemplo de observación
 
@@ -4521,7 +4521,7 @@ recomendaciones o remedios exactos. Puede ser beneficioso proporcionar una relac
 recomendación directa. Una relación que ofrezca una imagen global de un compromiso ayudará a
 describir cómo las mejoras aumentarán la seguridad.
 
-Imagen Alt](./Images/30.png)
+![Alt Image](./Images/30.png)
 
 Los detalles de este ejemplo no son importantes. El mapeo de la observación a la recomendación en
 en relación con la pirámide del dolor es el objetivo. La izquierda de la imagen muestra las observaciones del equipo rojo
@@ -4643,14 +4643,14 @@ Instrucciones:
 Colocando el bolígrafo en la página una sola vez, dibuja cuatro líneas rectas que pasen por los nueve puntos
 sin levantar el bolígrafo de la página.
 
-[Imagen Alt](./Imágenes/31.png)
+![Alt Image](./Images/31.png)
 
 #### Desafío del laberinto
 
 Instrucciones:
 Dibuja una línea desde el portátil hasta el centro de datos.
 
-Imagen Alt](./Images/32.png)
+![Alt Image](./Images/32.png)
 
 #### Puzzle de triángulos
 
@@ -4678,7 +4678,7 @@ Dado que los puntos rojos son zonas en las que los aviones de combate suelen ser
 siguiente diagrama? ¿Cuáles serían sus recomendaciones para el blindaje adicional de la
 de la aeronave?
 
-Imagen Alt](./Images/34.png)
+![Alt Image](./Images/34.png)
 
 
 ### Comentarios y Respuestas del Desafío de la Mente
@@ -4697,7 +4697,7 @@ fuera de la caja". No te limites a lo que se presenta y céntrate en medir lo qu
 
 Posibles respuestas
 
-[Imagen Alt](./Imágenes/36.png)
+![Alt Image](./Images/36.png)
 
 ¿Cómo se compara su solución? El objetivo de este ejercicio es similar al anterior. No dejes que
 suposiciones y limitaciones impidan las posibles soluciones. Un buen Red Teamer es capaz de entender y
@@ -4824,7 +4824,7 @@ Actividades y capacidades específicas
 ```
 IOCs del actor Energetic Bear y del malware HAVEX
 
-Imagen Alt](./Images/37.png)
+![Alt Image](./Images/37.png)
 
 **Actor**
 ```
@@ -4871,7 +4871,7 @@ HKEY_LOCAL_MACHINE\NSOFTWARE\NMicrosoft\NInternet Explorer\NInternetRegistry
 
 **Entrega de la carga de pago de SHAVEX**
 
-``[Imagen Alt](./Images/38.png)
+![Alt Image](./Images/38.png)
 
 ```
 Energetic Bear utilizó tres métodos principales para entregar el malware.
@@ -4969,11 +4969,11 @@ Los perfiles deben ser técnicamente viables. Si su perfil requiere el uso de d�
 
 2) Desarrolle su perfil utilizando la siguiente plantilla y compárela con la posible solución.
 
-Imagen Alt](./Images/39.png)
+![Alt Image](./Images/39.png)
 
 ### Posible solución
 
-Imagen Alt](./Images/40.png)
+![Alt Image](./Images/40.png)
 
 **Piensa en las siguientes preguntas:**
 
